@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="40" filename="kmeans/kmeans.cpp" linenumber="10" name="exitcond" contextFuncName="doKmean" moduleName="doKmean" rtlName="exitcond_fu_138_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls"><\/item>
+<item  id="42" filename="kmeans/kmeans.cpp" linenumber="10" name="idx_1" contextFuncName="doKmean" moduleName="doKmean" rtlName="idx_1_fu_144_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="14" fileDirectory="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls"><\/item>
+<item  id="55" filename="kmeans/kmeans.cpp" linenumber="15" name="valOut_data_V" contextFuncName="doKmean" moduleName="doKmean" rtlName="valOut_data_V_fu_184_p2" latency="0" BRAM="-1" DSP="3" FF="0" LUT="20" fileDirectory="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls"><\/item>
+</annotationInfo>

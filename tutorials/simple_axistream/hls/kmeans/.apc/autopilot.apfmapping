@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kmeans.cpp" path="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls/kmeans/kmeans.cpp"/>
+    <originFiles name="kmeans.h" path="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls/kmeans/kmeans.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_kmeans.cpp" path="/home/fabian/Documents/ensta/deuxieme/rob307/tutostr/hls/kmeans/test_kmeans.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

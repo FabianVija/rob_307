@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <xparameters.h>
+#include "xdokmean.h"
+#include "xaxidma.h"
+
+XDokmean dokmean;
+XDokmean_Config *dokmean_cfg;
+XAxiDma axiDMA;
+XAxiDma_Config *axiDMA_cfg;
+
+#define MEM_BASE_ADDR 0x01000000
+#define TX_BUFFER_BASE (MEM_BASE_ADDR+0x00100000)
+#define RX_BUFFER_BASE (MEM_BASE_ADDR+0x00300000)
+
+#define SIZE_ARR 1000
+int inStreamData[SIZE_ARR];
+
+void initPeripherals(){
+
+	dokmean_cfg = XDokmean_LookupConfig(XPAR_XDOKMEAN_0_DEVICE_ID);
+	if(dokmean_cfg){
+		int status = XDokmean_CfgInitialize(&dokmean, dokmean_cfg);
+		if(status != XST_SUCCESS){
+			printf("Error initializing dokmean core \n");
+		}
+	}
+
+	axiDMA_cfg = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	if(axiDMA_cfg){
+		int stat = XAxiDma_CfgInitialize(&axiDMA,axiDMA_cfg);
+		if(stat != XST_SUCCESS){
+			printf("error dma init \n");
+		}
+	}
+
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+}
+
+int main(){
+	int *m_dma_buffer_TX = (int*) TX_BUFFER_BASE;
+	int *m_dma_buffer_RX = (int*) RX_BUFFER_BASE;
+
+	initPeripherals();
+
+	for(int i=0 ; i< SIZE_ARR ; i++){
+		inStreamData[i] = i;
+	}
+
+	while(1){
+		int gain;
+		printf("choose gain: ");
+		scanf("%d", &gain);
+		XDokmean_Set_gain(&dokmean, gain);
+		XDokmean_Start(&dokmean);
+
+		Xil_DCacheFlushRange((u32)inStreamData, SIZE_ARR*sizeof(int));
+		Xil_DCacheFlushRange((u32)m_dma_buffer_RX, SIZE_ARR*sizeof(int));
+
+		XAxiDma_SimpleTransfer(&axiDMA, (u32) inStreamData, SIZE_ARR*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
+
+		XAxiDma_SimpleTransfer(&axiDMA, (u32) m_dma_buffer_RX, SIZE_ARR*sizeof(int),XAXIDMA_DEVICE_TO_DMA );
+		while(XAxiDma_Busy(&axiDMA, XAXIDMA_DEVICE_TO_DMA));
+
+	}
+
+}
