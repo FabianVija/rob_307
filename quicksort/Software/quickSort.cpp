@@ -154,9 +154,9 @@ int main()
     calculTime = (calculStopTime - calculStartTime) / (CLOCKS_PER_SEC / (double) 1000.0);
     readTime = (readStopTime - readStartTime) / (CLOCKS_PER_SEC / (double) 1000.0);
     printf("Size of vector: %d\n",vec->size);
-    printf("Time of calcul: %f\n",calculTime);
+    printf("Time of calcul: %f ms\n",calculTime);
     printf("Clocks of calcul: %f\n", (double)(calculStopTime - calculStartTime));
-    printf("Time total: %f\n",readTime);
+    printf("Time total: %f ms\n",readTime);
     printf("Clocks total: %f\n", (double)(readStopTime - readStartTime));
 
     free(vec->elements);

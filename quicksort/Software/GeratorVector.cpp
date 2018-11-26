@@ -7,7 +7,7 @@
 using namespace std;
 
 int main (){
-    int n = 100000000;
+    int n = 1000;
     int max = 100000000;
     FILE * pFile;
     pFile = fopen ("data.txt","w");

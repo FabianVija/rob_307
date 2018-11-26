@@ -1,0 +1,47 @@
+===================================
+==========   Software   ===========
+===================================
+Size of vector: 100000000
+Time of calcul: 33524.204000 ms
+Clocks of calcul: 33524204.000000
+Time total: 52905.540000 ms
+Clocks total: 52905540.000000
+
+Size of vector: 1000000
+Time of calcul: 247.846000 ms
+Clocks of calcul: 247846.000000
+Time total: 444.142000 ms
+Clocks total: 444142.000000
+
+Size of vector: 100000
+Time of calcul: 21.786000 ms
+Clocks of calcul: 21786.000000
+Time total: 41.843000 ms
+Clocks total: 41843.000000
+
+Size of vector: 1000
+Time of calcul: 0.148000 ms
+Clocks of calcul: 148.000000
+Time total: 0.408000 ms
+Clocks total: 408.000000
+
+Size of vector: 10
+Time of calcul: 0.003000 ms
+Clocks of calcul: 3.000000
+Time total: 0.063000 ms
+Clocks total: 63.000000
+
+===================================
+==========      ARM     ===========
+===================================
+Size of vector: 1000
+Time of calcul: 0.842770 ms
+Clocks of calcul: 84277.000000
+Time total: 23.422750 ms
+Clocks total: 2342275.000000
+
+Size of vector: 10
+Time of calcul: 0.004850 ms
+Clocks of calcul: 485.000000
+Time total: 20.667110 ms
+Clocks total: 2066711.000000
