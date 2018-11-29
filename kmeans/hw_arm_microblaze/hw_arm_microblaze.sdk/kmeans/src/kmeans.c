@@ -16,7 +16,7 @@ void kmeans(){
 	XTmrCtr_Initialize(&Timer, XPAR_TMRCTR_0_DEVICE_ID);
 	uint32_t startTime = 0;
 	float time = 0;
-
+	uint32_t startTime_c = 0;
 	for(int i=0; i<N_POINTS; i++){
 			result[i] = 0;
 		}
@@ -24,23 +24,20 @@ void kmeans(){
 	int in_index[N_CLUSTER];
 
 	// ============= load data ===============
-
+	startTime = start_time(&Timer);
 	read_dataset(data_set);
 	printf("read done \n");
 	//show_dataset(data_set, N_POINTS);
 
-	startTime = start_time(&Timer);
-	printf("a \n");
+	startTime_c = XTmrCtr_GetValue(&Timer,0);
 	// generate random cluster index
 	cluster_index(in_index);
-	printf("b \n");
 	// initialize cluster centroid
 	for(int i=0; i<N_CLUSTER; i++){
 		for(int j=0; j<N_FEATURES; j++){
 		  centroids[i][j] = data_set[in_index[i]][j];
 		}
 	 }
-	printf("c \n");
 	//show_dataset(centroids,N_CLUSTER);
 
 	// calculate distance from points to centroids
@@ -65,7 +62,7 @@ void kmeans(){
 		}
 	}
 
-	time = get_time(&Timer, startTime);
+	time = get_time(&Timer, startTime, startTime_c);
 	printf("Clustering time: %f secs\n",time);
 
 }

@@ -9,14 +9,19 @@ uint32_t start_time(XTmrCtr* timer){
 	return value;
 }
 
-float get_time(XTmrCtr* timer, uint32_t startTime){
+float get_time(XTmrCtr* timer, uint32_t startTime, uint32_t startTimec){
 	uint32_t endTime = 0;
-	float interval = 0;
+	float intervalt = 0;
+	float intervalc = 0;
 	XTmrCtr_Stop(timer, 0);
 	endTime = XTmrCtr_GetValue(timer,0);
-	interval = endTime - startTime;
-	printf("%f int \n",interval);
-	interval = interval/XPAR_TMRCTR_0_CLOCK_FREQ_HZ;
-	return interval;
+	intervalt = endTime - startTime;
+	intervalt = intervalt/XPAR_TMRCTR_0_CLOCK_FREQ_HZ;
+	printf("total time: %f secs\n",intervalt);
+
+	intervalc = endTime - startTimec;
+	intervalc = intervalc/XPAR_TMRCTR_0_CLOCK_FREQ_HZ;
+	printf("calcul time: %f secs\n",intervalc);
+	return intervalt;
 
 }

@@ -12,13 +12,13 @@
 
 #define CHUNK 16384
 #define N_FEATURES  50
-#define N_POINTS 100
+#define N_POINTS 50
 #define N_CLUSTER 20
 #define N_ITERATION 100
 #define N_digits 8
 
 
-static char FILE_NAME[32] = "testc.csv";
+static char FILE_NAME[32] = "two.csv";
 
 
 void kmeans();

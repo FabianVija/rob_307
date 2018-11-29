@@ -1,0 +1,537 @@
+
+*** Running vivado
+    with args -log design_1_doKmean_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_doKmean_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_doKmean_0_0.tcl -notrace
+Command: synth_design -top design_1_doKmean_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6031 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1293.801 ; gain = 82.707 ; free physical = 1122 ; free virtual = 3693
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_doKmean_0_0' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_0/synth/design_1_doKmean_0_0.vhd:99]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:12' bound to instance 'U0' of component 'doKmean' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_0/synth/design_1_doKmean_0_0.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'doKmean' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:58]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:103]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:106]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:292]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:295]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:297]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:303]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:307]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:313]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:317]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 101 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_results' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:76' bound to instance 'results_U' of component 'doKmean_results' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:390]
+INFO: [Synth 8-638] synthesizing module 'doKmean_results' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:91]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 101 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_results_ram' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:13' bound to instance 'doKmean_results_ram_U' of component 'doKmean_results_ram' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'doKmean_results_ram' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:31]
+	Parameter MEM_TYPE bound to: distributed - type: string 
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 101 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'doKmean_results_ram' (1#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'doKmean_results' (2#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_results.vhd:91]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_CRTL_BUS_s_axi' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:12' bound to instance 'doKmean_CRTL_BUS_s_axi_U' of component 'doKmean_CRTL_BUS_s_axi' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'doKmean_CRTL_BUS_s_axi' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:72]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'doKmean_CRTL_BUS_s_axi' (3#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'doKmean' (4#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/e561/hdl/vhdl/doKmean.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'design_1_doKmean_0_0' (5#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_0/synth/design_1_doKmean_0_0.vhd:99]
+WARNING: [Synth 8-3331] design doKmean_results has unconnected port reset
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[31]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[30]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[29]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[28]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[27]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[26]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[25]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[24]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[23]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[22]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[21]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[20]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[19]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[18]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[17]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[16]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[15]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[14]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[13]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[12]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[11]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[10]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[9]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[8]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[7]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[6]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[5]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[4]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[3]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[2]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[1]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[0]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TLAST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1339.426 ; gain = 128.332 ; free physical = 1131 ; free virtual = 3702
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1339.426 ; gain = 128.332 ; free physical = 1132 ; free virtual = 3703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1339.426 ; gain = 128.332 ; free physical = 1132 ; free virtual = 3703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_0/constraints/doKmean_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_0/constraints/doKmean_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1722.465 ; gain = 0.000 ; free physical = 863 ; free virtual = 3442
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 945 ; free virtual = 3524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 945 ; free virtual = 3524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 947 ; free virtual = 3525
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'doKmean_CRTL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'doKmean_CRTL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_351_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_228_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_240_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_fu_334_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_fu_222_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "inStream_V_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_dest_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_id_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_keep_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_strb_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_7_fu_278_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "valOut_last_V_fu_368_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'doKmean_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'doKmean_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 936 ; free virtual = 3516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module doKmean_results_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module doKmean_CRTL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module doKmean 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "tmp_fu_222_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond3_fu_334_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_351_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "valOut_last_V_fu_368_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[31]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[30]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[29]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[28]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[27]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[26]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[25]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[24]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[23]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[22]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[21]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[20]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[19]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[18]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[17]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[16]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[15]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[14]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[13]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[12]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[11]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[10]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[9]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[8]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[7]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[6]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[5]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[4]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[3]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[2]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[1]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TDATA[0]
+WARNING: [Synth 8-3331] design doKmean has unconnected port inStream_TLAST[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 917 ; free virtual = 3500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+|Module Name | RTL Object                              | Inference      | Size (Depth x Width) | Primitives                                 | 
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+|U0          | results_U/doKmean_results_ram_U/ram_reg | User Attribute | 128 x 7              | RAM16X1S x 7  RAM32X1S x 7  RAM64X1S x 7   | 
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 781 ; free virtual = 3366
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3354
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+|Module Name | RTL Object                              | Inference      | Size (Depth x Width) | Primitives                                 | 
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+|U0          | results_U/doKmean_results_ram_U/ram_reg | User Attribute | 128 x 7              | RAM16X1S x 7  RAM32X1S x 7  RAM64X1S x 7   | 
++------------+-----------------------------------------+----------------+----------------------+--------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     6|
+|2     |LUT2     |    14|
+|3     |LUT3     |   133|
+|4     |LUT4     |    46|
+|5     |LUT5     |    67|
+|6     |LUT6     |    27|
+|7     |RAM16X1S |     7|
+|8     |RAM32X1S |     7|
+|9     |RAM64X1S |     7|
+|10    |FDRE     |   315|
+|11    |FDSE     |     3|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-----------------------+------+
+|      |Instance                     |Module                 |Cells |
++------+-----------------------------+-----------------------+------+
+|1     |top                          |                       |   632|
+|2     |  U0                         |doKmean                |   632|
+|3     |    doKmean_CRTL_BUS_s_axi_U |doKmean_CRTL_BUS_s_axi |   171|
+|4     |    results_U                |doKmean_results        |    56|
+|5     |      doKmean_results_ram_U  |doKmean_results_ram    |    56|
++------+-----------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 767 ; free virtual = 3353
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.465 ; gain = 128.332 ; free physical = 825 ; free virtual = 3412
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1722.465 ; gain = 511.371 ; free physical = 825 ; free virtual = 3412
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 7 instances
+  RAM32X1S => RAM32X1S (RAMS32): 7 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1722.465 ; gain = 523.117 ; free physical = 821 ; free virtual = 3407
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_0_synth_1/design_1_doKmean_0_0.dcp' has been generated.

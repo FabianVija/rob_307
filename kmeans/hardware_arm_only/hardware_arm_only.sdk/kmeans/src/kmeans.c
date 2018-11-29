@@ -15,6 +15,7 @@ void kmeans(){
 	XTmrCtr Timer;
 	XTmrCtr_Initialize(&Timer, XPAR_TMRCTR_0_DEVICE_ID);
 	uint32_t startTime = 0;
+	uint32_t startTime_c = 0;
 	float time = 0;
 
 	for(int i=0; i<N_POINTS; i++){
@@ -24,12 +25,13 @@ void kmeans(){
 	int in_index[N_CLUSTER];
 
 	// ============= load data ===============
-
+	startTime = start_time(&Timer);
 	read_dataset(data_set);
 	printf("read done \n");
 	//show_dataset(data_set, N_POINTS);
 
-	startTime = start_time(&Timer);
+
+	startTime_c = XTmrCtr_GetValue(&Timer,0);
 
 	// generate random cluster index
 	cluster_index(in_index);
@@ -65,7 +67,7 @@ void kmeans(){
 		}
 	}
 
-	time = get_time(&Timer, startTime);
+	time = get_time(&Timer, startTime, startTime_c);
 	printf("Clustering time: %f secs\n",time);
 
 }

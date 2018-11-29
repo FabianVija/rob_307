@@ -7475,3 +7475,619 @@ arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
  111104	   2676	20429888	20543668	13978b4	kmeans.elf
 Finished building: kmeans.elf.size
  
+01:44:22 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:33:2: error: 'startTime_c' undeclared (first use in this function); did you mean 'startTime'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+  ^~~~~~~~~~~
+  startTime
+../src/kmeans.c:33:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/kmeans.c:33:33: error: 'timer' undeclared (first use in this function); did you mean 'time'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+                                 ^~~~~
+                                 time
+../src/kmeans.c:69:9: error: too many arguments to function 'get_time'
+  time = get_time(&Timer, startTime, startTime_c);
+         ^~~~~~~~
+In file included from ../src/kmeans.h:10:0,
+                 from ../src/kmeans.c:1:
+../src/timer_c.h:5:7: note: declared here
+ float get_time(XTmrCtr* timer, uint32_t startTime);
+       ^~~~~~~~
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:91:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:121:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+make: *** [src/kmeans.o] Error 1
+01:44:36 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:33:2: error: 'startTime_c' undeclared (first use in this function); did you mean 'startTime'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+  ^~~~~~~~~~~
+  startTime
+../src/kmeans.c:33:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/kmeans.c:33:33: error: 'timer' undeclared (first use in this function); did you mean 'time'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+                                 ^~~~~
+                                 time
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:91:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:121:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+make: *** [src/kmeans.o] Error 1
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+01:45:14 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:33:2: error: 'startTime_c' undeclared (first use in this function); did you mean 'startTime'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+  ^~~~~~~~~~~
+  startTime
+../src/kmeans.c:33:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/kmeans.c:33:33: error: 'timer' undeclared (first use in this function); did you mean 'time'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+                                 ^~~~~
+                                 time
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:91:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:121:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+make: *** [src/kmeans.o] Error 1
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+01:45:52 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:34:33: error: 'timer' undeclared (first use in this function); did you mean 'time'?
+  startTime_c = XTmrCtr_GetValue(timer,0);
+                                 ^~~~~
+                                 time
+../src/kmeans.c:34:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+make: *** [src/kmeans.o] Error 1
+01:46:14 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building file: ../src/timer_c.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Finished building: ../src/timer_c.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	20429888	20543844	1397964	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:47:06 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  33968	 147924	  241d4	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:47:25 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:48:24 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  33968	 147924	  241d4	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:48:30 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:49:09 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  40080	 154036	  259b4	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:49:23 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:50:12 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  40080	 154036	  259b4	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:50:16 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  50288	 164244	  28194	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:50:23 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:51:04 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  50288	 164244	  28194	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:51:12 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	20429888	20543844	1397964	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:51:24 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:52:26 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:55:31 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:57:55 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	20429888	20543844	1397964	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+01:58:21 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:59:54 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	20429888	20543844	1397964	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:00:01 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+02:00:17 **** Auto Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/kmeans.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../kmeans_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:92:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:122:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/ps7_cortexa9_0/lib -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111280	   2676	  50288	 164244	  28194	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:00:29 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

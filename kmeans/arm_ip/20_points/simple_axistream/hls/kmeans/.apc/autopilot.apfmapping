@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kmeans.h" path="/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/kmeans.h"/>
+    <originFiles name="kmeans.cpp" path="/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/kmeans.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_kmeans.cpp" path="/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/test_kmeans.cpp"/>
+    <originFiles name="twentp.csv" path="/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/twentp.csv"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

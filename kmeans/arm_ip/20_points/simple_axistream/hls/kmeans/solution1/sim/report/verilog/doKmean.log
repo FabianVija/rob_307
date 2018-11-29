@@ -1,0 +1,2 @@
+INFO: [COSIM-47] Using Modelsim for RTL simulation.
+ERROR: [COSIM-104] Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable.

@@ -1,6 +1,0 @@
-#include <iostream>
-#include "xtmrctr.h"
-
-class Timerc{
-
-};

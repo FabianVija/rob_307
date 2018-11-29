@@ -1867,3 +1867,290 @@ make: Nothing to be done for 'all'.
 22:30:49 **** Incremental Build of configuration Debug for project kmeans ****
 make all 
 make: Nothing to be done for 'all'.
+02:22:53 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/timer_c.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c:12:7: error: conflicting types for 'get_time'
+ float get_time(XTmrCtr* timer, uint32_t startTime, uint32_t startTimec){
+src/subdir.mk:24: recipe for target 'src/timer_c.o' failed
+       ^~~~~~~~
+In file included from ../src/timer_c.c:1:0:
+../src/timer_c.h:6:7: note: previous declaration of 'get_time' was here
+ float get_time(XTmrCtr* timer, uint32_t startTime);
+       ^~~~~~~~
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [src/timer_c.o] Error 1
+02:23:11 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:68:9: error: too few arguments to function 'get_time'
+  time = get_time(&Timer, startTime);
+         ^~~~~~~~
+In file included from ../src/kmeans.h:10:0,
+                 from ../src/kmeans.c:1:
+../src/timer_c.h:5:7: note: declared here
+ float get_time(XTmrCtr* timer, uint32_t startTime, uint32_t startTimec);
+       ^~~~~~~~
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:90:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+../src/kmeans.c:120:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+make: *** [src/kmeans.o] Error 1
+02:24:31 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'kmeans':
+../src/kmeans.c:68:9: error: too few arguments to function 'get_time'
+  time = get_time(&Timer, startTime);
+         ^~~~~~~~
+In file included from ../src/kmeans.h:10:0,
+                 from ../src/kmeans.c:1:
+../src/timer_c.h:5:7: note: declared here
+ float get_time(XTmrCtr* timer, uint32_t startTime, uint32_t startTimec);
+       ^~~~~~~~
+../src/kmeans.c:19:11: warning: variable 'startTime_c' set but not used [-Wunused-but-set-variable]
+  uint32_t startTime_c = 0;
+           ^~~~~~~~~~~
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:90:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+src/subdir.mk:24: recipe for target 'src/kmeans.o' failed
+         ^~~~~~
+../src/kmeans.c:120:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+make: *** [src/kmeans.o] Error 1
+02:24:43 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:90:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:120:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building file: ../src/timer_c.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Finished building: ../src/timer_c.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154644	   1532	  30120	 186296	  2d7b8	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:24:58 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:90:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:120:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154644	   1532	  30120	 186296	  2d7b8	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:25:45 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:90:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:120:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154644	   1532	  13800	 169976	  297f8	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:25:56 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+02:27:08 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:87:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:117:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  13800	 169904	  297b0	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:27:21 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+02:29:44 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:87:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:117:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  19920	 176024	  2af98	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+02:30:07 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+02:30:50 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
