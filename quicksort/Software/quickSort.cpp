@@ -8,6 +8,9 @@
 #include <time.h>
 using namespace std;
 
+#define N_TESTS 1000
+static int size;
+
 typedef struct vector {
 
     int* elements;
@@ -26,6 +29,7 @@ Vector* createVector (const char* nameFile){
     else{
         if (! feof (pFile)){
             fscanf (pFile, "%d", &newVector->size);
+            size = newVector->size;
 
             newVector->elements = (int*) malloc (newVector->size*sizeof(int));
             int i = 0;
@@ -129,38 +133,55 @@ int main()
 {
     double readTime;
     double calculTime;
+    double readClock;
+    double calculClock;
     clock_t readStopTime;
     clock_t readStartTime;
     clock_t calculStopTime;
     clock_t calculStartTime;
 
-    readStartTime = clock();
 
-    Vector* vec;
-    printf("reading...\n");
-    vec = createVector("data.txt");
-    printf("reade done\n");
+    int i;
+    for (i=0;i<N_TESTS;i++){
+		printf("n=%d\n",i);
+        readStartTime = clock();
 
-    printf("sorting...\n");
+        Vector* vec;
+        //printf("reading...\n");
+        vec = createVector("data.txt");
+        //printf("reade done\n");
 
-    calculStartTime = clock();
-    quickSortIterative(vec->elements,0,vec->size-1);
-    calculStopTime = clock();
+        //printf("sorting...\n");
 
-    readStopTime = clock();
-    printf("sort done\n");
-    //printVector(vec);
+        calculStartTime = clock();
+        quickSortIterative(vec->elements,0,vec->size-1);
+        calculStopTime = clock();
 
-    calculTime = (calculStopTime - calculStartTime) / (CLOCKS_PER_SEC / (double) 1000.0);
-    readTime = (readStopTime - readStartTime) / (CLOCKS_PER_SEC / (double) 1000.0);
-    printf("Size of vector: %d\n",vec->size);
+        readStopTime = clock();
+        //printf("sort done\n");
+        //printVector(vec);
+        
+        
+		calculClock += (calculStopTime - calculStartTime);
+		readClock += (readStopTime - readStartTime);
+		calculTime += ((calculStopTime - calculStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
+		readTime += ((readStopTime - readStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
+
+        free(vec->elements);
+        free(vec);
+    }
+    
+	calculClock = calculClock/N_TESTS;
+	readClock = readClock/N_TESTS;
+	calculTime = calculTime/N_TESTS;
+	readTime = readTime/N_TESTS;
+
+	printf("Number of tests: %d\n",N_TESTS);
+    printf("Size of vector: %d\n",size);
     printf("Time of calcul: %f ms\n",calculTime);
     printf("Clocks of calcul: %f\n", (double)(calculStopTime - calculStartTime));
     printf("Time total: %f ms\n",readTime);
     printf("Clocks total: %f\n", (double)(readStopTime - readStartTime));
-
-    free(vec->elements);
-    free(vec);
 
     return 0;
 }

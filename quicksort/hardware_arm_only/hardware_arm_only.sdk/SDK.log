@@ -1,36 +1,32 @@
-22:53:59 INFO  : Registering command handlers for SDK TCF services
-22:54:00 INFO  : Launching XSCT server: xsct -n -interactive /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/temp_xsdb_launch_script.tcl
-22:54:03 INFO  : XSCT server has started successfully.
-22:54:03 INFO  : Successfully done setting XSCT server connection channel  
-22:54:03 INFO  : Successfully done setting SDK workspace  
-22:54:03 INFO  : Processing command line option -hwspec /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper.hdf.
-22:58:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:00:39 INFO  : Refreshed build settings on project quicksort
-23:01:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
-23:01:11 INFO  : 'fpga -state' command is executed.
-23:01:21 INFO  : Memory regions updated for context APU
-23:01:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:01:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
-23:01:31 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
-23:01:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
-23:01:37 INFO  : 'fpga -state' command is executed.
-23:01:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:01:38 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
-23:01:38 INFO  : 'jtag frequency' command is executed.
-23:01:38 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
-23:01:38 INFO  : Context for 'APU' is selected.
-23:01:38 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
-23:01:38 INFO  : 'configparams force-mem-access 1' command is executed.
-23:01:38 INFO  : Context for 'APU' is selected.
-23:01:38 INFO  : 'stop' command is executed.
-23:01:38 INFO  : 'ps7_init' command is executed.
-23:01:38 INFO  : 'ps7_post_config' command is executed.
-23:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:01:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-23:01:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:01:39 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
-23:01:39 INFO  : 'configparams force-mem-access 0' command is executed.
-23:01:39 INFO  : ----------------XSDB Script----------------
+08:37:27 INFO  : Registering command handlers for SDK TCF services
+08:37:29 INFO  : Launching XSCT server: xsct -n -interactive /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/temp_xsdb_launch_script.tcl
+08:37:31 INFO  : XSCT server has started successfully.
+08:37:31 INFO  : Successfully done setting XSCT server connection channel  
+08:37:31 INFO  : Successfully done setting SDK workspace  
+08:37:31 INFO  : Processing command line option -hwspec /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper.hdf.
+08:47:07 INFO  : Refreshed build settings on project quicksort
+09:03:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:03:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:03:45 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:04:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:04:13 INFO  : 'fpga -state' command is executed.
+09:04:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:04:14 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+09:04:14 INFO  : 'jtag frequency' command is executed.
+09:04:14 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:04:14 INFO  : Context for 'APU' is selected.
+09:04:14 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:04:14 INFO  : 'configparams force-mem-access 1' command is executed.
+09:04:14 INFO  : Context for 'APU' is selected.
+09:04:14 INFO  : 'stop' command is executed.
+09:04:14 INFO  : 'ps7_init' command is executed.
+09:04:14 INFO  : 'ps7_post_config' command is executed.
+09:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:04:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:04:15 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:04:15 INFO  : 'configparams force-mem-access 0' command is executed.
+09:04:15 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
@@ -47,35 +43,38 @@ dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_ar
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-23:01:39 INFO  : Memory regions updated for context APU
-23:01:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:01:39 INFO  : 'con' command is executed.
-23:01:39 INFO  : ----------------XSDB Script (After Launch)----------------
+09:04:15 INFO  : Memory regions updated for context APU
+09:04:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:04:15 INFO  : 'con' command is executed.
+09:04:15 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
 con
 ----------------End of Script----------------
 
-23:01:39 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
-23:02:16 INFO  : Disconnected from the channel tcfchan#1.
-23:02:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
-23:02:22 INFO  : 'fpga -state' command is executed.
-23:02:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-23:02:22 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
-23:02:22 INFO  : 'jtag frequency' command is executed.
-23:02:22 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
-23:02:22 INFO  : Context for 'APU' is selected.
-23:02:25 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
-23:02:25 INFO  : 'configparams force-mem-access 1' command is executed.
-23:02:25 INFO  : Context for 'APU' is selected.
-23:02:25 INFO  : 'stop' command is executed.
-23:02:25 INFO  : 'ps7_init' command is executed.
-23:02:25 INFO  : 'ps7_post_config' command is executed.
-23:02:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:02:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-23:02:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:02:25 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
-23:02:25 INFO  : 'configparams force-mem-access 0' command is executed.
-23:02:25 INFO  : ----------------XSDB Script----------------
+09:04:15 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+09:05:58 INFO  : Disconnected from the channel tcfchan#1.
+09:56:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:56:26 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:56:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:56:48 INFO  : 'fpga -state' command is executed.
+09:56:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:49 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+09:56:49 INFO  : 'jtag frequency' command is executed.
+09:56:49 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:56:49 INFO  : Context for 'APU' is selected.
+09:56:49 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:56:49 INFO  : 'configparams force-mem-access 1' command is executed.
+09:56:49 INFO  : Context for 'APU' is selected.
+09:56:49 INFO  : 'stop' command is executed.
+09:56:49 INFO  : 'ps7_init' command is executed.
+09:56:49 INFO  : 'ps7_post_config' command is executed.
+09:56:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:56:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:50 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:56:50 INFO  : 'configparams force-mem-access 0' command is executed.
+09:56:50 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
 source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
@@ -92,14 +91,2323 @@ dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_ar
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-23:02:25 INFO  : Memory regions updated for context APU
-23:02:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-23:02:26 INFO  : 'con' command is executed.
-23:02:26 INFO  : ----------------XSDB Script (After Launch)----------------
+09:56:50 INFO  : Memory regions updated for context APU
+09:56:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:56:50 INFO  : 'con' command is executed.
+09:56:50 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
 con
 ----------------End of Script----------------
 
-23:02:26 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
-23:03:27 ERROR : (XSDB Server)Desconexão
+09:56:50 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+09:58:05 INFO  : Disconnected from the channel tcfchan#2.
+09:58:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:58:12 INFO  : 'fpga -state' command is executed.
+09:58:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:58:12 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+09:58:12 INFO  : 'jtag frequency' command is executed.
+09:58:12 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:58:12 INFO  : Context for 'APU' is selected.
+09:58:14 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:58:14 INFO  : 'configparams force-mem-access 1' command is executed.
+09:58:14 INFO  : Context for 'APU' is selected.
+09:58:14 INFO  : 'stop' command is executed.
+09:58:15 INFO  : 'ps7_init' command is executed.
+09:58:15 INFO  : 'ps7_post_config' command is executed.
+09:58:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:58:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:58:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:58:15 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:58:15 INFO  : 'configparams force-mem-access 0' command is executed.
+09:58:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
 
+09:58:15 INFO  : Memory regions updated for context APU
+09:58:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:58:15 INFO  : 'con' command is executed.
+09:58:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+09:58:15 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+09:58:26 INFO  : Disconnected from the channel tcfchan#3.
+09:59:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:59:14 INFO  : 'fpga -state' command is executed.
+09:59:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:15 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+09:59:15 INFO  : 'jtag frequency' command is executed.
+09:59:15 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:59:15 INFO  : Context for 'APU' is selected.
+09:59:17 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:59:17 INFO  : 'configparams force-mem-access 1' command is executed.
+09:59:17 INFO  : Context for 'APU' is selected.
+09:59:17 INFO  : 'stop' command is executed.
+09:59:17 INFO  : 'ps7_init' command is executed.
+09:59:17 INFO  : 'ps7_post_config' command is executed.
+09:59:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:59:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:18 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:59:18 INFO  : 'configparams force-mem-access 0' command is executed.
+09:59:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:59:18 INFO  : Memory regions updated for context APU
+09:59:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:18 INFO  : 'con' command is executed.
+09:59:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+09:59:18 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+09:59:42 INFO  : Disconnected from the channel tcfchan#4.
+09:59:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+09:59:54 INFO  : 'fpga -state' command is executed.
+09:59:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+09:59:55 INFO  : 'jtag frequency' command is executed.
+09:59:55 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:59:55 INFO  : Context for 'APU' is selected.
+09:59:57 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+09:59:57 INFO  : 'configparams force-mem-access 1' command is executed.
+09:59:57 INFO  : Context for 'APU' is selected.
+09:59:57 INFO  : 'stop' command is executed.
+09:59:57 INFO  : 'ps7_init' command is executed.
+09:59:57 INFO  : 'ps7_post_config' command is executed.
+09:59:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:59:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:57 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:59:57 INFO  : 'configparams force-mem-access 0' command is executed.
+09:59:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:59:57 INFO  : Memory regions updated for context APU
+09:59:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:59:58 INFO  : 'con' command is executed.
+09:59:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+09:59:58 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:00:57 INFO  : Disconnected from the channel tcfchan#5.
+10:00:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:00:58 INFO  : 'fpga -state' command is executed.
+10:00:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:00:58 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:00:58 INFO  : 'jtag frequency' command is executed.
+10:00:58 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:00:58 INFO  : Context for 'APU' is selected.
+10:01:00 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:01:00 INFO  : 'configparams force-mem-access 1' command is executed.
+10:01:00 INFO  : Context for 'APU' is selected.
+10:01:00 INFO  : 'stop' command is executed.
+10:01:00 INFO  : 'ps7_init' command is executed.
+10:01:00 INFO  : 'ps7_post_config' command is executed.
+10:01:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:01:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:01 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:01:01 INFO  : 'configparams force-mem-access 0' command is executed.
+10:01:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:01:01 INFO  : Memory regions updated for context APU
+10:01:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:01 INFO  : 'con' command is executed.
+10:01:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:01:01 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:01:33 INFO  : Disconnected from the channel tcfchan#6.
+10:01:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:01:40 INFO  : 'fpga -state' command is executed.
+10:01:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:01:40 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:01:40 INFO  : 'jtag frequency' command is executed.
+10:01:40 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:01:40 INFO  : Context for 'APU' is selected.
+10:01:42 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:01:42 INFO  : 'configparams force-mem-access 1' command is executed.
+10:01:42 INFO  : Context for 'APU' is selected.
+10:01:42 INFO  : 'stop' command is executed.
+10:01:42 INFO  : 'ps7_init' command is executed.
+10:01:42 INFO  : 'ps7_post_config' command is executed.
+10:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:43 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:01:43 INFO  : 'configparams force-mem-access 0' command is executed.
+10:01:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:01:43 INFO  : Memory regions updated for context APU
+10:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:01:43 INFO  : 'con' command is executed.
+10:01:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:01:43 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:02:18 INFO  : Disconnected from the channel tcfchan#7.
+10:02:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:02:28 INFO  : 'fpga -state' command is executed.
+10:02:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:28 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:02:28 INFO  : 'jtag frequency' command is executed.
+10:02:28 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:02:28 INFO  : Context for 'APU' is selected.
+10:02:30 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:02:30 INFO  : 'configparams force-mem-access 1' command is executed.
+10:02:30 INFO  : Context for 'APU' is selected.
+10:02:30 INFO  : 'stop' command is executed.
+10:02:31 INFO  : 'ps7_init' command is executed.
+10:02:31 INFO  : 'ps7_post_config' command is executed.
+10:02:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:02:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:31 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:02:31 INFO  : 'configparams force-mem-access 0' command is executed.
+10:02:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:02:31 INFO  : Memory regions updated for context APU
+10:02:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:02:31 INFO  : 'con' command is executed.
+10:02:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:02:31 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:13:41 INFO  : Disconnected from the channel tcfchan#8.
+10:13:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:13:58 INFO  : 'fpga -state' command is executed.
+10:13:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:13:59 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:13:59 INFO  : 'jtag frequency' command is executed.
+10:13:59 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:13:59 INFO  : Context for 'APU' is selected.
+10:14:02 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:14:02 INFO  : 'configparams force-mem-access 1' command is executed.
+10:14:02 INFO  : Context for 'APU' is selected.
+10:14:02 INFO  : 'stop' command is executed.
+10:14:03 INFO  : 'ps7_init' command is executed.
+10:14:03 INFO  : 'ps7_post_config' command is executed.
+10:14:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:14:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:03 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:14:03 INFO  : 'configparams force-mem-access 0' command is executed.
+10:14:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:14:03 INFO  : Memory regions updated for context APU
+10:14:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:14:03 INFO  : 'con' command is executed.
+10:14:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:14:03 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:17:20 INFO  : Disconnected from the channel tcfchan#9.
+10:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:17:21 INFO  : 'fpga -state' command is executed.
+10:17:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:22 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:17:22 INFO  : 'jtag frequency' command is executed.
+10:17:22 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:17:22 INFO  : Context for 'APU' is selected.
+10:17:24 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:17:24 INFO  : 'configparams force-mem-access 1' command is executed.
+10:17:24 INFO  : Context for 'APU' is selected.
+10:17:24 INFO  : 'stop' command is executed.
+10:17:24 INFO  : 'ps7_init' command is executed.
+10:17:24 INFO  : 'ps7_post_config' command is executed.
+10:17:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:17:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:25 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:17:25 INFO  : 'configparams force-mem-access 0' command is executed.
+10:17:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:17:25 INFO  : Memory regions updated for context APU
+10:17:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:25 INFO  : 'con' command is executed.
+10:17:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:17:25 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:18:24 INFO  : Disconnected from the channel tcfchan#10.
+10:18:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:18:29 INFO  : 'fpga -state' command is executed.
+10:18:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:29 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:18:29 INFO  : 'jtag frequency' command is executed.
+10:18:29 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:18:30 INFO  : Context for 'APU' is selected.
+10:18:32 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:18:32 INFO  : 'configparams force-mem-access 1' command is executed.
+10:18:32 INFO  : Context for 'APU' is selected.
+10:18:32 INFO  : 'stop' command is executed.
+10:18:32 INFO  : 'ps7_init' command is executed.
+10:18:32 INFO  : 'ps7_post_config' command is executed.
+10:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:33 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:18:33 INFO  : 'configparams force-mem-access 0' command is executed.
+10:18:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:18:33 INFO  : Memory regions updated for context APU
+10:18:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:18:33 INFO  : 'con' command is executed.
+10:18:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:18:33 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:19:21 INFO  : Disconnected from the channel tcfchan#11.
+10:19:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:19:33 INFO  : 'fpga -state' command is executed.
+10:19:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:34 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:19:34 INFO  : 'jtag frequency' command is executed.
+10:19:34 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:19:34 INFO  : Context for 'APU' is selected.
+10:19:36 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:19:36 INFO  : 'configparams force-mem-access 1' command is executed.
+10:19:36 INFO  : Context for 'APU' is selected.
+10:19:36 INFO  : 'stop' command is executed.
+10:19:36 INFO  : 'ps7_init' command is executed.
+10:19:36 INFO  : 'ps7_post_config' command is executed.
+10:19:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:19:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:37 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:19:37 INFO  : 'configparams force-mem-access 0' command is executed.
+10:19:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:19:37 INFO  : Memory regions updated for context APU
+10:19:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:19:37 INFO  : 'con' command is executed.
+10:19:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:19:37 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:20:14 INFO  : Disconnected from the channel tcfchan#12.
+10:20:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:20:29 INFO  : 'fpga -state' command is executed.
+10:20:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:30 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:20:30 INFO  : 'jtag frequency' command is executed.
+10:20:30 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:20:30 INFO  : Context for 'APU' is selected.
+10:20:32 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:20:32 INFO  : 'configparams force-mem-access 1' command is executed.
+10:20:32 INFO  : Context for 'APU' is selected.
+10:20:32 INFO  : 'stop' command is executed.
+10:20:33 INFO  : 'ps7_init' command is executed.
+10:20:33 INFO  : 'ps7_post_config' command is executed.
+10:20:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:20:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:20:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:20:33 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:20:33 INFO  : 'configparams force-mem-access 0' command is executed.
+10:20:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:20:33 INFO  : Memory regions updated for context APU
+10:20:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:20:33 INFO  : 'con' command is executed.
+10:20:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:20:33 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:20:59 INFO  : Disconnected from the channel tcfchan#13.
+10:21:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:21:04 INFO  : 'fpga -state' command is executed.
+10:21:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:04 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:21:04 INFO  : 'jtag frequency' command is executed.
+10:21:04 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:21:04 INFO  : Context for 'APU' is selected.
+10:21:06 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:21:06 INFO  : 'configparams force-mem-access 1' command is executed.
+10:21:06 INFO  : Context for 'APU' is selected.
+10:21:06 INFO  : 'stop' command is executed.
+10:21:06 INFO  : 'ps7_init' command is executed.
+10:21:06 INFO  : 'ps7_post_config' command is executed.
+10:21:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:21:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:07 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:07 INFO  : 'configparams force-mem-access 0' command is executed.
+10:21:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:21:07 INFO  : Memory regions updated for context APU
+10:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:07 INFO  : 'con' command is executed.
+10:21:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:21:07 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:21:28 INFO  : Disconnected from the channel tcfchan#14.
+10:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:21:37 INFO  : 'fpga -state' command is executed.
+10:21:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:37 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:21:37 INFO  : 'jtag frequency' command is executed.
+10:21:37 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:21:37 INFO  : Context for 'APU' is selected.
+10:21:39 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:21:39 INFO  : 'configparams force-mem-access 1' command is executed.
+10:21:39 INFO  : Context for 'APU' is selected.
+10:21:39 INFO  : 'stop' command is executed.
+10:21:40 INFO  : 'ps7_init' command is executed.
+10:21:40 INFO  : 'ps7_post_config' command is executed.
+10:21:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:21:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:40 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:40 INFO  : 'configparams force-mem-access 0' command is executed.
+10:21:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:21:40 INFO  : Memory regions updated for context APU
+10:21:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:40 INFO  : 'con' command is executed.
+10:21:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:21:40 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:22:53 INFO  : Disconnected from the channel tcfchan#15.
+10:23:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:23:04 INFO  : 'fpga -state' command is executed.
+10:23:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:23:04 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:23:04 INFO  : 'jtag frequency' command is executed.
+10:23:04 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:23:04 INFO  : Context for 'APU' is selected.
+10:23:06 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:23:06 INFO  : 'configparams force-mem-access 1' command is executed.
+10:23:06 INFO  : Context for 'APU' is selected.
+10:23:06 INFO  : 'stop' command is executed.
+10:23:07 INFO  : 'ps7_init' command is executed.
+10:23:07 INFO  : 'ps7_post_config' command is executed.
+10:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:07 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:23:07 INFO  : 'configparams force-mem-access 0' command is executed.
+10:23:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:23:07 INFO  : Memory regions updated for context APU
+10:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:07 INFO  : 'con' command is executed.
+10:23:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:23:07 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:23:29 INFO  : Disconnected from the channel tcfchan#16.
+10:23:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:23:35 INFO  : 'fpga -state' command is executed.
+10:23:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:23:35 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:23:35 INFO  : 'jtag frequency' command is executed.
+10:23:35 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:23:35 INFO  : Context for 'APU' is selected.
+10:23:37 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:23:37 INFO  : 'configparams force-mem-access 1' command is executed.
+10:23:37 INFO  : Context for 'APU' is selected.
+10:23:37 INFO  : 'stop' command is executed.
+10:23:37 INFO  : 'ps7_init' command is executed.
+10:23:37 INFO  : 'ps7_post_config' command is executed.
+10:23:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:23:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:38 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:23:38 INFO  : 'configparams force-mem-access 0' command is executed.
+10:23:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:23:38 INFO  : Memory regions updated for context APU
+10:23:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:23:38 INFO  : 'con' command is executed.
+10:23:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:23:38 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:24:04 INFO  : Disconnected from the channel tcfchan#17.
+10:24:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:24:16 INFO  : 'fpga -state' command is executed.
+10:24:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:24:16 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:24:16 INFO  : 'jtag frequency' command is executed.
+10:24:16 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:24:16 INFO  : Context for 'APU' is selected.
+10:24:18 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:24:18 INFO  : 'configparams force-mem-access 1' command is executed.
+10:24:19 INFO  : Context for 'APU' is selected.
+10:24:19 INFO  : 'stop' command is executed.
+10:24:19 INFO  : 'ps7_init' command is executed.
+10:24:19 INFO  : 'ps7_post_config' command is executed.
+10:24:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:24:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:19 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:24:19 INFO  : 'configparams force-mem-access 0' command is executed.
+10:24:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:24:19 INFO  : Memory regions updated for context APU
+10:24:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:24:19 INFO  : 'con' command is executed.
+10:24:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:24:19 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:26:42 INFO  : Disconnected from the channel tcfchan#18.
+10:26:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:26:47 INFO  : 'fpga -state' command is executed.
+10:26:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:47 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:26:47 INFO  : 'jtag frequency' command is executed.
+10:26:47 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:26:47 INFO  : Context for 'APU' is selected.
+10:26:50 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:26:50 INFO  : 'configparams force-mem-access 1' command is executed.
+10:26:50 INFO  : Context for 'APU' is selected.
+10:26:50 INFO  : 'stop' command is executed.
+10:26:50 INFO  : 'ps7_init' command is executed.
+10:26:50 INFO  : 'ps7_post_config' command is executed.
+10:26:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:26:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:50 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:26:50 INFO  : 'configparams force-mem-access 0' command is executed.
+10:26:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:26:50 INFO  : Memory regions updated for context APU
+10:26:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:26:51 INFO  : 'con' command is executed.
+10:26:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:26:51 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:28:59 INFO  : Disconnected from the channel tcfchan#19.
+10:29:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:29:29 INFO  : 'fpga -state' command is executed.
+10:29:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:29:29 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:29:29 INFO  : 'jtag frequency' command is executed.
+10:29:29 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:29:30 INFO  : Context for 'APU' is selected.
+10:29:32 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:29:32 INFO  : 'configparams force-mem-access 1' command is executed.
+10:29:32 INFO  : Context for 'APU' is selected.
+10:29:32 INFO  : 'stop' command is executed.
+10:29:32 INFO  : 'ps7_init' command is executed.
+10:29:32 INFO  : 'ps7_post_config' command is executed.
+10:29:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:29:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:29:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:29:33 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:29:33 INFO  : 'configparams force-mem-access 0' command is executed.
+10:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:29:33 INFO  : Memory regions updated for context APU
+10:29:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:29:33 INFO  : 'con' command is executed.
+10:29:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:29:33 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:31:12 INFO  : Disconnected from the channel tcfchan#20.
+10:31:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:31:19 INFO  : 'fpga -state' command is executed.
+10:31:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:19 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:31:19 INFO  : 'jtag frequency' command is executed.
+10:31:19 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:19 INFO  : Context for 'APU' is selected.
+10:31:22 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:31:22 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:22 INFO  : Context for 'APU' is selected.
+10:31:22 INFO  : 'stop' command is executed.
+10:31:22 INFO  : 'ps7_init' command is executed.
+10:31:22 INFO  : 'ps7_post_config' command is executed.
+10:31:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:31:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:22 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:22 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:22 INFO  : Memory regions updated for context APU
+10:31:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:23 INFO  : 'con' command is executed.
+10:31:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:31:23 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:31:47 INFO  : Disconnected from the channel tcfchan#21.
+10:31:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:31:54 INFO  : 'fpga -state' command is executed.
+10:31:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:54 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:31:54 INFO  : 'jtag frequency' command is executed.
+10:31:54 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:54 INFO  : Context for 'APU' is selected.
+10:31:57 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:31:57 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:57 INFO  : Context for 'APU' is selected.
+10:31:57 INFO  : 'stop' command is executed.
+10:31:57 INFO  : 'ps7_init' command is executed.
+10:31:57 INFO  : 'ps7_post_config' command is executed.
+10:31:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:57 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:31:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:57 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:57 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:57 INFO  : Memory regions updated for context APU
+10:31:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:58 INFO  : 'con' command is executed.
+10:31:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:31:58 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:34:46 INFO  : Disconnected from the channel tcfchan#22.
+10:34:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:34:55 INFO  : 'fpga -state' command is executed.
+10:34:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:34:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:34:55 INFO  : 'jtag frequency' command is executed.
+10:34:55 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:34:55 INFO  : Context for 'APU' is selected.
+10:34:58 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:34:58 INFO  : 'configparams force-mem-access 1' command is executed.
+10:34:58 INFO  : Context for 'APU' is selected.
+10:34:58 INFO  : 'stop' command is executed.
+10:34:58 INFO  : 'ps7_init' command is executed.
+10:34:58 INFO  : 'ps7_post_config' command is executed.
+10:34:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:34:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:34:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:34:59 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:34:59 INFO  : 'configparams force-mem-access 0' command is executed.
+10:34:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:34:59 INFO  : Memory regions updated for context APU
+10:34:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:34:59 INFO  : 'con' command is executed.
+10:34:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:34:59 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:35:47 INFO  : Disconnected from the channel tcfchan#23.
+10:35:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:35:52 INFO  : 'fpga -state' command is executed.
+10:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:52 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:35:52 INFO  : 'jtag frequency' command is executed.
+10:35:52 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:35:52 INFO  : Context for 'APU' is selected.
+10:35:54 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:35:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:35:54 INFO  : Context for 'APU' is selected.
+10:35:54 INFO  : 'stop' command is executed.
+10:35:54 INFO  : 'ps7_init' command is executed.
+10:35:54 INFO  : 'ps7_post_config' command is executed.
+10:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:55 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:35:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:35:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:35:55 INFO  : Memory regions updated for context APU
+10:35:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:55 INFO  : 'con' command is executed.
+10:35:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:35:55 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:36:46 INFO  : Disconnected from the channel tcfchan#24.
+10:36:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:36:53 INFO  : 'fpga -state' command is executed.
+10:36:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:53 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:36:53 INFO  : 'jtag frequency' command is executed.
+10:36:53 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:36:53 INFO  : Context for 'APU' is selected.
+10:36:55 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:36:55 INFO  : 'configparams force-mem-access 1' command is executed.
+10:36:55 INFO  : Context for 'APU' is selected.
+10:36:55 INFO  : 'stop' command is executed.
+10:36:56 INFO  : 'ps7_init' command is executed.
+10:36:56 INFO  : 'ps7_post_config' command is executed.
+10:36:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:36:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:36:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:36:56 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:36:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:36:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:36:56 INFO  : Memory regions updated for context APU
+10:36:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:36:56 INFO  : 'con' command is executed.
+10:36:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:36:56 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:39:06 INFO  : Disconnected from the channel tcfchan#25.
+10:39:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:39:21 INFO  : 'fpga -state' command is executed.
+10:39:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:39:21 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:39:21 INFO  : 'jtag frequency' command is executed.
+10:39:21 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:39:21 INFO  : Context for 'APU' is selected.
+10:39:23 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:39:23 INFO  : 'configparams force-mem-access 1' command is executed.
+10:39:23 INFO  : Context for 'APU' is selected.
+10:39:23 INFO  : 'stop' command is executed.
+10:39:24 INFO  : 'ps7_init' command is executed.
+10:39:24 INFO  : 'ps7_post_config' command is executed.
+10:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:24 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:39:24 INFO  : 'configparams force-mem-access 0' command is executed.
+10:39:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:39:24 INFO  : Memory regions updated for context APU
+10:39:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:39:24 INFO  : 'con' command is executed.
+10:39:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:39:24 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:40:48 INFO  : Disconnected from the channel tcfchan#26.
+10:40:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:40:57 INFO  : 'fpga -state' command is executed.
+10:40:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:57 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:40:57 INFO  : 'jtag frequency' command is executed.
+10:40:57 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:40:57 INFO  : Context for 'APU' is selected.
+10:41:00 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:41:00 INFO  : 'configparams force-mem-access 1' command is executed.
+10:41:00 INFO  : Context for 'APU' is selected.
+10:41:00 INFO  : 'stop' command is executed.
+10:41:00 INFO  : 'ps7_init' command is executed.
+10:41:00 INFO  : 'ps7_post_config' command is executed.
+10:41:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:41:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:01 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:41:01 INFO  : 'configparams force-mem-access 0' command is executed.
+10:41:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:41:01 INFO  : Memory regions updated for context APU
+10:41:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:01 INFO  : 'con' command is executed.
+10:41:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:41:01 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+10:49:43 INFO  : Disconnected from the channel tcfchan#27.
+10:49:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+10:49:49 INFO  : 'fpga -state' command is executed.
+10:49:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:49:49 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+10:49:49 INFO  : 'jtag frequency' command is executed.
+10:49:49 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:49:49 INFO  : Context for 'APU' is selected.
+10:49:52 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:49:52 INFO  : 'configparams force-mem-access 1' command is executed.
+10:49:52 INFO  : Context for 'APU' is selected.
+10:49:52 INFO  : 'stop' command is executed.
+10:49:52 INFO  : 'ps7_init' command is executed.
+10:49:52 INFO  : 'ps7_post_config' command is executed.
+10:49:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:49:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:53 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:49:53 INFO  : 'configparams force-mem-access 0' command is executed.
+10:49:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:49:53 INFO  : Memory regions updated for context APU
+10:49:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:49:53 INFO  : 'con' command is executed.
+10:49:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+10:49:53 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:07:00 INFO  : Disconnected from the channel tcfchan#28.
+11:07:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:07:07 INFO  : 'fpga -state' command is executed.
+11:07:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:07 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:07:07 INFO  : 'jtag frequency' command is executed.
+11:07:07 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:07:08 INFO  : Context for 'APU' is selected.
+11:07:10 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:07:10 INFO  : 'configparams force-mem-access 1' command is executed.
+11:07:10 INFO  : Context for 'APU' is selected.
+11:07:10 INFO  : 'stop' command is executed.
+11:07:10 INFO  : 'ps7_init' command is executed.
+11:07:10 INFO  : 'ps7_post_config' command is executed.
+11:07:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:07:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:11 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:07:11 INFO  : 'configparams force-mem-access 0' command is executed.
+11:07:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:07:11 INFO  : Memory regions updated for context APU
+11:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:07:11 INFO  : 'con' command is executed.
+11:07:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:07:11 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:07:50 INFO  : Disconnected from the channel tcfchan#29.
+11:07:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:07:57 INFO  : 'fpga -state' command is executed.
+11:07:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:57 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:07:57 INFO  : 'jtag frequency' command is executed.
+11:07:57 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:07:57 INFO  : Context for 'APU' is selected.
+11:07:59 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:07:59 INFO  : 'configparams force-mem-access 1' command is executed.
+11:07:59 INFO  : Context for 'APU' is selected.
+11:07:59 INFO  : 'stop' command is executed.
+11:08:00 INFO  : 'ps7_init' command is executed.
+11:08:00 INFO  : 'ps7_post_config' command is executed.
+11:08:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:08:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:00 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:08:00 INFO  : 'configparams force-mem-access 0' command is executed.
+11:08:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:08:00 INFO  : Memory regions updated for context APU
+11:08:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:00 INFO  : 'con' command is executed.
+11:08:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:08:00 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:08:38 INFO  : Disconnected from the channel tcfchan#30.
+11:08:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:08:43 INFO  : 'fpga -state' command is executed.
+11:08:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:43 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:08:43 INFO  : 'jtag frequency' command is executed.
+11:08:43 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:08:43 INFO  : Context for 'APU' is selected.
+11:08:45 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:08:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:08:45 INFO  : Context for 'APU' is selected.
+11:08:45 INFO  : 'stop' command is executed.
+11:08:46 INFO  : 'ps7_init' command is executed.
+11:08:46 INFO  : 'ps7_post_config' command is executed.
+11:08:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:08:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:46 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:08:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:08:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:08:46 INFO  : Memory regions updated for context APU
+11:08:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:08:46 INFO  : 'con' command is executed.
+11:08:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:08:46 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:09:19 INFO  : Disconnected from the channel tcfchan#31.
+11:10:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:10:21 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:10:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:10:28 INFO  : 'fpga -state' command is executed.
+11:10:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:29 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:10:29 INFO  : 'jtag frequency' command is executed.
+11:10:29 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:10:29 INFO  : Context for 'APU' is selected.
+11:10:29 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:10:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:10:29 INFO  : Context for 'APU' is selected.
+11:10:29 INFO  : 'stop' command is executed.
+11:10:29 INFO  : 'ps7_init' command is executed.
+11:10:29 INFO  : 'ps7_post_config' command is executed.
+11:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:29 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:10:29 INFO  : 'configparams force-mem-access 0' command is executed.
+11:10:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:10:29 INFO  : Memory regions updated for context APU
+11:10:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:10:30 INFO  : 'con' command is executed.
+11:10:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:10:30 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:10:58 INFO  : Disconnected from the channel tcfchan#32.
+11:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:11:05 INFO  : 'fpga -state' command is executed.
+11:11:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:06 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:11:06 INFO  : 'jtag frequency' command is executed.
+11:11:06 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:11:06 INFO  : Context for 'APU' is selected.
+11:11:08 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:11:08 INFO  : 'configparams force-mem-access 1' command is executed.
+11:11:08 INFO  : Context for 'APU' is selected.
+11:11:08 INFO  : 'stop' command is executed.
+11:11:08 INFO  : 'ps7_init' command is executed.
+11:11:08 INFO  : 'ps7_post_config' command is executed.
+11:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:09 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:11:09 INFO  : 'configparams force-mem-access 0' command is executed.
+11:11:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:11:09 INFO  : Memory regions updated for context APU
+11:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:09 INFO  : 'con' command is executed.
+11:11:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:11:09 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:13:12 INFO  : Disconnected from the channel tcfchan#33.
+11:13:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:13:17 INFO  : 'fpga -state' command is executed.
+11:13:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:17 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:13:17 INFO  : 'jtag frequency' command is executed.
+11:13:17 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:17 INFO  : Context for 'APU' is selected.
+11:13:19 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:13:19 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:19 INFO  : Context for 'APU' is selected.
+11:13:19 INFO  : 'stop' command is executed.
+11:13:19 INFO  : 'ps7_init' command is executed.
+11:13:19 INFO  : 'ps7_post_config' command is executed.
+11:13:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:13:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:20 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:13:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:20 INFO  : Memory regions updated for context APU
+11:13:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:20 INFO  : 'con' command is executed.
+11:13:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:13:20 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:13:45 INFO  : Disconnected from the channel tcfchan#34.
+11:14:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:14:14 INFO  : 'fpga -state' command is executed.
+11:14:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:15 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:14:15 INFO  : 'jtag frequency' command is executed.
+11:14:15 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:15 INFO  : Context for 'APU' is selected.
+11:14:17 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:14:17 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:17 INFO  : Context for 'APU' is selected.
+11:14:17 INFO  : 'stop' command is executed.
+11:14:17 INFO  : 'ps7_init' command is executed.
+11:14:17 INFO  : 'ps7_post_config' command is executed.
+11:14:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:14:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:18 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:14:18 INFO  : 'configparams force-mem-access 0' command is executed.
+11:14:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:14:18 INFO  : Memory regions updated for context APU
+11:14:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:18 INFO  : 'con' command is executed.
+11:14:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:14:18 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:14:42 INFO  : Disconnected from the channel tcfchan#35.
+11:14:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:14:55 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:15:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:15:15 INFO  : 'fpga -state' command is executed.
+11:15:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:15 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:15:15 INFO  : 'jtag frequency' command is executed.
+11:15:15 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:15:15 INFO  : Context for 'APU' is selected.
+11:15:15 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:15:15 INFO  : 'configparams force-mem-access 1' command is executed.
+11:15:16 INFO  : Context for 'APU' is selected.
+11:15:16 INFO  : 'stop' command is executed.
+11:15:16 INFO  : 'ps7_init' command is executed.
+11:15:16 INFO  : 'ps7_post_config' command is executed.
+11:15:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:15:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:16 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:15:16 INFO  : 'configparams force-mem-access 0' command is executed.
+11:15:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:15:16 INFO  : Memory regions updated for context APU
+11:15:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:15:16 INFO  : 'con' command is executed.
+11:15:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:15:16 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:15:51 INFO  : Disconnected from the channel tcfchan#36.
+11:15:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:15:58 INFO  : 'fpga -state' command is executed.
+11:15:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:15:58 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:15:58 INFO  : 'jtag frequency' command is executed.
+11:15:58 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:15:58 INFO  : Context for 'APU' is selected.
+11:16:00 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:16:00 INFO  : 'configparams force-mem-access 1' command is executed.
+11:16:00 INFO  : Context for 'APU' is selected.
+11:16:00 INFO  : 'stop' command is executed.
+11:16:01 INFO  : 'ps7_init' command is executed.
+11:16:01 INFO  : 'ps7_post_config' command is executed.
+11:16:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:16:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:01 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:16:01 INFO  : 'configparams force-mem-access 0' command is executed.
+11:16:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:16:01 INFO  : Memory regions updated for context APU
+11:16:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:01 INFO  : 'con' command is executed.
+11:16:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:16:01 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:16:13 INFO  : Disconnected from the channel tcfchan#37.
+11:16:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:16:22 INFO  : 'fpga -state' command is executed.
+11:16:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:22 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:16:22 INFO  : 'jtag frequency' command is executed.
+11:16:22 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:16:22 INFO  : Context for 'APU' is selected.
+11:16:25 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:16:25 INFO  : 'configparams force-mem-access 1' command is executed.
+11:16:25 INFO  : Context for 'APU' is selected.
+11:16:25 INFO  : 'stop' command is executed.
+11:16:25 INFO  : 'ps7_init' command is executed.
+11:16:25 INFO  : 'ps7_post_config' command is executed.
+11:16:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:16:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:25 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:16:25 INFO  : 'configparams force-mem-access 0' command is executed.
+11:16:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:16:25 INFO  : Memory regions updated for context APU
+11:16:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:26 INFO  : 'con' command is executed.
+11:16:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:16:26 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:16:34 INFO  : Disconnected from the channel tcfchan#38.
+11:16:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:16:36 INFO  : 'fpga -state' command is executed.
+11:16:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:36 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:16:36 INFO  : 'jtag frequency' command is executed.
+11:16:36 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:16:36 INFO  : Context for 'APU' is selected.
+11:16:38 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:16:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:16:38 INFO  : Context for 'APU' is selected.
+11:16:38 INFO  : 'stop' command is executed.
+11:16:38 INFO  : 'ps7_init' command is executed.
+11:16:38 INFO  : 'ps7_post_config' command is executed.
+11:16:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:16:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:39 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:16:39 INFO  : 'configparams force-mem-access 0' command is executed.
+11:16:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:16:39 INFO  : Memory regions updated for context APU
+11:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:39 INFO  : 'con' command is executed.
+11:16:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:16:39 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:16:54 INFO  : Disconnected from the channel tcfchan#39.
+11:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:17:11 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:17:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:17:39 INFO  : 'fpga -state' command is executed.
+11:17:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:17:39 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:17:39 INFO  : 'jtag frequency' command is executed.
+11:17:39 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:17:39 INFO  : Context for 'APU' is selected.
+11:17:39 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:17:39 INFO  : 'configparams force-mem-access 1' command is executed.
+11:17:39 INFO  : Context for 'APU' is selected.
+11:17:39 INFO  : 'stop' command is executed.
+11:17:39 INFO  : 'ps7_init' command is executed.
+11:17:39 INFO  : 'ps7_post_config' command is executed.
+11:17:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:17:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:17:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:17:40 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:17:40 INFO  : 'configparams force-mem-access 0' command is executed.
+11:17:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:17:40 INFO  : Memory regions updated for context APU
+11:17:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:17:40 INFO  : 'con' command is executed.
+11:17:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:17:40 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:18:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:18:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:18:26 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:18:57 INFO  : Disconnected from the channel tcfchan#40.
+11:19:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:19:11 INFO  : 'fpga -state' command is executed.
+11:19:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:19:11 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:19:11 INFO  : 'jtag frequency' command is executed.
+11:19:11 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:19:11 INFO  : Context for 'APU' is selected.
+11:19:14 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:19:14 INFO  : 'configparams force-mem-access 1' command is executed.
+11:19:14 INFO  : Context for 'APU' is selected.
+11:19:14 INFO  : 'stop' command is executed.
+11:19:14 INFO  : 'ps7_init' command is executed.
+11:19:14 INFO  : 'ps7_post_config' command is executed.
+11:19:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:19:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:19:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:19:15 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:19:15 INFO  : 'configparams force-mem-access 0' command is executed.
+11:19:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:19:15 INFO  : Memory regions updated for context APU
+11:19:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:19:15 INFO  : 'con' command is executed.
+11:19:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:19:15 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:19:50 INFO  : Disconnected from the channel tcfchan#41.
+11:19:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:19:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:20:01 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:20:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:20:27 INFO  : 'fpga -state' command is executed.
+11:20:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:27 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:20:27 INFO  : 'jtag frequency' command is executed.
+11:20:27 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:20:27 INFO  : Context for 'APU' is selected.
+11:20:27 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:20:27 INFO  : 'configparams force-mem-access 1' command is executed.
+11:20:27 INFO  : Context for 'APU' is selected.
+11:20:27 INFO  : 'stop' command is executed.
+11:20:28 INFO  : 'ps7_init' command is executed.
+11:20:28 INFO  : 'ps7_post_config' command is executed.
+11:20:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:20:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:28 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:20:28 INFO  : 'configparams force-mem-access 0' command is executed.
+11:20:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:20:28 INFO  : Memory regions updated for context APU
+11:20:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:28 INFO  : 'con' command is executed.
+11:20:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:20:28 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:20:51 INFO  : Disconnected from the channel tcfchan#42.
+11:21:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:21:03 INFO  : 'fpga -state' command is executed.
+11:21:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:04 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:21:04 INFO  : 'jtag frequency' command is executed.
+11:21:04 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:21:04 INFO  : Context for 'APU' is selected.
+11:21:06 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:21:06 INFO  : 'configparams force-mem-access 1' command is executed.
+11:21:06 INFO  : Context for 'APU' is selected.
+11:21:06 INFO  : 'stop' command is executed.
+11:21:07 INFO  : 'ps7_init' command is executed.
+11:21:07 INFO  : 'ps7_post_config' command is executed.
+11:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:07 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:21:07 INFO  : 'configparams force-mem-access 0' command is executed.
+11:21:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:21:07 INFO  : Memory regions updated for context APU
+11:21:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:07 INFO  : 'con' command is executed.
+11:21:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:21:07 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:21:27 INFO  : Disconnected from the channel tcfchan#43.
+11:21:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:21:35 INFO  : 'fpga -state' command is executed.
+11:21:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:21:35 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:21:35 INFO  : 'jtag frequency' command is executed.
+11:21:35 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:21:35 INFO  : Context for 'APU' is selected.
+11:21:38 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:21:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:21:38 INFO  : Context for 'APU' is selected.
+11:21:38 INFO  : 'stop' command is executed.
+11:21:38 INFO  : 'ps7_init' command is executed.
+11:21:38 INFO  : 'ps7_post_config' command is executed.
+11:21:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:21:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:38 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:21:38 INFO  : 'configparams force-mem-access 0' command is executed.
+11:21:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:21:38 INFO  : Memory regions updated for context APU
+11:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:21:39 INFO  : 'con' command is executed.
+11:21:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:21:39 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:22:20 INFO  : Disconnected from the channel tcfchan#44.
+11:22:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:22:30 INFO  : 'fpga -state' command is executed.
+11:22:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:30 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:22:30 INFO  : 'jtag frequency' command is executed.
+11:22:30 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:22:31 INFO  : Context for 'APU' is selected.
+11:22:33 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:22:33 INFO  : 'configparams force-mem-access 1' command is executed.
+11:22:33 INFO  : Context for 'APU' is selected.
+11:22:33 INFO  : 'stop' command is executed.
+11:22:33 INFO  : 'ps7_init' command is executed.
+11:22:33 INFO  : 'ps7_post_config' command is executed.
+11:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:22:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:34 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:22:34 INFO  : 'configparams force-mem-access 0' command is executed.
+11:22:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:22:34 INFO  : Memory regions updated for context APU
+11:22:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:34 INFO  : 'con' command is executed.
+11:22:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:22:34 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:22:38 INFO  : Disconnected from the channel tcfchan#45.
+11:22:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:22:42 INFO  : 'fpga -state' command is executed.
+11:22:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:22:42 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:22:43 INFO  : 'jtag frequency' command is executed.
+11:22:43 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:22:43 INFO  : Context for 'APU' is selected.
+11:22:45 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:22:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:22:45 INFO  : Context for 'APU' is selected.
+11:22:45 INFO  : 'stop' command is executed.
+11:22:45 INFO  : 'ps7_init' command is executed.
+11:22:45 INFO  : 'ps7_post_config' command is executed.
+11:22:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:22:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:46 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:22:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:22:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:22:46 INFO  : Memory regions updated for context APU
+11:22:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:22:46 INFO  : 'con' command is executed.
+11:22:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:22:46 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:24:15 INFO  : Disconnected from the channel tcfchan#46.
+11:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:24:20 INFO  : 'fpga -state' command is executed.
+11:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:20 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:24:20 INFO  : 'jtag frequency' command is executed.
+11:24:20 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:24:20 INFO  : Context for 'APU' is selected.
+11:24:23 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:24:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:24:23 INFO  : Context for 'APU' is selected.
+11:24:23 INFO  : 'stop' command is executed.
+11:24:23 INFO  : 'ps7_init' command is executed.
+11:24:23 INFO  : 'ps7_post_config' command is executed.
+11:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:23 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:24:23 INFO  : 'configparams force-mem-access 0' command is executed.
+11:24:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:24:23 INFO  : Memory regions updated for context APU
+11:24:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:24 INFO  : 'con' command is executed.
+11:24:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:24:24 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:24:56 INFO  : Disconnected from the channel tcfchan#47.
+11:25:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:25:04 INFO  : 'fpga -state' command is executed.
+11:25:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:25:05 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:25:05 INFO  : 'jtag frequency' command is executed.
+11:25:05 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:25:05 INFO  : Context for 'APU' is selected.
+11:25:07 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:25:07 INFO  : 'configparams force-mem-access 1' command is executed.
+11:25:07 INFO  : Context for 'APU' is selected.
+11:25:07 INFO  : 'stop' command is executed.
+11:25:07 INFO  : 'ps7_init' command is executed.
+11:25:07 INFO  : 'ps7_post_config' command is executed.
+11:25:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:25:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:08 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:25:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:25:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:25:08 INFO  : Memory regions updated for context APU
+11:25:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:25:08 INFO  : 'con' command is executed.
+11:25:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:25:08 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:25:56 INFO  : Disconnected from the channel tcfchan#48.
+11:26:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:26:05 INFO  : 'fpga -state' command is executed.
+11:26:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:05 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:26:05 INFO  : 'jtag frequency' command is executed.
+11:26:05 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:26:05 INFO  : Context for 'APU' is selected.
+11:26:08 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:26:08 INFO  : 'configparams force-mem-access 1' command is executed.
+11:26:08 INFO  : Context for 'APU' is selected.
+11:26:08 INFO  : 'stop' command is executed.
+11:26:08 INFO  : 'ps7_init' command is executed.
+11:26:08 INFO  : 'ps7_post_config' command is executed.
+11:26:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:09 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:26:09 INFO  : 'configparams force-mem-access 0' command is executed.
+11:26:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:26:09 INFO  : Memory regions updated for context APU
+11:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:26:09 INFO  : 'con' command is executed.
+11:26:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:26:09 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:31:36 INFO  : Disconnected from the channel tcfchan#49.
+11:31:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:31:43 INFO  : 'fpga -state' command is executed.
+11:31:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:31:43 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:31:43 INFO  : 'jtag frequency' command is executed.
+11:31:43 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:31:43 INFO  : Context for 'APU' is selected.
+11:31:45 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:31:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:31:45 INFO  : Context for 'APU' is selected.
+11:31:45 INFO  : 'stop' command is executed.
+11:31:46 INFO  : 'ps7_init' command is executed.
+11:31:46 INFO  : 'ps7_post_config' command is executed.
+11:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:46 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:31:46 INFO  : 'configparams force-mem-access 0' command is executed.
+11:31:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:31:46 INFO  : Memory regions updated for context APU
+11:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:31:46 INFO  : 'con' command is executed.
+11:31:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:31:46 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:34:35 INFO  : Disconnected from the channel tcfchan#50.
+11:35:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:35:02 INFO  : 'fpga -state' command is executed.
+11:35:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:02 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:35:02 INFO  : 'jtag frequency' command is executed.
+11:35:02 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:35:02 INFO  : Context for 'APU' is selected.
+11:35:05 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:35:05 INFO  : 'configparams force-mem-access 1' command is executed.
+11:35:05 INFO  : Context for 'APU' is selected.
+11:35:05 INFO  : 'stop' command is executed.
+11:35:05 INFO  : 'ps7_init' command is executed.
+11:35:05 INFO  : 'ps7_post_config' command is executed.
+11:35:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:35:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:05 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:35:05 INFO  : 'configparams force-mem-access 0' command is executed.
+11:35:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:35:06 INFO  : Memory regions updated for context APU
+11:35:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:35:06 INFO  : 'con' command is executed.
+11:35:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:35:06 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:35:24 INFO  : Disconnected from the channel tcfchan#51.
+11:35:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:35:58 INFO  : 'fpga -state' command is executed.
+11:35:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:58 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:35:58 INFO  : 'jtag frequency' command is executed.
+11:35:58 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:35:58 INFO  : Context for 'APU' is selected.
+11:36:01 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:36:01 INFO  : 'configparams force-mem-access 1' command is executed.
+11:36:01 INFO  : Context for 'APU' is selected.
+11:36:01 INFO  : 'stop' command is executed.
+11:36:01 INFO  : 'ps7_init' command is executed.
+11:36:01 INFO  : 'ps7_post_config' command is executed.
+11:36:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:36:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:01 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:36:01 INFO  : 'configparams force-mem-access 0' command is executed.
+11:36:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:36:01 INFO  : Memory regions updated for context APU
+11:36:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:02 INFO  : 'con' command is executed.
+11:36:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:36:02 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+11:36:16 INFO  : Disconnected from the channel tcfchan#52.
+11:36:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+11:36:44 INFO  : 'fpga -state' command is executed.
+11:36:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:45 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+11:36:45 INFO  : 'jtag frequency' command is executed.
+11:36:45 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:36:45 INFO  : Context for 'APU' is selected.
+11:36:47 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:36:47 INFO  : 'configparams force-mem-access 1' command is executed.
+11:36:47 INFO  : Context for 'APU' is selected.
+11:36:47 INFO  : 'stop' command is executed.
+11:36:47 INFO  : 'ps7_init' command is executed.
+11:36:47 INFO  : 'ps7_post_config' command is executed.
+11:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:48 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:36:48 INFO  : 'configparams force-mem-access 0' command is executed.
+11:36:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:36:48 INFO  : Memory regions updated for context APU
+11:36:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:48 INFO  : 'con' command is executed.
+11:36:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+11:36:48 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+12:26:28 INFO  : Disconnected from the channel tcfchan#53.

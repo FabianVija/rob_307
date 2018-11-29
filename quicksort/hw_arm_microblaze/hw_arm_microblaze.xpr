@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="/home/fabian/Documents/ensta/deuxieme/rob307/rob_307/hardware_model/hw_arm_microblaze/hw_arm_microblaze.xpr">
+<Project Version="7" Minor="38" Path="/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="eb14345e613543619bb50606a1a36ef8"/>
@@ -70,26 +70,11 @@
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_processing_system7_0_5/microblaze_arm_processing_system7_0_5.xci">
           <Proxy FileSetName="microblaze_arm_processing_system7_0_5"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_ilmb_v10_5/microblaze_arm_ilmb_v10_5.xci">
-          <Proxy FileSetName="microblaze_arm_ilmb_v10_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_dlmb_v10_5/microblaze_arm_dlmb_v10_5.xci">
-          <Proxy FileSetName="microblaze_arm_dlmb_v10_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_xbar_7/microblaze_arm_xbar_7.xci">
-          <Proxy FileSetName="microblaze_arm_xbar_7"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_timer_0_6/microblaze_arm_axi_timer_0_6.xci">
-          <Proxy FileSetName="microblaze_arm_axi_timer_0_6"/>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_ilmb_bram_if_cntlr_5/microblaze_arm_ilmb_bram_if_cntlr_5.xci">
+          <Proxy FileSetName="microblaze_arm_ilmb_bram_if_cntlr_5"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_lmb_bram_5/microblaze_arm_lmb_bram_5.xci">
           <Proxy FileSetName="microblaze_arm_lmb_bram_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_dlmb_bram_if_cntlr_5/microblaze_arm_dlmb_bram_if_cntlr_5.xci">
-          <Proxy FileSetName="microblaze_arm_dlmb_bram_if_cntlr_5"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_ilmb_bram_if_cntlr_5/microblaze_arm_ilmb_bram_if_cntlr_5.xci">
-          <Proxy FileSetName="microblaze_arm_ilmb_bram_if_cntlr_5"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_microblaze_0_5/microblaze_arm_microblaze_0_5.xci">
           <Proxy FileSetName="microblaze_arm_microblaze_0_5"/>
@@ -102,6 +87,21 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_smc_2/microblaze_arm_axi_smc_2.xci">
           <Proxy FileSetName="microblaze_arm_axi_smc_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_timer_0_6/microblaze_arm_axi_timer_0_6.xci">
+          <Proxy FileSetName="microblaze_arm_axi_timer_0_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_xbar_7/microblaze_arm_xbar_7.xci">
+          <Proxy FileSetName="microblaze_arm_xbar_7"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_dlmb_v10_5/microblaze_arm_dlmb_v10_5.xci">
+          <Proxy FileSetName="microblaze_arm_dlmb_v10_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_ilmb_v10_5/microblaze_arm_ilmb_v10_5.xci">
+          <Proxy FileSetName="microblaze_arm_ilmb_v10_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_dlmb_bram_if_cntlr_5/microblaze_arm_dlmb_bram_if_cntlr_5.xci">
+          <Proxy FileSetName="microblaze_arm_dlmb_bram_if_cntlr_5"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_auto_pc_0/microblaze_arm_auto_pc_0.xci">
           <Proxy FileSetName="microblaze_arm_auto_pc_0"/>
@@ -360,9 +360,7 @@
     </Run>
     <Run Id="microblaze_arm_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="microblaze_arm_auto_pc_0" Part="xc7z020clg484-1" ConstrsSet="microblaze_arm_auto_pc_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/microblaze_arm_auto_pc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -580,9 +578,7 @@
     </Run>
     <Run Id="microblaze_arm_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="microblaze_arm_auto_pc_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="microblaze_arm_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

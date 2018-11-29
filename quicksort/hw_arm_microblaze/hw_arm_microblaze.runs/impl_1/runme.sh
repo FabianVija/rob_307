@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/fabian/Documents/ensta/deuxieme/rob307/rob_307/hardware_model/hw_arm_microblaze/hw_arm_microblaze.runs/impl_1'
+HD_PWD='/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -37,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log microblaze_arm_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source microblaze_arm_wrapper.tcl -notrace
 
 

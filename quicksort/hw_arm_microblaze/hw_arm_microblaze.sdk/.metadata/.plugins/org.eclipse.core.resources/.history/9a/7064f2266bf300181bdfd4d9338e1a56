@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "ff.h" // right click in the bsp project, settings, add the ff library !!!!!!!
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xtmrctr.h"
+
+#define CHUNK 16384
+#define N_POINTS 10
+#define N_TESTS 1
+static int vector[N_POINTS];
+static char fileName[]="data10e1.txt";
+
+static FATFS  FS_instance;
+static FIL file_in;
+
+
+int main(){
+	printf("hi \n");
+
+		//--------------------------------------- Card
+		// mount sd card
+		TCHAR *Path = "0:/";
+		FRESULT  result;
+		result = f_mount(&FS_instance,Path, 0);
+		if (result != FR_OK) {
+			printf("Cannot mount sd\n");
+			return EXIT_FAILURE;
+		}
+		printf("sd card ok \n");
+
+	printf("done \n");
+	f_mount(NULL,0, 0);
+	return 0;
+
+}
