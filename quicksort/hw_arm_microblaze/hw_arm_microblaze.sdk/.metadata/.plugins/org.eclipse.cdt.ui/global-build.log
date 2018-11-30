@@ -3569,3 +3569,1210 @@ make: Nothing to be done for 'all'.
 20:24:34 **** Auto Build of configuration Debug for project kmeans ****
 make all 
 make: Nothing to be done for 'all'.
+20:41:20 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:25 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 130104	   1512	   5744	 137360	  21890	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+20:43:26 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:44:45 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:46:08 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 130104	   1512	   9712	 141328	  22810	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+20:46:20 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:47:52 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:53 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:05 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129524	   1512	   9716	 140752	  225d0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+20:56:06 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+20:57:12 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:00:26 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:01:15 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:02:38 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:03:25 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129524	   1512	   6100	 137136	  217b0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:04:49 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129548	   1512	 405716	 536776	  830c8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:04:49 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:53 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129524	   1512	   9716	 140752	  225d0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:08:54 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:09:37 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:10:56 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:32 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:12:43 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:52 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:35 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129676	   1512	   9716	 140904	  22668	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:16:41 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:19:42 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:21:15 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:24:03 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129524	   1512	   9716	 140752	  225d0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:24:04 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:03 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:66:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129520	   1512	   9712	 140744	  225c8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:25:04 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:08 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:43 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:66:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129672	   1512	   9712	 140896	  22660	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:25:44 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:48 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:59 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
+       ^~~~~~
+../src/main_quicksort.c:66:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129672	   1512	   5744	 136928	  216e0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:28:01 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:29:49 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:55 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:24 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:38 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       return ;
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129652	   1512	   5748	 136912	  216d0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:42:08 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       return ;
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129720	   1512	   5744	 136976	  21710	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:42:09 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:47:44 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:42:6: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+      if (number != N_POINTS)
+      ^~
+../src/main_quicksort.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+       return ;
+       ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 130040	   1512	   5744	 137296	  21850	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:47:47 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:11 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:37 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:06:57 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129496	   1512	   5744	 136752	  21630	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:07:14 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129660	   1512	   5748	 136920	  216d8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:07:18 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:08:27 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:11:16 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:31 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:15:13 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c: In function 'main':
+../src/main_quicksort.c:204:3: error: expected ';' before 'printArr'
+   printArr(vector,N_POINTS);
+   ^~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main_quicksort.o' failed
+make: *** [src/main_quicksort.o] Error 1
+22:15:16 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+src/subdir.mk:21: recipe for target 'src/main_quicksort.o' failed
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c: In function 'main':
+../src/main_quicksort.c:204:3: error: expected ';' before 'printArr'
+   printArr(vector,N_POINTS);
+   ^~~~~~~~
+make: *** [src/main_quicksort.o] Error 1
+22:15:22 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129688	   1512	   5744	 136944	  216f0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:15:26 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+22:17:56 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129720	   1512	   5744	 136976	  21710	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:18:06 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:23:36 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129720	   1512	   5744	 136976	  21710	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+16:24:28 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:65:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129744	   1512	   5744	 137000	  21728	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+16:25:10 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:23 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:52 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:21 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129712	   1512	   5744	 136968	  21708	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+16:28:25 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:52 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129712	   1512	   9712	 140936	  22688	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+16:34:55 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:18 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129864	   1512	   9712	 141088	  22720	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+16:40:20 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:07 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129896	   1512	 405712	 537120	  83220	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+17:03:58 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:64:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129700	   1512	 405716	 536928	  83160	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+17:04:05 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:40 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:05:08 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:05:48 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:09 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:09:07 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:44 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:66:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129760	   1512	 405712	 536984	  83198	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+17:14:57 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129760	   1512	 405712	 536984	  83198	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+17:15:00 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:30 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129736	   1512	   9712	 140960	  226a0	quicksort.elf
+Finished building: quicksort.elf.size
+ 

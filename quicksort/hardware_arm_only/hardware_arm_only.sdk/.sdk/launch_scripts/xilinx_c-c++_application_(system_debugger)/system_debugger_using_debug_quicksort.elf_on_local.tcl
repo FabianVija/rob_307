@@ -12,4 +12,5 @@ rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
 dow /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.sdk/quicksort/Debug/quicksort.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con

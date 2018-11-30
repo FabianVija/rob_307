@@ -8,10 +8,10 @@
 #include "xtmrctr.h"
 
 #define CHUNK 16384
-#define N_POINTS 10
+#define N_POINTS 1000
 #define N_TESTS 1
 static int vector[N_POINTS];
-static char fileName[]="data10e1.txt";
+static char fileName[]="data10e3.txt";
 
 static FATFS  FS_instance;
 static FIL file_in;
@@ -51,9 +51,12 @@ void createVector (const char* nameFile){
 				else
 					break;
 		   }else{
-			   //printf("buffer: %c\n",buf[j]);
-			   //printf("point %d, dig %d: %d\n",(point-1),j,((int)buf[j]-48));
-			   number = number*10 + ((int)buf[j]-48);
+			   int n = (int)buf[j];
+			   if (n > 47 && n < 58){
+				   printf("buffer: %c\n",buf[j]);
+				   printf("point %d, dig %d: %d\n",(point-1),j,((int)buf[j]-48));
+				   number = number*10 + ((int)buf[j]-48);
+			   }
 		   }
 
 		}
@@ -189,18 +192,19 @@ int main(){
 		//printf("reading...\n");
 		createVector(fileName);
 		//printf("reade done\n");
+		//printArr(vector,N_POINTS);
 
 		//-------------------------------------- Sorting
 
 		//printf("sorting...\n");
 		calculStartTime = XTmrCtr_GetValue(&timer,0);
-		quickSortIterative(vector,0,N_POINTS);
+		quickSortIterative(vector,0,N_POINTS-1);
 		calculStopTime = XTmrCtr_GetValue(&timer,0);
 		readStopTime = XTmrCtr_GetValue(&timer,0);
 		//printf("sort done\n");
 
 		//-------------------------------------- Time
-
+		printf("vector:\n");
 		//printArr(vector,N_POINTS);
 
 

@@ -8,10 +8,10 @@
 #include "xtmrctr.h"
 
 #define CHUNK 16384
-#define N_POINTS 1000000
+#define N_POINTS 10
 #define N_TESTS 1000
 static int vector[N_POINTS];
-static char fileName[]="data10e6.txt";
+static char fileName[]="data10e1.txt";
 
 static FATFS  FS_instance;
 static FIL file_in;
@@ -46,7 +46,7 @@ void createVector (const char* nameFile){
 						printf("Incompatibility between size of vector (%d) and size in file (%d)\n", N_POINTS,number);
 				} else {
 					vector[point-1] = number;
-					//printf("final number of point %d : %d\n",(point-1),number);
+					//printf("final number of point %d : %d, %d\n",(point-1),number,vector[point-1]);
 				}
 				number = 0;
 				if(point < N_POINTS)
@@ -191,12 +191,13 @@ int main(){
 		//printf("reading...\n");
 		createVector(fileName);
 		//printf("reade done\n");
+		//printArr(vector,N_POINTS);
 
 		//-------------------------------------- Sorting
 
 		//printf("sorting...\n");
 		calculStartTime = XTmrCtr_GetValue(&timer,0);
-		quickSortIterative(vector,0,N_POINTS);
+		quickSortIterative(vector,0,N_POINTS-1);
 		calculStopTime = XTmrCtr_GetValue(&timer,0);
 		readStopTime = XTmrCtr_GetValue(&timer,0);
 		//printf("sort done\n");

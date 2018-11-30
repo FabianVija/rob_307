@@ -2,8 +2,8 @@
 # Webtalk v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # 
-# Start of session at: Wed Nov 28 23:25:05 2018
-# Process ID: 10647
+# Start of session at: Thu Nov 29 21:51:16 2018
+# Process ID: 13931
 # Current directory: /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
 # Log file: /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/webtalk.log
@@ -12,7 +12,7 @@
 source sdk_webtalk.tcl
 # webtalk_init -webtalk_dir /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk
 # webtalk_register_client -client project
-# webtalk_add_data -client project -key date_generated -value "2018-11-28 23:25:01" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key date_generated -value "2018-11-29 21:51:13" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key product_version -value "SDK v2018.2" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key build_version -value "2018.2" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
@@ -24,36 +24,36 @@ source sdk_webtalk.tcl
 # webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
-# webtalk_add_data -client project -key random_id -value "jegkli2ih5313uitlh0gjtth5n" -context "software_version_and_target_device"
-# webtalk_add_data -client project -key project_id -value "2018.2_14" -context "software_version_and_target_device"
-# webtalk_add_data -client project -key project_iteration -value "14" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "gp2uft0fkmo4nooq9b087ufjv5" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2018.2_15" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "15" -context "software_version_and_target_device"
 # webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 # webtalk_add_data -client project -key os_release -value "Ubuntu 16.04.5 LTS" -context "user_environment"
 # webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz" -context "user_environment"
-# webtalk_add_data -client project -key cpu_speed -value "1062.693 MHz" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "2359.441 MHz" -context "user_environment"
 # webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 # webtalk_add_data -client project -key system_ram -value "4,029 GB" -context "user_environment"
 # webtalk_register_client -client sdk
-# webtalk_add_data -client sdk -key uid -value "1543443682000" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key isZynq -value "true" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key isZynqMP -value "false" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key Processors -value "3" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key VivadoVersion -value "2018.2" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key Arch -value "zynq" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key Device -value "7z020" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key os -value "NA" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key apptemplate -value "NA" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key RecordType -value "HWCreation" -context "sdk\\\\hardware/1543443682000"
-# webtalk_add_data -client sdk -key uid -value "NA" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key RecordType -value "ToolUsage" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key BootgenCount -value "0" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key DebugCount -value "1" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key PerfCount -value "0" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key FlashCount -value "0" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key CrossTriggCount -value "0" -context "sdk\\\\bsp/1543443900993"
-# webtalk_add_data -client sdk -key QemuDebugCount -value "0" -context "sdk\\\\bsp/1543443900993"
-# webtalk_transmit -clientid 2978816072 -regid "" -xml /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
-INFO: [Common 17-186] '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.xml' has been successfully sent to Xilinx on Wed Nov 28 23:25:08 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/SDK/2018.2/doc/webtalk_introduction.html.
+# webtalk_add_data -client sdk -key uid -value "1543520258000" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key isZynq -value "true" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key isZynqMP -value "false" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key Processors -value "3" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key VivadoVersion -value "2018.2" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key Arch -value "zynq" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key Device -value "7z020" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key os -value "NA" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key apptemplate -value "NA" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key RecordType -value "HWCreation" -context "sdk\\\\hardware/1543520258000"
+# webtalk_add_data -client sdk -key uid -value "NA" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key RecordType -value "ToolUsage" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key BootgenCount -value "0" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key DebugCount -value "33" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key PerfCount -value "0" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key FlashCount -value "0" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key CrossTriggCount -value "0" -context "sdk\\\\bsp/1543524672978"
+# webtalk_add_data -client sdk -key QemuDebugCount -value "0" -context "sdk\\\\bsp/1543524672978"
+# webtalk_transmit -clientid 1512701788 -regid "" -xml /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+INFO: [Common 17-186] '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/webtalk/usage_statistics_ext_sdk.xml' has been successfully sent to Xilinx on Thu Nov 29 21:51:19 2018. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/SDK/2018.2/doc/webtalk_introduction.html.
 # webtalk_terminate
-INFO: [Common 17-206] Exiting Webtalk at Wed Nov 28 23:25:08 2018...
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 29 21:51:19 2018...

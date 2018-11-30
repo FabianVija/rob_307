@@ -3,31 +3,31 @@
 ===================================
 Number of tests: 1000
 Size of vector: 1000000
-Time of calcul: 254.219392 ms
-Clocks of calcul: 252554.000000
-Time total: 458.119884 ms
-Clocks total: 458797.000000
+Time of calcul: 261.120493 ms
+Clocks of calcul: 261120.493000
+Time total: 297.909812 ms
+Clocks total: 297909.812000
 
 Number of tests: 1000
 Size of vector: 100000
-Time of calcul: 21.802116 ms
-Clocks of calcul: 21600.000000
-Time total: 43.090415 ms
-Clocks total: 42501.000000
+Time of calcul: 22.514428 ms
+Clocks of calcul: 22514.428000
+Time total: 26.284096 ms
+Clocks total: 26284.096000
 
 Number of tests: 1000
 Size of vector: 1000
-Time of calcul: 0.130563 ms
-Clocks of calcul: 129.000000
-Time total: 0.359986 ms
-Clocks total: 343.000000
+Time of calcul: 0.139127 ms
+Clocks of calcul: 139.127000
+Time total: 0.192628 ms
+Clocks total: 192.628000
 
 Number of tests: 1000
 Size of vector: 10
-Time of calcul: 0.001006 ms
-Clocks of calcul: 1.000000
-Time total: 0.010712 ms
-Clocks total: 10.000000
+Time of calcul: 0.001057 ms
+Clocks of calcul: 1.057000
+Time total: 0.010105 ms
+Clocks total: 10.105000
 
 ===================================
 ==========      ARM     ===========
@@ -59,3 +59,16 @@ Time of calcul: 0.004552 ms
 Clocks of calcul: 455.170000
 Time total: 0.694157 ms
 Clocks total: 69415.634000
+
+===================================
+==========  MricoBlaze  ===========
+===================================
+
+
+Number of tests: 1000
+Size of vector: 10
+Time of calcul: 1.511519 ms
+Clocks of calcul: 151151.902000
+Time total: 12.585970 ms
+Clocks total: 1258596.590000
+

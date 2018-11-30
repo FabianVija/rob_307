@@ -1,6 +1,36 @@
-20:23:59 **** Incremental Build of configuration Debug for project quicksort ****
+17:15:30 **** Auto Build of configuration Debug for project quicksort ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:37:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 129736	   1512	   9712	 140960	  226a0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
 
-20:24:00 Build Finished (took 415ms)
+17:15:31 Build Finished (took 722ms)
 

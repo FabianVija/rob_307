@@ -2887,3 +2887,608 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+21:57:28 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100444	   2652	4025856	4128952	 3f00b8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:57:46 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100380	   2652	  25920	 128952	  1f7b8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:57:47 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+21:59:31 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100316	   2652	  25920	 128888	  1f778	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+21:59:35 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+22:24:06 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+22:27:24 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+src/subdir.mk:21: recipe for target 'src/main_quicksort.o' failed
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:56:5: error: expected '}' before 'else'
+     else
+     ^~~~
+../src/main_quicksort.c:58:7: error: 'else' without a previous 'if'
+      }else{
+       ^~~~
+../src/main_quicksort.c:61:38: error: 'j' undeclared (first use in this function)
+       number = number*10 + ((int)buf[j]-48);
+                                      ^
+../src/main_quicksort.c:61:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/main_quicksort.c:67:4: error: break statement not within loop or switch
+    break;
+    ^~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c: At top level:
+../src/main_quicksort.c:72:10: error: expected declaration specifiers or '...' before '&' token
+  f_close(&file_in);
+          ^
+../src/main_quicksort.c:73:2: warning: data definition has no type or storage class
+  free (buf);
+  ^~~~
+../src/main_quicksort.c:73:2: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+../src/main_quicksort.c:73:2: warning: parameter names (without types) in function declaration
+../src/main_quicksort.c:73:2: error: conflicting types for 'free'
+In file included from /opt/Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main_quicksort.c:1:
+/opt/Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdlib.h:89:7: note: previous declaration of 'free' was here
+ _VOID _EXFUN_NOTHROW(free,(_PTR));
+       ^
+../src/main_quicksort.c:74:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/main_quicksort.o] Error 1
+22:27:25 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:56:5: error: expected '}' before 'else'
+     else
+     ^~~~
+../src/main_quicksort.c:58:7: error: 'else' without a previous 'if'
+      }else{
+       ^~~~
+../src/main_quicksort.c:61:38: error: 'j' undeclared (first use in this function)
+src/subdir.mk:21: recipe for target 'src/main_quicksort.o' failed
+       number = number*10 + ((int)buf[j]-48);
+                                      ^
+../src/main_quicksort.c:61:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/main_quicksort.c:67:4: error: break statement not within loop or switch
+    break;
+    ^~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c: At top level:
+../src/main_quicksort.c:72:10: error: expected declaration specifiers or '...' before '&' token
+  f_close(&file_in);
+          ^
+../src/main_quicksort.c:73:2: warning: data definition has no type or storage class
+  free (buf);
+  ^~~~
+../src/main_quicksort.c:73:2: warning: type defaults to 'int' in declaration of 'free' [-Wimplicit-int]
+../src/main_quicksort.c:73:2: warning: parameter names (without types) in function declaration
+../src/main_quicksort.c:73:2: error: conflicting types for 'free'
+In file included from /opt/Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdio.h:29:0,
+                 from ../src/main_quicksort.c:1:
+/opt/Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/stdlib.h:89:7: note: previous declaration of 'free' was here
+ _VOID _EXFUN_NOTHROW(free,(_PTR));
+       ^
+../src/main_quicksort.c:74:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/main_quicksort.o] Error 1
+22:29:47 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100404	   2652	  25920	 128976	  1f7d0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:29:52 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+22:32:47 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100500	   2652	  25920	 129072	  1f830	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:32:48 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+22:34:26 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100508	   2652	  25920	 129080	  1f838	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:34:39 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+22:35:44 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100516	   2652	  25920	 129088	  1f840	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+22:35:48 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:44:24 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:45:32 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100516	   2652	  25920	 129088	  1f840	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+15:47:42 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:48:14 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:54:25 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:69:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100516	   2652	  29856	 133024	  207a0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+15:54:38 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:54:46 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:56:53 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100316	   2652	  29856	 132824	  206d8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+15:57:01 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:57:40 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:58:14 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100380	   2652	4025856	4128888	 3f0078	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+15:58:15 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+16:09:42 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main_quicksort.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c: In function 'createVector':
+../src/main_quicksort.c:40:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/main_quicksort.c:67:33: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+    f_read(&file_in, buf, CHUNK, &n_read);
+                                 ^
+In file included from ../src/main_quicksort.c:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100380	   2652	  25920	 128952	  1f7b8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
