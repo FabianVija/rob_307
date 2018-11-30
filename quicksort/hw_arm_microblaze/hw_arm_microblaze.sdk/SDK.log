@@ -5256,3 +5256,1764 @@ con
 17:40:46 INFO  : Successfully done setting SDK workspace  
 17:40:46 INFO  : Processing command line option -hwspec /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper.hdf.
 17:40:46 INFO  : Checking for hwspec changes in the project microblaze_arm_wrapper_hw_platform_2.
+17:47:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:47:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+17:47:23 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+17:48:39 INFO  : Refreshed build settings on project quicksort
+17:50:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:50:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+17:50:20 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+17:52:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+17:52:06 INFO  : 'fpga -state' command is executed.
+17:52:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:06 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+17:52:06 INFO  : 'jtag frequency' command is executed.
+17:52:06 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:52:06 INFO  : Context for 'APU' is selected.
+17:52:07 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+17:52:07 INFO  : 'configparams force-mem-access 1' command is executed.
+17:52:07 INFO  : Context for 'APU' is selected.
+17:52:07 INFO  : 'stop' command is executed.
+17:52:07 INFO  : 'ps7_init' command is executed.
+17:52:07 INFO  : 'ps7_post_config' command is executed.
+17:52:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:52:07 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:07 INFO  : Processor reset is completed for 'microblaze_0'.
+17:52:07 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:08 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+17:52:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:52:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:52:08 INFO  : Memory regions updated for context APU
+17:52:08 INFO  : Memory regions updated for context PA
+17:52:08 INFO  : Memory regions updated for context PA
+17:52:08 INFO  : Context for processor 'microblaze_0' is selected.
+17:52:08 INFO  : 'con' command is executed.
+17:52:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+17:52:08 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+17:58:06 INFO  : Disconnected from the channel tcfchan#1.
+17:58:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+17:58:08 INFO  : 'fpga -state' command is executed.
+17:58:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:58:08 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+17:58:08 INFO  : 'jtag frequency' command is executed.
+17:58:08 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:58:08 INFO  : Context for 'APU' is selected.
+17:58:12 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+17:58:12 INFO  : 'configparams force-mem-access 1' command is executed.
+17:58:12 INFO  : Context for 'APU' is selected.
+17:58:12 INFO  : 'stop' command is executed.
+17:58:12 INFO  : 'ps7_init' command is executed.
+17:58:12 INFO  : 'ps7_post_config' command is executed.
+17:58:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:58:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:58:12 INFO  : Processor reset is completed for 'microblaze_0'.
+17:58:12 INFO  : Context for processor 'microblaze_0' is selected.
+17:58:13 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+17:58:13 INFO  : 'configparams force-mem-access 0' command is executed.
+17:58:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:58:13 INFO  : Memory regions updated for context APU
+17:58:13 INFO  : Memory regions updated for context PA
+17:58:13 INFO  : Memory regions updated for context PA
+17:58:13 INFO  : Context for processor 'microblaze_0' is selected.
+17:58:13 INFO  : 'con' command is executed.
+17:58:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+17:58:13 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+17:59:36 INFO  : Disconnected from the channel tcfchan#2.
+17:59:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+17:59:37 INFO  : 'fpga -state' command is executed.
+17:59:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:59:37 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+17:59:37 INFO  : 'jtag frequency' command is executed.
+17:59:37 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:59:37 INFO  : Context for 'APU' is selected.
+17:59:37 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+17:59:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:59:37 INFO  : Context for 'APU' is selected.
+17:59:37 INFO  : 'stop' command is executed.
+17:59:37 INFO  : 'ps7_init' command is executed.
+17:59:37 INFO  : 'ps7_post_config' command is executed.
+17:59:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:59:37 INFO  : Context for processor 'microblaze_0' is selected.
+17:59:38 INFO  : Processor reset is completed for 'microblaze_0'.
+17:59:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:59:38 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+17:59:38 INFO  : 'configparams force-mem-access 0' command is executed.
+17:59:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:59:38 INFO  : Memory regions updated for context APU
+17:59:38 INFO  : Memory regions updated for context PA
+17:59:38 INFO  : Memory regions updated for context PA
+17:59:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:59:38 INFO  : 'con' command is executed.
+17:59:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+17:59:38 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:00:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:00:11 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:00:32 INFO  : Disconnected from the channel tcfchan#3.
+18:00:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:00:34 INFO  : 'fpga -state' command is executed.
+18:00:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:34 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:00:34 INFO  : 'jtag frequency' command is executed.
+18:00:34 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:00:34 INFO  : Context for 'APU' is selected.
+18:00:34 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:00:34 INFO  : 'configparams force-mem-access 1' command is executed.
+18:00:34 INFO  : Context for 'APU' is selected.
+18:00:34 INFO  : 'stop' command is executed.
+18:00:34 INFO  : 'ps7_init' command is executed.
+18:00:34 INFO  : 'ps7_post_config' command is executed.
+18:00:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:34 INFO  : Processor reset is completed for 'microblaze_0'.
+18:00:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:35 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:00:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:00:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:00:35 INFO  : Memory regions updated for context APU
+18:00:35 INFO  : Memory regions updated for context PA
+18:00:35 INFO  : Memory regions updated for context PA
+18:00:35 INFO  : Context for processor 'microblaze_0' is selected.
+18:00:35 INFO  : 'con' command is executed.
+18:00:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:00:35 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:00:51 INFO  : Disconnected from the channel tcfchan#4.
+18:00:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:00:53 INFO  : 'fpga -state' command is executed.
+18:00:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:00:54 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:00:54 INFO  : 'jtag frequency' command is executed.
+18:00:54 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:00:57 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"". available targets:
+  1  DAP (AHB AP transaction error, DAP status 30000021)
+  2* xc7z020
+     3  MicroBlaze Debug Module at USER2
+        4  MicroBlaze #0 (Running)
+18:00:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+----------------End of Script----------------
+
+18:01:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:01:47 INFO  : 'fpga -state' command is executed.
+18:01:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:47 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:01:47 INFO  : 'jtag frequency' command is executed.
+18:01:47 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:01:50 ERROR : no targets found with "name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"". available targets:
+  5  whole scan chain (DR shift output all zeroes)
+  2* JTAG-jsn-Zed-210248773728-23727093-0
+18:01:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+----------------End of Script----------------
+
+18:05:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:05:14 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:06:09 INFO  : 'fpga -state' command is executed.
+18:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:09 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:06:09 INFO  : 'jtag frequency' command is executed.
+18:06:09 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:06:09 INFO  : Context for 'APU' is selected.
+18:06:09 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:06:09 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:09 INFO  : Context for 'APU' is selected.
+18:06:09 INFO  : 'stop' command is executed.
+18:06:09 INFO  : 'ps7_init' command is executed.
+18:06:09 INFO  : 'ps7_post_config' command is executed.
+18:06:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:06:09 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:09 INFO  : Processor reset is completed for 'microblaze_0'.
+18:06:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:10 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:06:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:10 INFO  : Memory regions updated for context APU
+18:06:10 INFO  : Memory regions updated for context PA
+18:06:10 INFO  : Memory regions updated for context PA
+18:06:10 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:10 INFO  : 'con' command is executed.
+18:06:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:06:10 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:06:54 INFO  : Disconnected from the channel tcfchan#5.
+18:06:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:06:55 INFO  : 'fpga -state' command is executed.
+18:06:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:56 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:06:56 INFO  : 'jtag frequency' command is executed.
+18:06:56 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:06:56 INFO  : Context for 'APU' is selected.
+18:06:56 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:06:56 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:56 INFO  : Context for 'APU' is selected.
+18:06:56 INFO  : 'stop' command is executed.
+18:06:56 INFO  : 'ps7_init' command is executed.
+18:06:56 INFO  : 'ps7_post_config' command is executed.
+18:06:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:06:56 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:56 INFO  : Processor reset is completed for 'microblaze_0'.
+18:06:56 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:57 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:06:57 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:57 INFO  : Memory regions updated for context APU
+18:06:57 INFO  : Memory regions updated for context PA
+18:06:57 INFO  : Memory regions updated for context PA
+18:06:57 INFO  : Context for processor 'microblaze_0' is selected.
+18:06:57 INFO  : 'con' command is executed.
+18:06:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:06:57 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:08:02 INFO  : Disconnected from the channel tcfchan#6.
+18:08:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:08:03 INFO  : 'fpga -state' command is executed.
+18:08:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:03 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:08:03 INFO  : 'jtag frequency' command is executed.
+18:08:03 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:08:03 INFO  : Context for 'APU' is selected.
+18:08:03 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:08:03 INFO  : 'configparams force-mem-access 1' command is executed.
+18:08:03 INFO  : Context for 'APU' is selected.
+18:08:03 INFO  : 'stop' command is executed.
+18:08:04 INFO  : 'ps7_init' command is executed.
+18:08:04 INFO  : 'ps7_post_config' command is executed.
+18:08:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:08:04 INFO  : Context for processor 'microblaze_0' is selected.
+18:08:04 INFO  : Processor reset is completed for 'microblaze_0'.
+18:08:04 INFO  : Context for processor 'microblaze_0' is selected.
+18:08:04 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:08:04 INFO  : 'configparams force-mem-access 0' command is executed.
+18:08:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:08:05 INFO  : Memory regions updated for context APU
+18:08:05 INFO  : Memory regions updated for context PA
+18:08:05 INFO  : Memory regions updated for context PA
+18:08:05 INFO  : Context for processor 'microblaze_0' is selected.
+18:08:05 INFO  : 'con' command is executed.
+18:08:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:08:05 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:11:09 INFO  : Disconnected from the channel tcfchan#7.
+18:11:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:11:11 INFO  : 'fpga -state' command is executed.
+18:11:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:11 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:11:11 INFO  : 'jtag frequency' command is executed.
+18:11:11 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:11 INFO  : Context for 'APU' is selected.
+18:11:11 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:11:11 INFO  : 'configparams force-mem-access 1' command is executed.
+18:11:11 INFO  : Context for 'APU' is selected.
+18:11:11 INFO  : 'stop' command is executed.
+18:11:11 INFO  : 'ps7_init' command is executed.
+18:11:11 INFO  : 'ps7_post_config' command is executed.
+18:11:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:11 INFO  : Processor reset is completed for 'microblaze_0'.
+18:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:12 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:11:12 INFO  : 'configparams force-mem-access 0' command is executed.
+18:11:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:11:12 INFO  : Memory regions updated for context APU
+18:11:12 INFO  : Memory regions updated for context PA
+18:11:12 INFO  : Memory regions updated for context PA
+18:11:12 INFO  : Context for processor 'microblaze_0' is selected.
+18:11:12 INFO  : 'con' command is executed.
+18:11:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:11:12 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:16:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:16:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:16:40 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:17:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:17:49 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:18:29 INFO  : Disconnected from the channel tcfchan#8.
+18:18:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:18:32 INFO  : 'fpga -state' command is executed.
+18:18:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:32 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:18:32 INFO  : 'jtag frequency' command is executed.
+18:18:32 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:18:32 INFO  : Context for 'APU' is selected.
+18:18:32 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:18:32 INFO  : 'configparams force-mem-access 1' command is executed.
+18:18:32 INFO  : Context for 'APU' is selected.
+18:18:32 INFO  : 'stop' command is executed.
+18:18:32 INFO  : 'ps7_init' command is executed.
+18:18:32 INFO  : 'ps7_post_config' command is executed.
+18:18:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:18:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:32 INFO  : Processor reset is completed for 'microblaze_0'.
+18:18:32 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:33 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:18:33 INFO  : 'configparams force-mem-access 0' command is executed.
+18:18:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:18:33 INFO  : Memory regions updated for context APU
+18:18:33 INFO  : Memory regions updated for context PA
+18:18:33 INFO  : Memory regions updated for context PA
+18:18:33 INFO  : Context for processor 'microblaze_0' is selected.
+18:18:33 INFO  : 'con' command is executed.
+18:18:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:18:33 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:19:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:19:34 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:19:45 INFO  : Disconnected from the channel tcfchan#9.
+18:19:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:19:46 INFO  : 'fpga -state' command is executed.
+18:19:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:46 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:19:46 INFO  : 'jtag frequency' command is executed.
+18:19:46 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:19:46 INFO  : Context for 'APU' is selected.
+18:19:46 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:19:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:19:46 INFO  : Context for 'APU' is selected.
+18:19:46 INFO  : 'stop' command is executed.
+18:19:46 INFO  : 'ps7_init' command is executed.
+18:19:46 INFO  : 'ps7_post_config' command is executed.
+18:19:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:19:46 INFO  : Context for processor 'microblaze_0' is selected.
+18:19:46 INFO  : Processor reset is completed for 'microblaze_0'.
+18:19:47 INFO  : Context for processor 'microblaze_0' is selected.
+18:19:47 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:19:47 INFO  : 'configparams force-mem-access 0' command is executed.
+18:19:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:19:47 INFO  : Memory regions updated for context APU
+18:19:47 INFO  : Memory regions updated for context PA
+18:19:47 INFO  : Memory regions updated for context PA
+18:19:47 INFO  : Context for processor 'microblaze_0' is selected.
+18:19:47 INFO  : 'con' command is executed.
+18:19:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:19:47 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:20:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:20:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:20:32 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:21:06 INFO  : Disconnected from the channel tcfchan#10.
+18:21:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:21:07 INFO  : 'fpga -state' command is executed.
+18:21:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:07 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:21:07 INFO  : 'jtag frequency' command is executed.
+18:21:07 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:21:07 INFO  : Context for 'APU' is selected.
+18:21:07 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:21:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:21:07 INFO  : Context for 'APU' is selected.
+18:21:07 INFO  : 'stop' command is executed.
+18:21:07 INFO  : 'ps7_init' command is executed.
+18:21:07 INFO  : 'ps7_post_config' command is executed.
+18:21:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:21:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:08 INFO  : Processor reset is completed for 'microblaze_0'.
+18:21:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:08 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:21:08 INFO  : 'configparams force-mem-access 0' command is executed.
+18:21:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:21:08 INFO  : Memory regions updated for context APU
+18:21:08 INFO  : Memory regions updated for context PA
+18:21:08 INFO  : Memory regions updated for context PA
+18:21:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:21:08 INFO  : 'con' command is executed.
+18:21:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:21:08 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:21:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:21:47 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:22:53 INFO  : Disconnected from the channel tcfchan#11.
+18:22:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:22:54 INFO  : 'fpga -state' command is executed.
+18:22:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:22:55 INFO  : 'jtag frequency' command is executed.
+18:22:55 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:22:55 INFO  : Context for 'APU' is selected.
+18:22:55 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:22:55 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:55 INFO  : Context for 'APU' is selected.
+18:22:55 INFO  : 'stop' command is executed.
+18:22:55 INFO  : 'ps7_init' command is executed.
+18:22:55 INFO  : 'ps7_post_config' command is executed.
+18:22:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:22:55 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:55 INFO  : Processor reset is completed for 'microblaze_0'.
+18:22:55 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:56 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:22:56 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:56 INFO  : Memory regions updated for context APU
+18:22:56 INFO  : Memory regions updated for context PA
+18:22:56 INFO  : Memory regions updated for context PA
+18:22:56 INFO  : Context for processor 'microblaze_0' is selected.
+18:22:56 INFO  : 'con' command is executed.
+18:22:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:22:56 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:24:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:24:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:24:16 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:25:21 INFO  : Disconnected from the channel tcfchan#12.
+18:25:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:25:22 INFO  : 'fpga -state' command is executed.
+18:25:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:25:22 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:25:22 INFO  : 'jtag frequency' command is executed.
+18:25:22 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:25:22 INFO  : Context for 'APU' is selected.
+18:25:22 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:25:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:25:23 INFO  : Context for 'APU' is selected.
+18:25:23 INFO  : 'stop' command is executed.
+18:25:23 INFO  : 'ps7_init' command is executed.
+18:25:23 INFO  : 'ps7_post_config' command is executed.
+18:25:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:25:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:23 INFO  : Processor reset is completed for 'microblaze_0'.
+18:25:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:24 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:25:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:25:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:25:24 INFO  : Memory regions updated for context APU
+18:25:24 INFO  : Memory regions updated for context PA
+18:25:24 INFO  : Memory regions updated for context PA
+18:25:24 INFO  : Context for processor 'microblaze_0' is selected.
+18:25:24 INFO  : 'con' command is executed.
+18:25:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:25:24 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:26:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:26:28 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:26:42 INFO  : Disconnected from the channel tcfchan#13.
+18:26:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:26:43 INFO  : 'fpga -state' command is executed.
+18:26:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:43 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:26:43 INFO  : 'jtag frequency' command is executed.
+18:26:43 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:26:43 INFO  : Context for 'APU' is selected.
+18:26:43 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:26:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:26:43 INFO  : Context for 'APU' is selected.
+18:26:43 INFO  : 'stop' command is executed.
+18:26:44 INFO  : 'ps7_init' command is executed.
+18:26:44 INFO  : 'ps7_post_config' command is executed.
+18:26:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:26:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:44 INFO  : Processor reset is completed for 'microblaze_0'.
+18:26:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:45 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:26:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:26:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:26:45 INFO  : Memory regions updated for context APU
+18:26:45 INFO  : Memory regions updated for context PA
+18:26:45 INFO  : Memory regions updated for context PA
+18:26:45 INFO  : Context for processor 'microblaze_0' is selected.
+18:26:45 INFO  : 'con' command is executed.
+18:26:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:26:45 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:27:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:27:14 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:28:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:28:32 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:28:52 INFO  : Disconnected from the channel tcfchan#14.
+18:28:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:28:53 INFO  : 'fpga -state' command is executed.
+18:28:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:54 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:28:54 INFO  : 'jtag frequency' command is executed.
+18:28:54 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:28:54 INFO  : Context for 'APU' is selected.
+18:28:54 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:28:54 INFO  : 'configparams force-mem-access 1' command is executed.
+18:28:54 INFO  : Context for 'APU' is selected.
+18:28:54 INFO  : 'stop' command is executed.
+18:28:54 INFO  : 'ps7_init' command is executed.
+18:28:54 INFO  : 'ps7_post_config' command is executed.
+18:28:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:28:54 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:54 INFO  : Processor reset is completed for 'microblaze_0'.
+18:28:54 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:55 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:28:55 INFO  : 'configparams force-mem-access 0' command is executed.
+18:28:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:28:55 INFO  : Memory regions updated for context APU
+18:28:55 INFO  : Memory regions updated for context PA
+18:28:55 INFO  : Memory regions updated for context PA
+18:28:55 INFO  : Context for processor 'microblaze_0' is selected.
+18:28:55 INFO  : 'con' command is executed.
+18:28:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:28:55 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:29:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:29:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:29:50 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:30:13 INFO  : Disconnected from the channel tcfchan#15.
+18:30:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:30:16 INFO  : 'fpga -state' command is executed.
+18:30:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:17 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:30:17 INFO  : 'jtag frequency' command is executed.
+18:30:17 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:30:17 INFO  : Context for 'APU' is selected.
+18:30:17 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:30:17 INFO  : 'configparams force-mem-access 1' command is executed.
+18:30:17 INFO  : Context for 'APU' is selected.
+18:30:17 INFO  : 'stop' command is executed.
+18:30:17 INFO  : 'ps7_init' command is executed.
+18:30:17 INFO  : 'ps7_post_config' command is executed.
+18:30:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:17 INFO  : Processor reset is completed for 'microblaze_0'.
+18:30:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:18 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:30:18 INFO  : 'configparams force-mem-access 0' command is executed.
+18:30:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:30:18 INFO  : Memory regions updated for context APU
+18:30:18 INFO  : Memory regions updated for context PA
+18:30:18 INFO  : Memory regions updated for context PA
+18:30:18 INFO  : Context for processor 'microblaze_0' is selected.
+18:30:18 INFO  : 'con' command is executed.
+18:30:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:30:18 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:30:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:30:57 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:31:21 INFO  : Disconnected from the channel tcfchan#16.
+18:31:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:31:22 INFO  : 'fpga -state' command is executed.
+18:31:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:31:22 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:31:22 INFO  : 'jtag frequency' command is executed.
+18:31:22 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:31:22 INFO  : Context for 'APU' is selected.
+18:31:22 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:31:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:31:22 INFO  : Context for 'APU' is selected.
+18:31:22 INFO  : 'stop' command is executed.
+18:31:22 INFO  : 'ps7_init' command is executed.
+18:31:22 INFO  : 'ps7_post_config' command is executed.
+18:31:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:23 INFO  : Processor reset is completed for 'microblaze_0'.
+18:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:23 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:31:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:31:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:31:23 INFO  : Memory regions updated for context APU
+18:31:23 INFO  : Memory regions updated for context PA
+18:31:23 INFO  : Memory regions updated for context PA
+18:31:23 INFO  : Context for processor 'microblaze_0' is selected.
+18:31:23 INFO  : 'con' command is executed.
+18:31:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:31:23 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:32:14 INFO  : Disconnected from the channel tcfchan#17.
+18:32:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:32:15 INFO  : 'fpga -state' command is executed.
+18:32:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:16 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:32:16 INFO  : 'jtag frequency' command is executed.
+18:32:16 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:32:16 INFO  : Context for 'APU' is selected.
+18:32:16 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:32:16 INFO  : 'configparams force-mem-access 1' command is executed.
+18:32:16 INFO  : Context for 'APU' is selected.
+18:32:16 INFO  : 'stop' command is executed.
+18:32:16 INFO  : 'ps7_init' command is executed.
+18:32:16 INFO  : 'ps7_post_config' command is executed.
+18:32:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:32:16 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:16 INFO  : Processor reset is completed for 'microblaze_0'.
+18:32:16 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:17 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:32:17 INFO  : 'configparams force-mem-access 0' command is executed.
+18:32:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:32:17 INFO  : Memory regions updated for context APU
+18:32:17 INFO  : Memory regions updated for context PA
+18:32:17 INFO  : Memory regions updated for context PA
+18:32:17 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:17 INFO  : 'con' command is executed.
+18:32:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:32:17 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:32:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:32:36 INFO  : 'fpga -state' command is executed.
+18:32:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:32:36 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:32:36 INFO  : 'jtag frequency' command is executed.
+18:32:36 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:32:36 INFO  : Context for 'APU' is selected.
+18:32:36 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:32:36 INFO  : 'configparams force-mem-access 1' command is executed.
+18:32:36 INFO  : Context for 'APU' is selected.
+18:32:36 INFO  : 'stop' command is executed.
+18:32:36 INFO  : 'ps7_init' command is executed.
+18:32:36 INFO  : 'ps7_post_config' command is executed.
+18:32:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:32:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:37 INFO  : Processor reset is completed for 'microblaze_0'.
+18:32:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:37 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:32:37 INFO  : 'configparams force-mem-access 0' command is executed.
+18:32:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:32:37 INFO  : Context for processor 'microblaze_0' is selected.
+18:32:37 INFO  : 'con' command is executed.
+18:32:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:32:38 INFO  : Disconnected from the channel tcfchan#18.
+18:40:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:40:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:40:27 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:40:38 WARN  : channel "tcfchan#18" closed
+18:40:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:40:39 INFO  : 'fpga -state' command is executed.
+18:40:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:40:39 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:40:39 INFO  : 'jtag frequency' command is executed.
+18:40:39 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:40:39 INFO  : Context for 'APU' is selected.
+18:40:39 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:40:39 INFO  : 'configparams force-mem-access 1' command is executed.
+18:40:39 INFO  : Context for 'APU' is selected.
+18:40:39 INFO  : 'stop' command is executed.
+18:40:40 INFO  : 'ps7_init' command is executed.
+18:40:40 INFO  : 'ps7_post_config' command is executed.
+18:40:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:40:40 INFO  : Context for processor 'microblaze_0' is selected.
+18:40:40 INFO  : Processor reset is completed for 'microblaze_0'.
+18:40:40 INFO  : Context for processor 'microblaze_0' is selected.
+18:40:40 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:40:40 INFO  : 'configparams force-mem-access 0' command is executed.
+18:40:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:40:41 INFO  : Memory regions updated for context APU
+18:40:41 INFO  : Memory regions updated for context PA
+18:40:41 INFO  : Memory regions updated for context PA
+18:40:41 INFO  : Context for processor 'microblaze_0' is selected.
+18:40:41 INFO  : 'con' command is executed.
+18:40:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:40:41 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:42:03 INFO  : Disconnected from the channel tcfchan#19.
+18:42:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:42:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:42:35 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:44:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:44:42 INFO  : 'fpga -state' command is executed.
+18:44:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:42 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:44:42 INFO  : 'jtag frequency' command is executed.
+18:44:42 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:44:42 INFO  : Context for 'APU' is selected.
+18:44:42 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:44:42 INFO  : 'configparams force-mem-access 1' command is executed.
+18:44:42 INFO  : Context for 'APU' is selected.
+18:44:42 INFO  : 'stop' command is executed.
+18:44:43 INFO  : 'ps7_init' command is executed.
+18:44:43 INFO  : 'ps7_post_config' command is executed.
+18:44:43 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:44:43 INFO  : Context for processor 'microblaze_0' is selected.
+18:44:43 INFO  : Processor reset is completed for 'microblaze_0'.
+18:44:43 INFO  : Context for processor 'microblaze_0' is selected.
+18:44:43 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:44:43 INFO  : 'configparams force-mem-access 0' command is executed.
+18:44:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:44:43 INFO  : Memory regions updated for context APU
+18:44:43 INFO  : Memory regions updated for context PA
+18:44:43 INFO  : Memory regions updated for context PA
+18:44:43 INFO  : Context for processor 'microblaze_0' is selected.
+18:44:43 INFO  : 'con' command is executed.
+18:44:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:44:43 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:45:11 INFO  : Disconnected from the channel tcfchan#20.
+18:45:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:45:12 INFO  : 'fpga -state' command is executed.
+18:45:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:13 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:45:13 INFO  : 'jtag frequency' command is executed.
+18:45:13 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:45:13 INFO  : Context for 'APU' is selected.
+18:45:13 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:45:13 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:13 INFO  : Context for 'APU' is selected.
+18:45:13 INFO  : 'stop' command is executed.
+18:45:13 INFO  : 'ps7_init' command is executed.
+18:45:13 INFO  : 'ps7_post_config' command is executed.
+18:45:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:45:13 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:13 INFO  : Processor reset is completed for 'microblaze_0'.
+18:45:13 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:14 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:45:14 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:14 INFO  : Memory regions updated for context APU
+18:45:14 INFO  : Memory regions updated for context PA
+18:45:14 INFO  : Memory regions updated for context PA
+18:45:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:14 INFO  : 'con' command is executed.
+18:45:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:45:14 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:45:42 INFO  : Disconnected from the channel tcfchan#21.
+18:45:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:45:44 INFO  : 'fpga -state' command is executed.
+18:45:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:44 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:45:44 INFO  : 'jtag frequency' command is executed.
+18:45:44 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:45:44 INFO  : Context for 'APU' is selected.
+18:45:44 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:45:44 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:44 INFO  : Context for 'APU' is selected.
+18:45:44 INFO  : 'stop' command is executed.
+18:45:44 INFO  : 'ps7_init' command is executed.
+18:45:44 INFO  : 'ps7_post_config' command is executed.
+18:45:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:45:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:44 INFO  : Processor reset is completed for 'microblaze_0'.
+18:45:44 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:45 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:45:45 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:45 INFO  : Memory regions updated for context APU
+18:45:45 INFO  : Memory regions updated for context PA
+18:45:45 INFO  : Memory regions updated for context PA
+18:45:45 INFO  : Context for processor 'microblaze_0' is selected.
+18:45:45 INFO  : 'con' command is executed.
+18:45:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:45:45 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:46:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:46:23 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:46:38 INFO  : Disconnected from the channel tcfchan#22.
+18:46:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:46:39 INFO  : 'fpga -state' command is executed.
+18:46:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:39 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:46:39 INFO  : 'jtag frequency' command is executed.
+18:46:39 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:46:39 INFO  : Context for 'APU' is selected.
+18:46:39 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:46:39 INFO  : 'configparams force-mem-access 1' command is executed.
+18:46:39 INFO  : Context for 'APU' is selected.
+18:46:39 INFO  : 'stop' command is executed.
+18:46:39 INFO  : 'ps7_init' command is executed.
+18:46:39 INFO  : 'ps7_post_config' command is executed.
+18:46:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:46:39 INFO  : Context for processor 'microblaze_0' is selected.
+18:46:39 INFO  : Processor reset is completed for 'microblaze_0'.
+18:46:39 INFO  : Context for processor 'microblaze_0' is selected.
+18:46:40 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:46:40 INFO  : 'configparams force-mem-access 0' command is executed.
+18:46:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:46:40 INFO  : Memory regions updated for context APU
+18:46:40 INFO  : Memory regions updated for context PA
+18:46:40 INFO  : Memory regions updated for context PA
+18:46:40 INFO  : Context for processor 'microblaze_0' is selected.
+18:46:40 INFO  : 'con' command is executed.
+18:46:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:46:40 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:47:22 INFO  : Disconnected from the channel tcfchan#23.
+18:47:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:47:23 INFO  : 'fpga -state' command is executed.
+18:47:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:23 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:47:23 INFO  : 'jtag frequency' command is executed.
+18:47:23 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:47:23 INFO  : Context for 'APU' is selected.
+18:47:23 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:47:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:23 INFO  : Context for 'APU' is selected.
+18:47:23 INFO  : 'stop' command is executed.
+18:47:24 INFO  : 'ps7_init' command is executed.
+18:47:24 INFO  : 'ps7_post_config' command is executed.
+18:47:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:47:24 INFO  : Context for processor 'microblaze_0' is selected.
+18:47:24 INFO  : Processor reset is completed for 'microblaze_0'.
+18:47:24 INFO  : Context for processor 'microblaze_0' is selected.
+18:47:24 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:47:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:24 INFO  : Memory regions updated for context APU
+18:47:24 INFO  : Memory regions updated for context PA
+18:47:24 INFO  : Memory regions updated for context PA
+18:47:25 INFO  : Context for processor 'microblaze_0' is selected.
+18:47:25 INFO  : 'con' command is executed.
+18:47:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:47:25 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:48:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:48:40 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:49:29 INFO  : Disconnected from the channel tcfchan#24.
+18:49:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:49:30 INFO  : 'fpga -state' command is executed.
+18:49:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:49:30 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:49:30 INFO  : 'jtag frequency' command is executed.
+18:49:30 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:49:30 INFO  : Context for 'APU' is selected.
+18:49:30 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:49:30 INFO  : 'configparams force-mem-access 1' command is executed.
+18:49:30 INFO  : Context for 'APU' is selected.
+18:49:30 INFO  : 'stop' command is executed.
+18:49:30 INFO  : 'ps7_init' command is executed.
+18:49:30 INFO  : 'ps7_post_config' command is executed.
+18:49:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:49:30 INFO  : Context for processor 'microblaze_0' is selected.
+18:49:31 INFO  : Processor reset is completed for 'microblaze_0'.
+18:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:49:31 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:49:31 INFO  : 'configparams force-mem-access 0' command is executed.
+18:49:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:49:31 INFO  : Memory regions updated for context APU
+18:49:31 INFO  : Memory regions updated for context PA
+18:49:31 INFO  : Memory regions updated for context PA
+18:49:31 INFO  : Context for processor 'microblaze_0' is selected.
+18:49:31 INFO  : 'con' command is executed.
+18:49:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:49:31 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:51:46 INFO  : Disconnected from the channel tcfchan#25.
+18:51:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:51:48 INFO  : 'fpga -state' command is executed.
+18:51:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:48 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:51:48 INFO  : 'jtag frequency' command is executed.
+18:51:48 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:51:48 INFO  : Context for 'APU' is selected.
+18:51:48 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:51:48 INFO  : 'configparams force-mem-access 1' command is executed.
+18:51:48 INFO  : Context for 'APU' is selected.
+18:51:48 INFO  : 'stop' command is executed.
+18:51:48 INFO  : 'ps7_init' command is executed.
+18:51:48 INFO  : 'ps7_post_config' command is executed.
+18:51:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:51:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:51:48 INFO  : Processor reset is completed for 'microblaze_0'.
+18:51:48 INFO  : Context for processor 'microblaze_0' is selected.
+18:51:49 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:51:49 INFO  : 'configparams force-mem-access 0' command is executed.
+18:51:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:51:49 INFO  : Memory regions updated for context APU
+18:51:49 INFO  : Memory regions updated for context PA
+18:51:49 INFO  : Memory regions updated for context PA
+18:51:49 INFO  : Context for processor 'microblaze_0' is selected.
+18:51:49 INFO  : 'con' command is executed.
+18:51:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:51:49 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:52:29 INFO  : Refreshed build settings on project quicksort
+18:56:12 INFO  : Disconnected from the channel tcfchan#26.
+18:56:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:56:14 INFO  : 'fpga -state' command is executed.
+18:56:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:56:14 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:56:14 INFO  : 'jtag frequency' command is executed.
+18:56:14 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:56:14 INFO  : Context for 'APU' is selected.
+18:56:14 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:56:14 INFO  : 'configparams force-mem-access 1' command is executed.
+18:56:14 INFO  : Context for 'APU' is selected.
+18:56:14 INFO  : 'stop' command is executed.
+18:56:14 INFO  : 'ps7_init' command is executed.
+18:56:14 INFO  : 'ps7_post_config' command is executed.
+18:56:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:56:14 INFO  : Processor reset is completed for 'microblaze_0'.
+18:56:14 INFO  : Context for processor 'microblaze_0' is selected.
+18:56:15 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:56:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:56:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:56:15 INFO  : Memory regions updated for context APU
+18:56:15 INFO  : Memory regions updated for context PA
+18:56:15 INFO  : Memory regions updated for context PA
+18:56:15 INFO  : Context for processor 'microblaze_0' is selected.
+18:56:15 INFO  : 'con' command is executed.
+18:56:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:56:15 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:57:06 INFO  : Disconnected from the channel tcfchan#27.
+18:57:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:57:07 INFO  : 'fpga -state' command is executed.
+18:57:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:57:07 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:57:07 INFO  : 'jtag frequency' command is executed.
+18:57:07 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:57:07 INFO  : Context for 'APU' is selected.
+18:57:07 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:57:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:57:07 INFO  : Context for 'APU' is selected.
+18:57:07 INFO  : 'stop' command is executed.
+18:57:08 INFO  : 'ps7_init' command is executed.
+18:57:08 INFO  : 'ps7_post_config' command is executed.
+18:57:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:57:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:57:08 INFO  : Processor reset is completed for 'microblaze_0'.
+18:57:08 INFO  : Context for processor 'microblaze_0' is selected.
+18:57:09 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:57:09 INFO  : 'configparams force-mem-access 0' command is executed.
+18:57:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:57:09 INFO  : Memory regions updated for context APU
+18:57:09 INFO  : Memory regions updated for context PA
+18:57:09 INFO  : Memory regions updated for context PA
+18:57:09 INFO  : Context for processor 'microblaze_0' is selected.
+18:57:09 INFO  : 'con' command is executed.
+18:57:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:57:09 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+18:58:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:58:07 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+18:58:32 INFO  : Disconnected from the channel tcfchan#28.
+18:58:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:58:33 INFO  : 'fpga -state' command is executed.
+18:58:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:33 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:58:33 INFO  : 'jtag frequency' command is executed.
+18:58:33 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:58:33 INFO  : Context for 'APU' is selected.
+18:58:33 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+18:58:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:58:33 INFO  : Context for 'APU' is selected.
+18:58:33 INFO  : 'stop' command is executed.
+18:58:34 INFO  : 'ps7_init' command is executed.
+18:58:34 INFO  : 'ps7_post_config' command is executed.
+18:58:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+18:58:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:58:34 INFO  : Processor reset is completed for 'microblaze_0'.
+18:58:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:58:34 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+18:58:34 INFO  : 'configparams force-mem-access 0' command is executed.
+18:58:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:58:34 INFO  : Memory regions updated for context APU
+18:58:34 INFO  : Memory regions updated for context PA
+18:58:34 INFO  : Memory regions updated for context PA
+18:58:34 INFO  : Context for processor 'microblaze_0' is selected.
+18:58:34 INFO  : 'con' command is executed.
+18:58:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+18:58:34 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+19:01:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:01:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:01:50 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+19:02:58 INFO  : Disconnected from the channel tcfchan#29.
+19:02:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:02:59 INFO  : 'fpga -state' command is executed.
+19:02:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:02:59 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+19:02:59 INFO  : 'jtag frequency' command is executed.
+19:02:59 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:02:59 INFO  : Context for 'APU' is selected.
+19:02:59 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+19:02:59 INFO  : 'configparams force-mem-access 1' command is executed.
+19:02:59 INFO  : Context for 'APU' is selected.
+19:02:59 INFO  : 'stop' command is executed.
+19:02:59 INFO  : 'ps7_init' command is executed.
+19:02:59 INFO  : 'ps7_post_config' command is executed.
+19:02:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:02:59 INFO  : Context for processor 'microblaze_0' is selected.
+19:02:59 INFO  : Processor reset is completed for 'microblaze_0'.
+19:02:59 INFO  : Context for processor 'microblaze_0' is selected.
+19:03:00 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+19:03:00 INFO  : 'configparams force-mem-access 0' command is executed.
+19:03:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:03:00 INFO  : Memory regions updated for context APU
+19:03:00 INFO  : Memory regions updated for context PA
+19:03:00 INFO  : Memory regions updated for context PA
+19:03:00 INFO  : Context for processor 'microblaze_0' is selected.
+19:03:00 INFO  : 'con' command is executed.
+19:03:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+19:03:00 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+19:04:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:04:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:04:31 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+19:06:24 INFO  : Disconnected from the channel tcfchan#30.
+19:06:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:06:25 INFO  : 'fpga -state' command is executed.
+19:06:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:06:25 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+19:06:25 INFO  : 'jtag frequency' command is executed.
+19:06:25 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:06:25 INFO  : Context for 'APU' is selected.
+19:06:25 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+19:06:25 INFO  : 'configparams force-mem-access 1' command is executed.
+19:06:25 INFO  : Context for 'APU' is selected.
+19:06:25 INFO  : 'stop' command is executed.
+19:06:25 INFO  : 'ps7_init' command is executed.
+19:06:25 INFO  : 'ps7_post_config' command is executed.
+19:06:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:06:25 INFO  : Context for processor 'microblaze_0' is selected.
+19:06:25 INFO  : Processor reset is completed for 'microblaze_0'.
+19:06:26 INFO  : Context for processor 'microblaze_0' is selected.
+19:06:26 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+19:06:26 INFO  : 'configparams force-mem-access 0' command is executed.
+19:06:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:06:26 INFO  : Memory regions updated for context APU
+19:06:26 INFO  : Memory regions updated for context PA
+19:06:26 INFO  : Memory regions updated for context PA
+19:06:26 INFO  : Context for processor 'microblaze_0' is selected.
+19:06:26 INFO  : 'con' command is executed.
+19:06:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+19:06:26 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+19:07:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:07:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:07:19 INFO  : FPGA configured successfully with bitstream "/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit"
+19:08:11 INFO  : Disconnected from the channel tcfchan#31.
+19:08:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:08:12 INFO  : 'fpga -state' command is executed.
+19:08:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:08:12 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+19:08:12 INFO  : 'jtag frequency' command is executed.
+19:08:12 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:08:12 INFO  : Context for 'APU' is selected.
+19:08:12 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+19:08:12 INFO  : 'configparams force-mem-access 1' command is executed.
+19:08:12 INFO  : Context for 'APU' is selected.
+19:08:12 INFO  : 'stop' command is executed.
+19:08:13 INFO  : 'ps7_init' command is executed.
+19:08:13 INFO  : 'ps7_post_config' command is executed.
+19:08:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:08:13 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:13 INFO  : Processor reset is completed for 'microblaze_0'.
+19:08:13 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:14 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+19:08:14 INFO  : 'configparams force-mem-access 0' command is executed.
+19:08:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:08:14 INFO  : Memory regions updated for context APU
+19:08:14 INFO  : Memory regions updated for context PA
+19:08:14 INFO  : Memory regions updated for context PA
+19:08:14 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:14 INFO  : 'con' command is executed.
+19:08:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+19:08:14 INFO  : Launch script is exported to file '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_quicksort.elf_on_local.tcl'
+19:08:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+19:08:35 INFO  : 'fpga -state' command is executed.
+19:08:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:08:35 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+19:08:35 INFO  : 'jtag frequency' command is executed.
+19:08:35 INFO  : Sourcing of '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:08:35 INFO  : Context for 'APU' is selected.
+19:08:35 INFO  : Hardware design information is loaded from '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf'.
+19:08:35 INFO  : 'configparams force-mem-access 1' command is executed.
+19:08:35 INFO  : Context for 'APU' is selected.
+19:08:35 INFO  : 'stop' command is executed.
+19:08:35 INFO  : 'ps7_init' command is executed.
+19:08:35 INFO  : 'ps7_post_config' command is executed.
+19:08:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:08:36 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:36 INFO  : Processor reset is completed for 'microblaze_0'.
+19:08:36 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:36 INFO  : The application '/home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf' is downloaded to processor 'microblaze_0'.
+19:08:36 INFO  : 'configparams force-mem-access 0' command is executed.
+19:08:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+dow /home/lais/Documentos/ROB307/rob_307/quicksort/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/quicksort.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:08:36 INFO  : Context for processor 'microblaze_0' is selected.
+19:08:37 INFO  : 'con' command is executed.
+19:08:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1
+con
+----------------End of Script----------------
+
+19:08:37 INFO  : Disconnected from the channel tcfchan#32.
+19:10:01 WARN  : channel "tcfchan#32" closed
