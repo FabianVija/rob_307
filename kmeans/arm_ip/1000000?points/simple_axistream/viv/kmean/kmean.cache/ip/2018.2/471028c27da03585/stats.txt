@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Nov 29 14:50:58 UTC 2018
+VLNV: xilinx.com:hls:doKmean:1.0
+SynthRuntime: 429

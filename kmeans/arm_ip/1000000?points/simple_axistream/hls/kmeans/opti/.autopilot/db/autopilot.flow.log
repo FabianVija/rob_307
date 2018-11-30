@@ -1,0 +1,692 @@
+INFO-FLOW: Workspace /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti opened at Thu Nov 29 23:47:10 CET 2018
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.17 sec.
+Execute   set_part xc7z020clg484-1 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   source ./kmeans/opti/directives.tcl 
+Execute     set_directive_pipeline doKmean/update 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline doKmean/sumcen 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline doKmean/cluster 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline doKmean/read_c 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline doKmean/read_p 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'kmeans/kmeans.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling kmeans/kmeans.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted kmeans/kmeans.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "kmeans/kmeans.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E kmeans/kmeans.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp
+Command       clang done; 1.23 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp"  -o "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/useless.bc
+Command       clang done; 1.9 sec.
+INFO-FLOW: GCC PP time: 3 seconds per iteration
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp std=gnu++98 -directive=/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/.systemc_flag -quiet -fix-errors /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.87 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp std=gnu++98 -directive=/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/opti.json 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/opti.json -quiet -fix-errors /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.24 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/xilinx-dataflow-lawyer.kmeans.pp.0.cpp.diag.yml /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/xilinx-dataflow-lawyer.kmeans.pp.0.cpp.out.log 2> /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/xilinx-dataflow-lawyer.kmeans.pp.0.cpp.err.log 
+Command       ap_eval done; 0.56 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.98 sec.
+INFO-FLOW: tidy-3.1 time 3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.43 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.2.cpp" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.2.cpp
+Command       clang done; 1.24 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.bc" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.bc
+Command       clang done; 1.66 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/kmeans.g.bc -hls-opt -except-internalize doKmean -L/opt/Xilinx/Vivado/2018.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g 
+Command       llvm-ld done; 0.64 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 372.895 ; gain = 0.293 ; free physical = 383 ; free virtual = 2706
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 372.895 ; gain = 0.293 ; free physical = 383 ; free virtual = 2706
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.pp.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx/Vivado/2018.2/lnx64/lib -lfloatconversion -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.65 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top doKmean -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.0.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 372.910 ; gain = 0.309 ; free physical = 377 ; free virtual = 2701
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.1.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'get_cluster' into 'doKmean' (kmeans/kmeans.cpp:49) automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.2.prechk.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 372.910 ; gain = 0.309 ; free physical = 370 ; free virtual = 2695
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.g.1.bc to /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.1.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'read_p' (kmeans/kmeans.cpp:19) in function 'doKmean' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'read_c' (kmeans/kmeans.cpp:32) in function 'doKmean' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'sumcen' (kmeans/kmeans.cpp:57) in function 'doKmean' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'update' (kmeans/kmeans.cpp:67) in function 'doKmean' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'get_cluster' (kmeans/kmeans.cpp:92).
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1' (kmeans/kmeans.cpp:20) in function 'doKmean' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1' (kmeans/kmeans.cpp:33) in function 'doKmean' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5.1' (kmeans/kmeans.cpp:58) in function 'doKmean' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-6.1' (kmeans/kmeans.cpp:68) in function 'doKmean' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1' (kmeans/kmeans.cpp:96) in function 'get_cluster' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1' (kmeans/kmeans.cpp:98) in function 'get_cluster' completely.
+Command         transform done; 1.76 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.1.tmp.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 1.03 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 500.602 ; gain = 128.000 ; free physical = 454 ; free virtual = 2780
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.2.bc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 2.49 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 564.602 ; gain = 192.000 ; free physical = 454 ; free virtual = 2763
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 6.15 sec.
+Command     elaborate done; 19.18 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'doKmean' ...
+Execute       ap_set_top_model doKmean 
+Execute       get_model_list doKmean -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model doKmean 
+Execute       preproc_iomode -model get_cluster 
+Execute       get_model_list doKmean -filter all-wo-channel 
+INFO-FLOW: Model list for configure: get_cluster doKmean
+INFO-FLOW: Configuring Module : get_cluster ...
+Execute       set_default_model get_cluster 
+Execute       apply_spec_resource_limit get_cluster 
+INFO-FLOW: Configuring Module : doKmean ...
+Execute       set_default_model doKmean 
+Execute       apply_spec_resource_limit doKmean 
+INFO-FLOW: Model list for preprocess: get_cluster doKmean
+INFO-FLOW: Preprocessing Module: get_cluster ...
+Execute       set_default_model get_cluster 
+Execute       cdfg_preprocess -model get_cluster 
+Command       cdfg_preprocess done; 3.96 sec.
+Execute       rtl_gen_preprocess get_cluster 
+INFO-FLOW: Preprocessing Module: doKmean ...
+Execute       set_default_model doKmean 
+Execute       cdfg_preprocess -model doKmean 
+Execute       rtl_gen_preprocess doKmean 
+INFO-FLOW: Model list for synthesis: get_cluster doKmean
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'get_cluster' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model get_cluster 
+Execute       schedule -model get_cluster 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'get_cluster'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('centroids_load_100', kmeans/kmeans.cpp:99) on array 'centroids' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'centroids'.
+INFO: [SCHED 204-61] Unable to satisfy pipeline directive: Unable to pipeline the region.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 134.67 sec.
+INFO: [HLS 200-111]  Elapsed time: 158.36 seconds; current allocated memory: 203.137 MB.
+Execute       report -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.verbose.sched.rpt -verbose -f 
+Command       report done; 25.13 sec.
+Execute       db_write -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.sched.adb -f 
+Command       db_write done; 5.84 sec.
+INFO-FLOW: Finish scheduling get_cluster.
+Execute       set_default_model get_cluster 
+Execute       bind -model get_cluster 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=get_cluster
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] After resource sharing, estimated clock period (10.3727ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+INFO: [BIND 205-100] The critical path consists of the following:
+	'fsub' operation ('tmp_6_9', kmeans/kmeans.cpp:99) (10.4 ns)
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 15.84 sec.
+INFO: [HLS 200-111]  Elapsed time: 46.82 seconds; current allocated memory: 267.424 MB.
+Execute       report -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.verbose.bind.rpt -verbose -f 
+Command       report done; 22.02 sec.
+Execute       db_write -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.bind.adb -f 
+Command       db_write done; 6.47 sec.
+INFO-FLOW: Finish binding get_cluster.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'doKmean' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model doKmean 
+Execute       schedule -model doKmean 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_p'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 43, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 47, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 49, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:21).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 50, Depth = 51.
+INFO: [SCHED 204-61] Pipelining loop 'read_c'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 43, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 47, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 49, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34) and axis read on port 'inStream_V_data_V' (kmeans/kmeans.cpp:34).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 50, Depth = 51.
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'get_cluster' is not pipelined.
+INFO: [SCHED 204-61] Pipelining loop 'sumcen'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (kmeans/kmeans.cpp:59) of variable 'tmp_18_126', kmeans/kmeans.cpp:59 on array 'new_centroids' and 'load' operation ('new_centroids_load', kmeans/kmeans.cpp:59) on array 'new_centroids'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation (kmeans/kmeans.cpp:59) of variable 'tmp_18_126', kmeans/kmeans.cpp:59 on array 'new_centroids' and 'load' operation ('new_centroids_load', kmeans/kmeans.cpp:59) on array 'new_centroids'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation (kmeans/kmeans.cpp:59) of variable 'tmp_18_126', kmeans/kmeans.cpp:59 on array 'new_centroids' and 'load' operation ('new_centroids_load', kmeans/kmeans.cpp:59) on array 'new_centroids'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation (kmeans/kmeans.cpp:59) of variable 'tmp_18_126', kmeans/kmeans.cpp:59 on array 'new_centroids' and 'load' operation ('new_centroids_load', kmeans/kmeans.cpp:59) on array 'new_centroids'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (kmeans/kmeans.cpp:59) of variable 'tmp_16_21', kmeans/kmeans.cpp:59 on array 'new_centroids' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'new_centroids'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 50, Depth = 60.
+INFO: [SCHED 204-61] Pipelining loop 'update'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('np_cluster_load_3', kmeans/kmeans.cpp:69) on array 'np_cluster' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'np_cluster'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (kmeans/kmeans.cpp:70) of constant 0 on array 'new_centroids' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'new_centroids'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 50, Depth = 73.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'mul' operation ('tmp_352', kmeans/kmeans.cpp:59) (3.36 ns)
+	'add' operation ('tmp_353', kmeans/kmeans.cpp:59) (3.02 ns)
+	'getelementptr' operation ('new_centroids_addr_2', kmeans/kmeans.cpp:59) (0 ns)
+	'load' operation ('new_centroids_load_2', kmeans/kmeans.cpp:59) on array 'new_centroids' (3.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 5.46 sec.
+INFO: [HLS 200-111]  Elapsed time: 33.97 seconds; current allocated memory: 274.962 MB.
+Execute       report -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 4 loops out of a total 7 loops have been pipelined in this design.
+Command       report done; 2.64 sec.
+Execute       db_write -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.sched.adb -f 
+Command       db_write done; 0.76 sec.
+INFO-FLOW: Finish scheduling doKmean.
+Execute       set_default_model doKmean 
+Execute       bind -model doKmean 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=doKmean
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 1.13 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.54 seconds; current allocated memory: 284.026 MB.
+Execute       report -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.verbose.bind.rpt -verbose -f 
+Command       report done; 2.8 sec.
+Execute       db_write -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.bind.adb -f 
+Command       db_write done; 0.77 sec.
+INFO-FLOW: Finish binding doKmean.
+Execute       get_model_list doKmean -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess get_cluster 
+Execute       rtl_gen_preprocess doKmean 
+INFO-FLOW: Model list for RTL generation: get_cluster doKmean
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'get_cluster' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model get_cluster -vendor xilinx -mg_file /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'doKmean_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'doKmean_faddfsub_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_fmul_32ns_32ns_32_4_max_dsp_1' to 'doKmean_fmul_32nscud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_fcmp_32ns_32ns_1_1_1' to 'doKmean_fcmp_32nsdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_fsqrt_32ns_32ns_32_12_1' to 'doKmean_fsqrt_32neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mul_mul_7ns_10ns_17_1_1' to 'doKmean_mul_mul_7fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'doKmean_faddfsub_bkb': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_fcmp_32nsdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_fmul_32nscud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_fsqrt_32neOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mul_mul_7fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'get_cluster'.
+Command       create_rtl_model done; 35.72 sec.
+INFO: [HLS 200-111]  Elapsed time: 39.31 seconds; current allocated memory: 409.662 MB.
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.rtl_wrap.cfg.tcl 
+Execute       gen_rtl get_cluster -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/systemc/get_cluster -synmodules get_cluster doKmean 
+Command       gen_rtl done; 0.14 sec.
+Execute       gen_rtl get_cluster -style xilinx -f -lang vhdl -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/vhdl/get_cluster 
+Command       gen_rtl done; 0.11 sec.
+Execute       gen_rtl get_cluster -style xilinx -f -lang vlog -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/verilog/get_cluster 
+Command       gen_rtl done; 0.11 sec.
+Execute       gen_tb_info get_cluster -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster -p /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db 
+Command       gen_tb_info done; 0.11 sec.
+Execute       report -model get_cluster -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/report/get_cluster_csynth.rpt -f 
+Execute       report -model get_cluster -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/report/get_cluster_csynth.xml -f -x 
+Execute       report -model get_cluster -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.verbose.rpt -verbose -f 
+Command       report done; 21.01 sec.
+Execute       db_write -model get_cluster -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.adb -f 
+Command       db_write done; 8.59 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doKmean' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model doKmean -vendor xilinx -mg_file /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'doKmean/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'doKmean' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'points' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'valref_keep_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'valref_strb_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'valref_user_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'valref_id_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'valref_dest_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Global array 'centroids' will not be exposed as RTL port.
+INFO: [SYN 201-210] Renamed object name 'doKmean_new_centroids' to 'doKmean_new_centrg8j' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'doKmean_fadd_32ns_32ns_32_5_full_dsp_1' to 'doKmean_fadd_32nshbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_fdiv_32ns_32ns_32_16_1' to 'doKmean_fdiv_32nsibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_sitofp_32ns_32_6_1' to 'doKmean_sitofp_32jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mul_mul_7ns_11s_11_1_1' to 'doKmean_mul_mul_7kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mac_muladd_7ns_11s_3ns_11_1_1' to 'doKmean_mac_muladlbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mac_muladd_7ns_11s_4ns_11_1_1' to 'doKmean_mac_muladmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mac_muladd_7ns_11s_5ns_11_1_1' to 'doKmean_mac_muladncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mac_muladd_7ns_11s_6ns_11_1_1' to 'doKmean_mac_muladocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'doKmean_mac_muladd_7ns_11s_7ns_11_1_1' to 'doKmean_mac_muladpcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'doKmean_fadd_32nshbi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_fdiv_32nsibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mac_muladlbW': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mac_muladmb6': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mac_muladncg': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mac_muladocq': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mac_muladpcA': 18 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_mul_mul_7kbM': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'doKmean_sitofp_32jbC': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doKmean'.
+Command       create_rtl_model done; 1.33 sec.
+INFO: [HLS 200-111]  Elapsed time: 32.98 seconds; current allocated memory: 549.355 MB.
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.rtl_wrap.cfg.tcl 
+Execute       gen_rtl doKmean -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/systemc/doKmean -synmodules get_cluster doKmean 
+Execute       gen_rtl doKmean -istop -style xilinx -f -lang vhdl -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/vhdl/doKmean 
+Command       gen_rtl done; 0.29 sec.
+Execute       gen_rtl doKmean -istop -style xilinx -f -lang vlog -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/verilog/doKmean 
+Command       gen_rtl done; 0.17 sec.
+Execute       export_constraint_db -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.constraint.tcl -f -tool general 
+Execute       report -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.design.xml -verbose -f -dv 
+Command       report done; 0.46 sec.
+Execute       report -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.54 sec.
+Execute       gen_tb_info doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean -p /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db 
+Execute       report -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/report/doKmean_csynth.rpt -f 
+Command       report done; 0.15 sec.
+Execute       report -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/syn/report/doKmean_csynth.xml -f -x 
+Command       report done; 0.15 sec.
+Execute       report -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.verbose.rpt -verbose -f 
+Command       report done; 3.14 sec.
+Execute       db_write -model doKmean -o /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.adb -f 
+Command       db_write done; 1.85 sec.
+Execute       sc_get_clocks doKmean 
+Execute       sc_get_portdomain doKmean 
+INFO-FLOW: Model list for RTL component generation: get_cluster doKmean
+INFO-FLOW: Handling components in module [get_cluster] ... 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+INFO-FLOW: Found component doKmean_faddfsub_bkb.
+INFO-FLOW: Append model doKmean_faddfsub_bkb
+INFO-FLOW: Found component doKmean_fmul_32nscud.
+INFO-FLOW: Append model doKmean_fmul_32nscud
+INFO-FLOW: Found component doKmean_fcmp_32nsdEe.
+INFO-FLOW: Append model doKmean_fcmp_32nsdEe
+INFO-FLOW: Found component doKmean_fsqrt_32neOg.
+INFO-FLOW: Append model doKmean_fsqrt_32neOg
+INFO-FLOW: Found component doKmean_mul_mul_7fYi.
+INFO-FLOW: Append model doKmean_mul_mul_7fYi
+INFO-FLOW: Handling components in module [doKmean] ... 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+INFO-FLOW: Found component doKmean_fadd_32nshbi.
+INFO-FLOW: Append model doKmean_fadd_32nshbi
+INFO-FLOW: Found component doKmean_fdiv_32nsibs.
+INFO-FLOW: Append model doKmean_fdiv_32nsibs
+INFO-FLOW: Found component doKmean_sitofp_32jbC.
+INFO-FLOW: Append model doKmean_sitofp_32jbC
+INFO-FLOW: Found component doKmean_mul_mul_7kbM.
+INFO-FLOW: Append model doKmean_mul_mul_7kbM
+INFO-FLOW: Found component doKmean_mac_muladlbW.
+INFO-FLOW: Append model doKmean_mac_muladlbW
+INFO-FLOW: Found component doKmean_mac_muladmb6.
+INFO-FLOW: Append model doKmean_mac_muladmb6
+INFO-FLOW: Found component doKmean_mac_muladncg.
+INFO-FLOW: Append model doKmean_mac_muladncg
+INFO-FLOW: Found component doKmean_mac_muladocq.
+INFO-FLOW: Append model doKmean_mac_muladocq
+INFO-FLOW: Found component doKmean_mac_muladpcA.
+INFO-FLOW: Append model doKmean_mac_muladpcA
+INFO-FLOW: Found component doKmean_points.
+INFO-FLOW: Append model doKmean_points
+INFO-FLOW: Found component doKmean_centroids.
+INFO-FLOW: Append model doKmean_centroids
+INFO-FLOW: Found component doKmean_results.
+INFO-FLOW: Append model doKmean_results
+INFO-FLOW: Found component doKmean_np_cluster.
+INFO-FLOW: Append model doKmean_np_cluster
+INFO-FLOW: Found component doKmean_new_centrg8j.
+INFO-FLOW: Append model doKmean_new_centrg8j
+INFO-FLOW: Found component doKmean_CRTL_BUS_s_axi.
+INFO-FLOW: Append model doKmean_CRTL_BUS_s_axi
+INFO-FLOW: Append model get_cluster
+INFO-FLOW: Append model doKmean
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: doKmean_faddfsub_bkb doKmean_fmul_32nscud doKmean_fcmp_32nsdEe doKmean_fsqrt_32neOg doKmean_mul_mul_7fYi doKmean_fadd_32nshbi doKmean_fdiv_32nsibs doKmean_sitofp_32jbC doKmean_mul_mul_7kbM doKmean_mac_muladlbW doKmean_mac_muladmb6 doKmean_mac_muladncg doKmean_mac_muladocq doKmean_mac_muladpcA doKmean_points doKmean_centroids doKmean_results doKmean_np_cluster doKmean_new_centrg8j doKmean_CRTL_BUS_s_axi get_cluster doKmean
+INFO-FLOW: To file: write model doKmean_faddfsub_bkb
+INFO-FLOW: To file: write model doKmean_fmul_32nscud
+INFO-FLOW: To file: write model doKmean_fcmp_32nsdEe
+INFO-FLOW: To file: write model doKmean_fsqrt_32neOg
+INFO-FLOW: To file: write model doKmean_mul_mul_7fYi
+INFO-FLOW: To file: write model doKmean_fadd_32nshbi
+INFO-FLOW: To file: write model doKmean_fdiv_32nsibs
+INFO-FLOW: To file: write model doKmean_sitofp_32jbC
+INFO-FLOW: To file: write model doKmean_mul_mul_7kbM
+INFO-FLOW: To file: write model doKmean_mac_muladlbW
+INFO-FLOW: To file: write model doKmean_mac_muladmb6
+INFO-FLOW: To file: write model doKmean_mac_muladncg
+INFO-FLOW: To file: write model doKmean_mac_muladocq
+INFO-FLOW: To file: write model doKmean_mac_muladpcA
+INFO-FLOW: To file: write model doKmean_points
+INFO-FLOW: To file: write model doKmean_centroids
+INFO-FLOW: To file: write model doKmean_results
+INFO-FLOW: To file: write model doKmean_np_cluster
+INFO-FLOW: To file: write model doKmean_new_centrg8j
+INFO-FLOW: To file: write model doKmean_CRTL_BUS_s_axi
+INFO-FLOW: To file: write model get_cluster
+INFO-FLOW: To file: write model doKmean
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'doKmean_points_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'doKmean_centroids_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'doKmean_results_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'doKmean_np_cluster_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'doKmean_new_centrg8j_ram (RAM)' using block RAMs with power-on initialization.
+Execute         source ./CRTL_BUS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.15 sec.
+Execute       get_config_sdx -target 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.rtl_wrap.cfg.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.rtl_wrap.cfg.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.rtl_wrap.cfg.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/get_cluster.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.compgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.constraint.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.tbgen.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/doKmean.constraint.tcl 
+Execute       sc_get_clocks doKmean 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/.autopilot/db/global.setting.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_faddfsub_3_full_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_fdiv_14_no_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_fsqrt_10_no_dsp_32_ip.tcl 
+Execute       source /home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/opti/impl/misc/doKmean_ap_sitofp_4_no_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:01 ; elapsed = 00:05:24 . Memory (MB): peak = 987.684 ; gain = 615.082 ; free physical = 143 ; free virtual = 2141
+INFO: [SYSC 207-301] Generating SystemC RTL for doKmean.
+INFO: [VHDL 208-304] Generating VHDL RTL for doKmean.
+INFO: [VLOG 209-307] Generating Verilog RTL for doKmean.
+Command     autosyn done; 304.3 sec.
+Command   csynth_design done; 323.48 sec.
+Command ap_source done; 323.7 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.25 sec.
