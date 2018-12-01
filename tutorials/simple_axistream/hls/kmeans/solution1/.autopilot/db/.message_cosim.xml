@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[COSIM 212-47]" key="COSIM_TCL_47_1115" tag="" content="Using Modelsim for RTL simulation."/>
+	<Message severity="ERROR" prefix="[COSIM 212-104]" key="COSIM_TCL_104_1162" tag="" content="Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable."/>
+</Messages>
