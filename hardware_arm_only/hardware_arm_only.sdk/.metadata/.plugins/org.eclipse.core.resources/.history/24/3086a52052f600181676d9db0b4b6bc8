@@ -1,0 +1,22 @@
+/*
+ * Empty C++ Application
+ */
+#include <vector>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+	std::vector<char> array;
+	int i;
+	for(i=0;i<10000000;i++){
+		array.push_back('a');
+	}
+
+	for(i=0;i<10000000;i++){
+		printf("%c, ",array[i]);
+	}
+
+	return 0;
+}

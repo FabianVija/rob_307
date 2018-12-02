@@ -1,0 +1,8 @@
+22:21:57 **** Incremental Build of configuration Debug for project kmeans ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+22:21:57 Build Finished (took 413ms)
+

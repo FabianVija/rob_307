@@ -62,6 +62,19 @@ void createVector (const char* nameFile){
 	free (buf);
 }
 
+void createRandomVector(){
+	int max_val = 100000000;
+	printf("creating elements...\n");
+
+	int i = 0;
+	for (i=0;i<N_POINTS;i++){
+		vector[i]=rand() % max_val;
+		//printf ("%d\n", vector[i]);
+	}
+	printf("finished create Elements\n");
+
+}
+
 // A utility function to swap two elements
 void swap ( int* a, int* b )
 {

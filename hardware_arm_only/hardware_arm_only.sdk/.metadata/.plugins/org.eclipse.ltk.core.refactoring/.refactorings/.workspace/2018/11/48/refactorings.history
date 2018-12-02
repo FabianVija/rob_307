@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;quicksort/src/main_quicksort&apos;" deleteContents="false" description="Delete resource &apos;quicksort/src/main_quicksort&apos;" element1="/quicksort/src/main_quicksort" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1543304338485"/>
+</session>
