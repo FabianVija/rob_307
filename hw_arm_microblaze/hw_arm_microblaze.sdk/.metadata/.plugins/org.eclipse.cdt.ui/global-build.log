@@ -1,0 +1,893 @@
+
+**** Build of configuration Debug for project dijkstra ****
+
+Nothing to build for project dijkstra
+10:35:49 **** Clean-only build of configuration Debug for project dijkstra ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  dijkstra.elf.size  dijkstra.elf
+ 
+10:35:50 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100276	   1460	4007200	4108936	 3eb288	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+10:36:02 **** Build of project dijkstra_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ddrps
+Running Make libs in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+10:36:10 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100276	   1460	4007200	4108936	 3eb288	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+10:36:15 **** Clean-only build of configuration Debug for project kmeans ****
+make clean 
+rm -rf  ./src/kmeans.o ./src/timer_c.o  ./src/kmeans.d ./src/timer_c.d  kmeans.elf.size  kmeans.elf
+ 
+10:36:16 **** Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c: In function 'read_dataset':
+../src/kmeans.c:87:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:117:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building file: ../src/timer_c.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Finished building: ../src/timer_c.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  19920	 176024	  2af98	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+10:36:27 **** Build of project kmeans_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ddrps
+Running Make libs in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+Running Make libs in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling XilFFs Library
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+10:36:33 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+../src/kmeans.c: In function 'read_dataset':
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+../src/kmeans.c:87:31: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+  f_read(&file_in, buf, CHUNK, &n_read);
+                               ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+../src/kmeans.c:117:35: warning: pointer targets in passing argument 4 of 'f_read' differ in signedness [-Wpointer-sign]
+      f_read(&file_in, buf, CHUNK, &n_read);
+                                   ^
+In file included from ../src/kmeans.h:4:0,
+                 from ../src/kmeans.c:1:
+../../kmeans_bsp/microblaze_0/include/ff.h:223:9: note: expected 'UINT * {aka unsigned int *}' but argument is of type 'int *'
+ FRESULT f_read (FIL* fp, void* buff, UINT btr, UINT* br);   /* Read data from a file */
+         ^~~~~~
+Finished building: ../src/kmeans.c
+ 
+Building file: ../src/timer_c.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Finished building: ../src/timer_c.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  19920	 176024	  2af98	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+10:36:40 **** Clean-only build of configuration Debug for project quicksort ****
+make clean 
+rm -rf  ./src/main_quicksort.o  ./src/main_quicksort.d  quicksort.elf.size  quicksort.elf
+ 
+10:36:41 **** Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main_quicksort.o: In function `main':
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:189: undefined reference to `f_mount'
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:219: undefined reference to `f_mount'
+collect2: error: ld returned 1 exit status
+make: *** [quicksort.elf] Error 1
+makefile:36: recipe for target 'quicksort.elf' failed
+10:36:53 **** Build of project quicksort_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ddrps
+Running Make libs in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+Running Make libs in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling XilFFs Library
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+10:37:08 **** Auto Build of project quicksort_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src
+make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ddrps
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/qspips_v3_4/src
+make -C microblaze_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling qspips
+Running Make libs in microblaze_0/libsrc/standalone_v6_7/src
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/gpiops_v3_3/src
+make -C microblaze_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpiops
+Running Make libs in microblaze_0/libsrc/emacps_v3_7/src
+make -C microblaze_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emacps
+Running Make libs in microblaze_0/libsrc/uartps_v3_6/src
+make -C microblaze_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartps
+Running Make libs in microblaze_0/libsrc/xilffs_v3_9/src
+make -C microblaze_0/libsrc/xilffs_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling XilFFs Library
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/cpu_v2_7/src
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/sdps_v3_5/src
+make -C microblaze_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling sdps
+Running Make libs in microblaze_0/libsrc/usbps_v2_4/src
+make -C microblaze_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling usbps
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_4/src
+make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Finished building libraries
+10:37:14 **** Clean-only build of configuration Debug for project quicksort ****
+make clean 
+rm -rf  ./src/main_quicksort.o  ./src/main_quicksort.d  quicksort.elf.size  quicksort.elf
+ 
+10:37:14 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119376	   1496	   5168	 126040	  1ec58	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+10:44:53 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  19920	 176024	  2af98	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+10:44:59 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+10:45:52 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+10:48:04 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+10:49:08 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+10:50:56 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+10:52:57 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+10:56:21 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100276	   1460	4007200	4108936	 3eb288	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:07:42 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119400	   1496	   5168	 126064	  1ec70	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+11:07:45 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+11:11:23 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100296	   1460	4007196	4108952	 3eb298	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:11:46 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:19:30 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:116:25: error: 'size' was not declared in this scope
+   printResult(sw_result,size);
+                         ^~~~
+../src/main.cc:116:25: note: suggested alternative: 'size_t'
+   printResult(sw_result,size);
+                         ^~~~
+                         size_t
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:19:46 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100128	   1456	   3312	 104896	  199c0	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:20:09 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:25:48 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void printResult(unsigned int*, unsigned int, unsigned int, unsigned int)':
+../src/main.cc:67:45: error: 'dst' was not declared in this scope
+  printf("source : %d, destination : %d",scr,dst);
+                                             ^~~
+../src/main.cc:67:45: note: suggested alternative: 'dstn'
+  printf("source : %d, destination : %d",scr,dst);
+                                             ^~~
+                                             dstn
+../src/main.cc:69:2: error: expected ';' before 'unsigned'
+  unsigned int i ;
+  ^~~~~~~~
+../src/main.cc:70:7: error: 'i' was not declared in this scope
+  for (i=0;i<size;i++){
+       ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:118:35: error: too few arguments to function 'void printResult(unsigned int*, unsigned int, unsigned int, unsigned int)'
+   printResult(sw_result,max_vertex);
+                                   ^
+../src/main.cc:66:6: note: declared here
+ void printResult(unsigned int sw_result[max_vertex], unsigned int size, unsigned int scr, unsigned int dstn){
+      ^~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:25:56 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void printResult(unsigned int*, unsigned int, unsigned int, unsigned int)':
+../src/main.cc:67:45: error: 'dst' was not declared in this scope
+  printf("source : %d, destination : %d",scr,dst);
+                                             ^~~
+../src/main.cc:67:45: note: suggested alternative: 'dstn'
+  printf("source : %d, destination : %d",scr,dst);
+                                             ^~~
+                                             dstn
+../src/main.cc: In function 'int main()':
+../src/main.cc:118:35: error: too few arguments to function 'void printResult(unsigned int*, unsigned int, unsigned int, unsigned int)'
+   printResult(sw_result,max_vertex);
+                                   ^
+../src/main.cc:66:6: note: declared here
+ void printResult(unsigned int sw_result[max_vertex], unsigned int size, unsigned int scr, unsigned int dstn){
+      ^~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:26:08 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:118:35: error: too few arguments to function 'void printResult(unsigned int*, unsigned int, unsigned int, unsigned int)'
+   printResult(sw_result,max_vertex);
+                                   ^
+../src/main.cc:66:6: note: declared here
+ void printResult(unsigned int sw_result[max_vertex], unsigned int size, unsigned int scr, unsigned int dstn){
+      ^~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+11:26:19 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100232	   1456	   3312	 105000	  19a28	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:26:23 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:27:03 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100212	   1456	   3316	 104984	  19a18	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:27:57 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100256	   1456	   4872	 106584	  1a058	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:28:02 **** Auto Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100240	   1456	   3632	 105328	  19b70	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:28:05 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:29:08 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:29:42 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:31:12 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:32:15 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:32:34 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:34:02 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../dijkstra_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: dijkstra.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../dijkstra_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dijkstra.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: dijkstra.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size dijkstra.elf  |tee "dijkstra.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  99060	   1456	   3636	 104152	  196d8	dijkstra.elf
+Finished building: dijkstra.elf.size
+ 
+11:35:45 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+11:38:31 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+11:39:53 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119352	   1496	   9136	 129984	  1fbc0	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+11:40:00 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+11:40:43 **** Auto Build of configuration Debug for project quicksort ****
+make all 
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 119328	   1496	   9136	 129960	  1fba8	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+11:44:28 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154572	   1532	  19920	 176024	  2af98	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+11:51:40 **** Incremental Build of configuration Debug for project dijkstra ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:42 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:43 **** Incremental Build of configuration Debug for project quicksort ****
+make all 
+make: Nothing to be done for 'all'.
+11:54:18 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154732	   1532	  19920	 176184	  2b038	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+11:54:37 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154732	   1532	  13800	 170064	  29850	kmeans.elf
+Finished building: kmeans.elf.size
+ 
+11:55:01 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+11:56:07 **** Auto Build of configuration Debug for project kmeans ****
+make all 
+Building file: ../src/kmeans.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
+Finished building: ../src/kmeans.c
+ 
+Building target: kmeans.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: kmeans.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size kmeans.elf  |tee "kmeans.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154592	   1532	  13796	 169920	  297c0	kmeans.elf
+Finished building: kmeans.elf.size
+ 
