@@ -1,9 +1,20 @@
-11:56:07 **** Auto Build of configuration Debug for project kmeans ****
+00:22:06 **** Build of configuration Debug for project kmeans ****
 make all 
 Building file: ../src/kmeans.c
 Invoking: MicroBlaze gcc compiler
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
 Finished building: ../src/kmeans.c
+ 
+Building file: ../src/timer_c.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_c.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/timer_c.d" -MT"src/timer_c.o" -o "src/timer_c.o" "../src/timer_c.c"
+../src/timer_c.c: In function 'get_time':
+../src/timer_c.c:20:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("total time: %f secs\n",intervalt);
+  ^~~~~~
+../src/timer_c.c:20:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/timer_c.c:20:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+Finished building: ../src/timer_c.c
  
 Building target: kmeans.elf
 Invoking: MicroBlaze gcc linker
@@ -13,9 +24,9 @@ Finished building target: kmeans.elf
 Invoking: MicroBlaze Print Size
 mb-size kmeans.elf  |tee "kmeans.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 154592	   1532	  13796	 169920	  297c0	kmeans.elf
+ 154724	   1532	  13800	 170056	  29848	kmeans.elf
 Finished building: kmeans.elf.size
  
 
-11:56:08 Build Finished (took 625ms)
+00:22:07 Build Finished (took 867ms)
 

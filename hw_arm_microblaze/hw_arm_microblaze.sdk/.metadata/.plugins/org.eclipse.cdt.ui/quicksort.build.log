@@ -1,6 +1,22 @@
-11:51:43 **** Incremental Build of configuration Debug for project quicksort ****
+00:22:14 **** Build of configuration Debug for project quicksort ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main_quicksort.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_quicksort.o" -I../../quicksort_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_quicksort.d" -MT"src/main_quicksort.o" -o "src/main_quicksort.o" "../src/main_quicksort.c"
+../src/main_quicksort.c:14:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main_quicksort.c
+ 
+Building target: quicksort.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main_quicksort.o: In function `main':
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:189: undefined reference to `f_mount'
+makefile:36: recipe for target 'quicksort.elf' failed
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:219: undefined reference to `f_mount'
+collect2: error: ld returned 1 exit status
+make: *** [quicksort.elf] Error 1
 
-11:51:44 Build Finished (took 480ms)
+00:22:15 Build Finished (took 823ms)
 
