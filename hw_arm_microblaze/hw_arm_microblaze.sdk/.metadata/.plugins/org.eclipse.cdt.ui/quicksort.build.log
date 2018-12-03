@@ -1,6 +1,6 @@
-11:51:43 **** Incremental Build of configuration Debug for project quicksort ****
+22:02:25 **** Incremental Build of configuration Debug for project quicksort ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:51:44 Build Finished (took 480ms)
+22:02:25 Build Finished (took 418ms)
 

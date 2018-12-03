@@ -1,21 +1,6 @@
-11:56:07 **** Auto Build of configuration Debug for project kmeans ****
+22:02:21 **** Incremental Build of configuration Debug for project kmeans ****
 make all 
-Building file: ../src/kmeans.c
-Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/kmeans.o" -I../../kmeans_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/kmeans.d" -MT"src/kmeans.o" -o "src/kmeans.o" "../src/kmeans.c"
-Finished building: ../src/kmeans.c
- 
-Building target: kmeans.elf
-Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../kmeans_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "kmeans.elf"  ./src/kmeans.o ./src/timer_c.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lxilffs,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: kmeans.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size kmeans.elf  |tee "kmeans.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 154592	   1532	  13796	 169920	  297c0	kmeans.elf
-Finished building: kmeans.elf.size
- 
+make: Nothing to be done for 'all'.
 
-11:56:08 Build Finished (took 625ms)
+22:02:22 Build Finished (took 471ms)
 

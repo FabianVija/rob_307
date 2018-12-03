@@ -1,0 +1,21 @@
+22:57:30 **** Auto Build of configuration Debug for project diametre ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../diametre_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: diametre.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../diametre_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "diametre.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: diametre.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size diametre.elf  |tee "diametre.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 100804	   1460	   6800	 109064	  1aa08	diametre.elf
+Finished building: diametre.elf.size
+ 
+
+22:57:32 Build Finished (took 2s.369ms)
+

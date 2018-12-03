@@ -1,0 +1,29 @@
+22:36:48 **** Auto Build of configuration Debug for project count ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../count_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:41:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:121:17: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+   TCHAR *Path = "0:/";
+                 ^~~~~
+Finished building: ../src/main.cc
+ 
+Building target: count.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../count_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "count.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: count.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size count.elf  |tee "count.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 128724	   1512	   6100	 136336	  21490	count.elf
+Finished building: count.elf.size
+ 
+
+22:36:50 Build Finished (took 2s.16ms)
+
