@@ -67,20 +67,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_smc_2/microblaze_arm_axi_smc_2.xci">
-          <Proxy FileSetName="microblaze_arm_axi_smc_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_mdm_1_5/microblaze_arm_mdm_1_5.xci">
-          <Proxy FileSetName="microblaze_arm_mdm_1_5"/>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_processing_system7_0_5/microblaze_arm_processing_system7_0_5.xci">
+          <Proxy FileSetName="microblaze_arm_processing_system7_0_5"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_microblaze_0_5/microblaze_arm_microblaze_0_5.xci">
           <Proxy FileSetName="microblaze_arm_microblaze_0_5"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_mdm_1_5/microblaze_arm_mdm_1_5.xci">
+          <Proxy FileSetName="microblaze_arm_mdm_1_5"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_rst_ps7_0_50M_3/microblaze_arm_rst_ps7_0_50M_3.xci">
           <Proxy FileSetName="microblaze_arm_rst_ps7_0_50M_3"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_processing_system7_0_5/microblaze_arm_processing_system7_0_5.xci">
-          <Proxy FileSetName="microblaze_arm_processing_system7_0_5"/>
+        <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_smc_2/microblaze_arm_axi_smc_2.xci">
+          <Proxy FileSetName="microblaze_arm_axi_smc_2"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_arm.bd" FileRelPathName="ip/microblaze_arm_axi_timer_0_6/microblaze_arm_axi_timer_0_6.xci">
           <Proxy FileSetName="microblaze_arm_axi_timer_0_6"/>

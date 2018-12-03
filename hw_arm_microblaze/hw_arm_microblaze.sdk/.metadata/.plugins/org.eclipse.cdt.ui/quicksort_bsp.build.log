@@ -1,4 +1,4 @@
-00:22:07 **** Build of project quicksort_bsp ****
+23:40:52 **** Auto Build of project quicksort_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
 make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -66,5 +66,5 @@ make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling tmrctr
 Finished building libraries
 
-00:22:14 Build Finished (took 6s.794ms)
+23:41:03 Build Finished (took 11s.316ms)
 
