@@ -200,7 +200,7 @@ int main(){
 		//--------------------------------------- Read data
 
 		//printf("reading...\n");
-		//	(fileName);
+		//createVector(fileName);
 		createRandomVector();
 		//printf("reade done\n");
 		//printArr(vector,N_POINTS);
