@@ -1,0 +1,87 @@
+//#include <stdlib.h>
+#include "xparameters.h"
+#include "xdokmean.h"
+#include "xaxidma.h"
+
+#define PCLUS 10
+#define PDSET 11
+#define PNPOI 12
+#define PRESU 13
+#define PNEWC 14
+#define PRESU2 15
+#define PRESU3 16
+#define PRESU4 17
+
+#define N_FEATURES  50
+#define N_CLUSTER 20
+
+#define M4_DONE 7
+#define M4_START 8
+
+XDokmean dokmean;
+XDokmean_Config *dokmean_cfg;
+XAxiDma axiDMA;
+XAxiDma_Config *axiDMA_cfg;
+
+
+int *shared_mem = (int*) 0x40000000;
+
+
+int initPeripherals(){
+
+	dokmean_cfg = XDokmean_LookupConfig(XPAR_XDOKMEAN_0_DEVICE_ID);
+	if(dokmean_cfg){
+		int status = XDokmean_CfgInitialize(&dokmean, dokmean_cfg);
+		if(status != XST_SUCCESS){
+			return 1;
+		}
+	}
+
+	axiDMA_cfg = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	if(axiDMA_cfg){
+		int stat = XAxiDma_CfgInitialize(&axiDMA,axiDMA_cfg);
+		if(stat != XST_SUCCESS){
+			return 1;
+		}
+	}
+
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+	return 0;
+
+}
+
+void kmean(){
+
+	int centroid = shared_mem[PCLUS];
+	int centroid2 =  shared_mem[PRESU3];
+
+	XDokmean_Set_gain(&dokmean, 1);
+	XDokmean_Start(&dokmean);
+
+	XAxiDma_SimpleTransfer(&axiDMA, (u32) centroid, N_CLUSTER*N_FEATURES*sizeof(float),XAXIDMA_DMA_TO_DEVICE );
+	while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
+
+	XAxiDma_SimpleTransfer(&axiDMA, (u32) centroid2, N_CLUSTER*N_FEATURES*sizeof(float),XAXIDMA_DEVICE_TO_DMA );
+	while(XAxiDma_Busy(&axiDMA, XAXIDMA_DEVICE_TO_DMA));
+
+	shared_mem[M4_DONE] = 1;
+	Xil_DCacheFlushRange((u32)shared_mem, 100*sizeof(int));
+}
+int main(){
+	shared_mem[23] = 687;
+	shared_mem[M4_START] = 0;
+	initPeripherals();
+	Xil_DCacheFlushRange((u32)shared_mem, 100*sizeof(int));
+	while(1){
+		int start = shared_mem[M4_START];
+		if(start == 1){
+			break;
+		}
+		usleep(1);
+	}
+	kmean();
+
+	return 0;
+}

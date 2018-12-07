@@ -1,0 +1,21 @@
+00:49:24 **** Build of configuration Debug for project micro4 ****
+make all 
+Building file: ../src/main_m4.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_m4.o" -I../../micro4_bsp/microblaze_3/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_m4.d" -MT"src/main_m4.o" -o "src/main_m4.o" "../src/main_m4.c"
+Finished building: ../src/main_m4.c
+ 
+Building target: micro4.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro4_bsp/microblaze_3/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro4.elf"  ./src/main_m4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro4.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro4.elf  |tee "micro4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15940	   1392	   5068	  22400	   5780	micro4.elf
+Finished building: micro4.elf.size
+ 
+
+00:49:25 Build Finished (took 363ms)
+

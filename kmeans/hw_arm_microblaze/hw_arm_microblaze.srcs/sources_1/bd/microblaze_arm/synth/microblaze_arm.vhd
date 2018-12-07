@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
---Date        : Sat Nov 17 18:27:03 2018
+--Date        : Tue Dec  4 00:24:53 2018
 --Host        : fabian running 64-bit Ubuntu 16.04.5 LTS
 --Command     : generate_target microblaze_arm.bd
 --Design      : microblaze_arm

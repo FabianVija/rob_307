@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/fabian/Documents/ensta/deuxieme/rob307/rob_307/hardware_model/hw_arm_microblaze/hw_arm_microblaze.runs/microblaze_arm_microblaze_0_5_synth_1'
+HD_PWD='/home/fabian/Documents/ensta/deuxieme/rob307/git_kmeans/kmeans/hw_arm_microblaze/hw_arm_microblaze.runs/microblaze_arm_microblaze_0_5_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
