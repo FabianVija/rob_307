@@ -5,7 +5,7 @@
 
 #define N_TESTS 1000
 #define CHUNK 16384
-#define N_POINTS 100
+#define N_POINTS 10000
 #define MAX_VALUE 100
 static int vector[N_POINTS];
 static char fileName[]="data.txt";
@@ -65,13 +65,13 @@ void createVector (const char* nameFile){
 }
 
 void createRandomVector(){
-	printf("creating elements...\n");
+	//printf("creating elements...\n");
 	int i = 0;
 	for (i=0;i<N_POINTS;i++){
 		vector[i]=rand() % MAX_VALUE;
 		//printf ("%d\n", vector[i]);
 	}
-	printf("finished create Elements\n");
+	//printf("finished create Elements\n");
 
 }
 
@@ -110,7 +110,8 @@ int main(){
 		//--------------------------------------- Read data
 
 		//printf("reading...\n");
-		createVector(fileName);
+		//createVector(fileName);
+		createRandomVector();
 		//printf("reade done\n");
 		//printArr(vector,N_POINTS);
 
@@ -141,6 +142,7 @@ int main(){
 
 	printf("Number of tests: %d\n",N_TESTS);
 	printf("Size of vector: %d\n",N_POINTS);
+	printf("Frequence : %ld\n",CLOCKS_PER_SEC);
 	printf("Time of calcul: %f ms\n",calculTime);
 	printf("Clocks of calcul: %f\n", calculClock);
 	printf("Time total: %f ms\n",readTime);
