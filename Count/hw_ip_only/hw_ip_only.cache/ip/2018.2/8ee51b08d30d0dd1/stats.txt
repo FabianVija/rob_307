@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Dec 05 10:43:06 UTC 2018
+VLNV: size1000cpyIOs1:hls:Count:1.0
+SynthRuntime: 82

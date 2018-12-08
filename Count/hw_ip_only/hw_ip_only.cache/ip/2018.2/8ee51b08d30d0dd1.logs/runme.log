@@ -1,0 +1,599 @@
+
+*** Running vivado
+    with args -log count_ip_Count_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_ip_Count_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source count_ip_Count_0_0.tcl -notrace
+Command: synth_design -top count_ip_Count_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1293.805 ; gain = 81.738 ; free physical = 108 ; free virtual = 1905
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'count_ip_Count_0_0' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ip/count_ip_Count_0_0/synth/count_ip_Count_0_0.vhd:116]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Count' declared at '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:12' bound to instance 'U0' of component 'Count' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ip/count_ip_Count_0_0/synth/count_ip_Count_0_0.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'Count' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:77]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_CTRL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:113]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:116]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:317]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:319]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:322]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:325]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:330]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:344]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:347]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Count_CRTL_BUS_s_axi' declared at '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CRTL_BUS_s_axi.vhd:12' bound to instance 'Count_CRTL_BUS_s_axi_U' of component 'Count_CRTL_BUS_s_axi' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'Count_CRTL_BUS_s_axi' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CRTL_BUS_s_axi.vhd:53]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Count_CRTL_BUS_s_axi' (1#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CRTL_BUS_s_axi.vhd:53]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Count_CTRL_BUS_s_axi' declared at '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CTRL_BUS_s_axi.vhd:12' bound to instance 'Count_CTRL_BUS_s_axi_U' of component 'Count_CTRL_BUS_s_axi' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:470]
+INFO: [Synth 8-638] synthesizing module 'Count_CTRL_BUS_s_axi' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CTRL_BUS_s_axi.vhd:68]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Count_CTRL_BUS_s_axi' (2#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_CTRL_BUS_s_axi.vhd:68]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1000 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'Count_arr' declared at '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:76' bound to instance 'arr_U' of component 'Count_arr' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:501]
+INFO: [Synth 8-638] synthesizing module 'Count_arr' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:91]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1000 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'Count_arr_ram' declared at '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:13' bound to instance 'Count_arr_ram_U' of component 'Count_arr_ram' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'Count_arr_ram' [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:31]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Count_arr_ram' (3#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Count_arr' (4#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count_arr.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'Count' (5#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ipshared/408d/hdl/vhdl/Count.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'count_ip_Count_0_0' (6#1) [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ip/count_ip_Count_0_0/synth/count_ip_Count_0_0.vhd:116]
+WARNING: [Synth 8-3331] design Count_arr has unconnected port reset
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design Count_CTRL_BUS_s_axi has unconnected port WSTRB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1340.430 ; gain = 128.363 ; free physical = 167 ; free virtual = 1915
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1340.430 ; gain = 128.363 ; free physical = 168 ; free virtual = 1916
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1340.430 ; gain = 128.363 ; free physical = 168 ; free virtual = 1916
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ip/count_ip_Count_0_0/constraints/Count_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.srcs/sources_1/bd/count_ip/ip/count_ip_Count_0_0/constraints/Count_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.runs/count_ip_Count_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.runs/count_ip_Count_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1691.453 ; gain = 0.000 ; free physical = 106 ; free virtual = 1645
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 186 ; free virtual = 1727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 186 ; free virtual = 1727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.runs/count_ip_Count_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 188 ; free virtual = 1729
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Count_CRTL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Count_CRTL_BUS_s_axi'
+INFO: [Synth 8-5546] ROM "rdata_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Count_CTRL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Count_CTRL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "inStream_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_dest_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_id_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_keep_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_strb_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Count_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Count_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Count_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Count_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 177 ; free virtual = 1722
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 11    
+	                2 Bit    Registers := 20    
+	                1 Bit    Registers := 41    
++---RAMs : 
+	              31K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 11    
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Count_CRTL_BUS_s_axi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Count_CTRL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Count_arr_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              31K Bit         RAMs := 1     
+Module Count 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 11    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[31]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[30]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[29]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[28]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[27]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[26]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[25]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[24]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[23]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[22]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[21]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[20]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[19]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[18]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[17]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[16]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[15]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[14]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[13]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[12]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[11]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[10]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[9]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[8]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[6]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[5]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[4]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[3]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WDATA[2]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WSTRB[3]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WSTRB[2]
+WARNING: [Synth 8-3331] design Count has unconnected port s_axi_CTRL_BUS_WSTRB[1]
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[4]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[5]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[6]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[8]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[9]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[10]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[11]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[12]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[13]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[14]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[15]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[16]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[17]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[18]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[19]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[20]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[21]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[22]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[23]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[24]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[25]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[26]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[27]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[28]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[29]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[30]' (FDE) to 'U0/Count_CTRL_BUS_s_axi_U/rdata_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Count_CTRL_BUS_s_axi_U/rdata_data_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (Count_CTRL_BUS_s_axi_U/rdata_data_reg[31]) is unused and will be removed from module Count.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:53 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 153 ; free virtual = 1706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Count_arr_ram: | ram_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:08 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 109 ; free virtual = 1566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 110 ; free virtual = 1546
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Count_arr_ram: | ram_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
++---------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:09 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 172 ; free virtual = 1574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 171 ; free virtual = 1573
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 171 ; free virtual = 1573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 171 ; free virtual = 1573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 171 ; free virtual = 1573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 170 ; free virtual = 1573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 170 ; free virtual = 1573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    33|
+|2     |LUT1       |     4|
+|3     |LUT2       |    13|
+|4     |LUT3       |   191|
+|5     |LUT4       |    20|
+|6     |LUT5       |    37|
+|7     |LUT6       |    66|
+|8     |RAMB36E1_1 |     1|
+|9     |FDRE       |   623|
+|10    |FDSE       |     5|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------+---------------------+------+
+|      |Instance                   |Module               |Cells |
++------+---------------------------+---------------------+------+
+|1     |top                        |                     |   993|
+|2     |  U0                       |Count                |   993|
+|3     |    Count_CRTL_BUS_s_axi_U |Count_CRTL_BUS_s_axi |   118|
+|4     |    Count_CTRL_BUS_s_axi_U |Count_CTRL_BUS_s_axi |    62|
+|5     |    arr_U                  |Count_arr            |    59|
+|6     |      Count_arr_ram_U      |Count_arr_ram        |    59|
++------+---------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.453 ; gain = 479.387 ; free physical = 170 ; free virtual = 1573
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 1691.453 ; gain = 128.363 ; free physical = 229 ; free virtual = 1632
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:10 . Memory (MB): peak = 1691.461 ; gain = 479.387 ; free physical = 240 ; free virtual = 1643
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:14 . Memory (MB): peak = 1691.461 ; gain = 491.109 ; free physical = 218 ; free virtual = 1632
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/lais/Documentos/ROB307/rob_307/Count/hw_ip_only/hw_ip_only.runs/count_ip_Count_0_0_synth_1/count_ip_Count_0_0.dcp' has been generated.
