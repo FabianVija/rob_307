@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Tue Dec 04 09:28:03 UTC 2018
-VLNV: xilinx.com:hls:quickSortIterative:1.0
-SynthRuntime: 81

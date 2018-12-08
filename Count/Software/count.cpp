@@ -5,7 +5,7 @@
 
 #define N_TESTS 1000
 #define CHUNK 16384
-#define N_POINTS 1000000
+#define N_POINTS 5000000
 #define MAX_VALUE 100
 static int vector[N_POINTS];
 static char fileName[]="data.txt";
