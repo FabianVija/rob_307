@@ -1,0 +1,22 @@
+===================================
+==========   Software   ===========
+===================================
+
+Number of tests: 1000
+Size of vector: 1000000
+Time of calcul: 4.341876 ms
+Clocks of calcul: 4341.876000
+Time total: 20.684941 ms
+Clocks total: 20684.941000
+
+
+===================================
+==========   IP only    ===========
+===================================
+Number of tests: 100
+Size of vector: 1000000
+Frequence : 100000000
+Time of calcul: 7150.470215 ms
+Clocks of calcul: 715046868.290000
+Time total: 7225.486816 ms
+Clocks total: 722548251.420000

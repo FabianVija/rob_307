@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="count_ip_wrapper_hw_platform_0-bmmFile"/>
+	<item value="count_ip_wrapper.bit" key="count_ip_wrapper_hw_platform_0-bitFile"/>
+	<item value="count_ip_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="count_ip_wrapper_hw_platform_0-device"/>
+	<item value="Local" key="count_ip_wrapper_hw_platform_0-target"/>
+	<item value="false" key="count_ip_wrapper_hw_platform_0-partial_bit"/>
+</section>

@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Dec  5 11:39:56 2018
+| Host         : lais-Inspiron-3421 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'count_ip_Count_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of count_ip_Count_0_0 (size1000cpyIOs1:hls:Count:1.0 (Rev. 1812050645)) to Vivado generation flows.
+
