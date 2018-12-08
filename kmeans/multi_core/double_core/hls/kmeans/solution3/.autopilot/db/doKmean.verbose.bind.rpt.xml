@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'doKmean'" level="0">
+<item name = "Date">Sat Dec  8 13:05:07 2018
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">kmeans</item>
+<item name = "Solution">solution3</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.634, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">667022, 670053, 667022, 670053, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_get_cluster_fu_3582">get_cluster, 1229, 1229, 1229, 1229, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- read_p">25000, 25000, 51, 50, 1, 500, yes</column>
+<column name="- read_c">1000, 1000, 51, 50, 1, 20, yes</column>
+<column name="- read_res">500, 500, 2, 1, 1, 500, yes</column>
+<column name="- cluster">616000, 616000, 1232, -, -, 500, no</column>
+<column name="- sumcen">25009, 25009, 60, 50, 1, 500, yes</column>
+<column name="- update">1022, 1022, 73, 50, 1, 20, yes</column>
+<column name="- send">501, 501, 3, 1, 1, 500, yes</column>
+<column name="- send2">3, 3, 3, 1, 1, 2, yes</column>
+<column name="- write_c">1001, 1001, 52, 50, 1, 20, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
