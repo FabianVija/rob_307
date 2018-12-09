@@ -10,10 +10,10 @@
 #include "xparameters.h"
 
 // Constantes
-#define N_TESTS 1000
+#define N_TESTS 1
 #define CHUNK 16384
-#define N_POINTS 500000
-#define N_IP_POINTS 100
+#define N_POINTS 1000000
+#define N_IP_POINTS 10000
 
 // vectors
 int vector[N_POINTS];
@@ -163,6 +163,7 @@ int partition (int* arr, int l, int h){
 			ip_size = size-1-i;
 		else
 			ip_size = N_IP_POINTS;
+		//printf("ip_size=%d\n",ip_size);
 
 		// Start IP
 		XQuicksortiterativev2_Set_size(&sort,ip_size);
@@ -170,8 +171,10 @@ int partition (int* arr, int l, int h){
 		XQuicksortiterativev2_Start(&sort);
 
 		// Update Cash
-		Xil_DCacheFlushRange((u32)&arr[l+i], (ip_size)*sizeof(int));
-		Xil_DCacheFlushRange((u32)ip_vec, ip_size*sizeof(int));
+		Xil_DCacheFlushRange((u32)&vector[l+i], ip_size*sizeof(int));
+		Xil_DCacheFlushRange((u32)ip_vec, (ip_size+1)*sizeof(int));
+		//Xil_DCacheFlushRange((u32)arr, N_POINTS*sizeof(int));
+		//Xil_DCacheFlushRange((u32)ip_vec, (N_IP_POINTS+1)*sizeof(int));
 		//Xil_DCacheFlushRange((u32)&pivot, sizeof(int));
 
 
@@ -180,8 +183,9 @@ int partition (int* arr, int l, int h){
 
 
 		// Send data
-		XAxiDma_SimpleTransfer(&axiDMA, (u32) &arr[l+i], ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
-		while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
+		//printf("start send ip\n");
+		XAxiDma_SimpleTransfer(&axiDMA, (u32) vector+(l+i)*sizeof(int), ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
+		//while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
 		//printf("send ip ok\n");
 
 		// Receive data
@@ -290,7 +294,7 @@ int main(){
         //printf("reading...\n");
         //createVector(fileName);
         createRandomVector();
-        printf("reade done\n");
+        //printf("reade done\n");
         //printArr(vector,N_POINTS);
 
 		//-------------------------------------- Sorting
@@ -299,7 +303,7 @@ int main(){
 		quickSortIterative(vector,0,N_POINTS-1);
 		calculStopTime = XTmrCtr_GetValue(&timer,0);
 		readStopTime = XTmrCtr_GetValue(&timer,0);
-		printf("sort done\n");
+		//printf("sort done\n");
 
 		//-------------------------------------- Time
 

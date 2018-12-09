@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.runs/impl_1'
+HD_PWD='/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,6 +38,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+EAStep vivado -log arm_timer_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source arm_timer_wrapper.tcl -notrace
 
 

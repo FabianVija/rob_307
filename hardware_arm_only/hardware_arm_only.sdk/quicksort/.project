@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>quicksort</name>
-	<comment>Created by SDK v2018.2. quicksort_bsp - ps7_cortexa9_0</comment>
+	<comment></comment>
 	<projects>
-		<project>quicksort_bsp</project>
+		<project>sort_bsp_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

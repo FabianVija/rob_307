@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:quickSortIterativeV2:1.0
-// IP Revision: 1812082026
+// IP Revision: 1812100005
 
 (* X_CORE_INFO = "quickSortIterativeV2,Vivado 2018.2" *)
 (* CHECK_LICENSE_TYPE = "quicksort_ip_quickSortIterativeV2_0_1,quickSortIterativeV2,{}" *)
-(* CORE_GENERATION_INFO = "quicksort_ip_quickSortIterativeV2_0_1,quickSortIterativeV2,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=quickSortIterativeV2,x_ipVersion=1.0,x_ipCoreRevision=1812082026,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=5,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "quicksort_ip_quickSortIterativeV2_0_1,quickSortIterativeV2,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=quickSortIterativeV2,x_ipVersion=1.0,x_ipCoreRevision=1812100005,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=5,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module quicksort_ip_quickSortIterativeV2_0_1 (

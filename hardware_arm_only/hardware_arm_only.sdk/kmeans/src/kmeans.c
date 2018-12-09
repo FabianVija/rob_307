@@ -214,7 +214,7 @@ int main()
 		XTmrCtr_Start(&timer, 0);
 		readStartTime = XTmrCtr_GetValue(&timer,0);
 		read_dataset(data_set);
-		//printf("read done \n");
+		printf("read done \n");
 		//show_dataset(data_set, N_POINTS);
 
 
@@ -222,6 +222,7 @@ int main()
 		kmeans();
 		calculStopTime = XTmrCtr_GetValue(&timer,0);
 		readStopTime = XTmrCtr_GetValue(&timer,0);
+		printf("kmeans done \n");
 
 		f_mount(NULL,0, 0);
 

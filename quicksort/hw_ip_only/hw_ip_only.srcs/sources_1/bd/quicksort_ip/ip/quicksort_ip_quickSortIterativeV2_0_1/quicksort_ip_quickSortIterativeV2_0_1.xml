@@ -1182,11 +1182,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Dec 09 00:07:47 UTC 2018</spirit:value>
+            <spirit:value>Sun Dec 09 23:07:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:0d77b7af</spirit:value>
+            <spirit:value>8:21611617</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1202,11 +1202,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Dec 09 00:07:47 UTC 2018</spirit:value>
+            <spirit:value>Sun Dec 09 23:07:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:0d77b7af</spirit:value>
+            <spirit:value>8:21611617</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1222,11 +1222,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Dec 09 00:07:47 UTC 2018</spirit:value>
+            <spirit:value>Sun Dec 09 23:07:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:2777cb02</spirit:value>
+            <spirit:value>8:3b128fa9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1242,11 +1242,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Dec 09 00:07:47 UTC 2018</spirit:value>
+            <spirit:value>Sun Dec 09 23:07:09 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:2777cb02</spirit:value>
+            <spirit:value>8:3b128fa9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1260,11 +1260,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Dec 09 00:08:29 UTC 2018</spirit:value>
+            <spirit:value>Sun Dec 09 23:07:53 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:0d77b7af</spirit:value>
+            <spirit:value>8:21611617</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1887,7 +1887,7 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativbkb.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativbkb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1895,11 +1895,11 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativeV2_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativeV2_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativeV2.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativeV2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1914,7 +1914,7 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativbkb.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativbkb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1923,12 +1923,12 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativeV2_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativeV2_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/5123/hdl/verilog/quickSortIterativeV2.v</spirit:name>
+        <spirit:name>../../ipshared/1616/hdl/verilog/quickSortIterativeV2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2044,7 +2044,7 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
     <xilinx:coreExtensions>
       <xilinx:displayName>quick-sort-noptm</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1812082026</xilinx:coreRevision>
+      <xilinx:coreRevision>1812100005</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2097,7 +2097,7 @@ m {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format l
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7d119789"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1e3ed29d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6fe84a0a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d365f21b"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f2dd603d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="79823f82"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="70a360a7"/>

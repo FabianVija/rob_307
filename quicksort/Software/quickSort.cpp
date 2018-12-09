@@ -4,8 +4,8 @@
 #include <time.h>
 
 #define CHUNK 16384
-#define N_POINTS 500000
-#define N_TESTS 1000
+#define N_POINTS 1000
+#define N_TESTS 10
 static int vector[N_POINTS];
 static char fileName[]="data10e6.txt";
 
@@ -161,7 +161,7 @@ void printArr( int arr[], int n )
 
 int main(){
 
-	double readTime;
+    double readTime;
     double calculTime;
     double readClock;
     double calculClock;
@@ -195,8 +195,8 @@ int main(){
 
 		//printArr(vector,N_POINTS);
 
-		calculClock += (calculStopTime - calculStartTime);
-		readClock += (readStopTime - readStartTime);
+		calculClock += (double)(calculStopTime - calculStartTime);
+		readClock += (double)(readStopTime - readStartTime);
 		calculTime += ((calculStopTime - calculStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
 		readTime += ((readStopTime - readStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
 	}

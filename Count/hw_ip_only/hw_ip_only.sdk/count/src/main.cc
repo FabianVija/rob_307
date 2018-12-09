@@ -173,7 +173,7 @@ int sendIP(int* arr, int ip_size,int filter){
 }
 
 int doCount (int* arr, int size){
-	int ip_size;
+	unsigned int ip_size;
 	int result=0;
 
     for (int i=0;i<size;i+=N_IP_POINTS){

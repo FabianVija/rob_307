@@ -7,9 +7,9 @@
 #include "xil_printf.h"
 #include "xil_io.h"
 
-#define N_TESTS 1000
+#define N_TESTS 10
 #define CHUNK 16384
-#define N_POINTS 1000000
+#define N_POINTS 10000
 #define MAX_VALUE 100
 static int vector[N_POINTS];
 static char fileName[]="data.txt";
@@ -171,6 +171,7 @@ int main(){
 
 	printf("Number of tests: %d\n",N_TESTS);
 	printf("Size of vector: %d\n",N_POINTS);
+	printf("Frequence : %u ms\n",XPAR_TMRCTR_0_CLOCK_FREQ_HZ);
 	printf("Time of calcul: %f ms\n",calculTime);
 	printf("Clocks of calcul: %f\n", calculClock);
 	printf("Time total: %f ms\n",readTime);

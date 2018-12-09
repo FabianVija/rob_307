@@ -11,7 +11,7 @@
 #define N_TESTS 1
 #define CHUNK 16384
 #define N_FEATURES  50
-#define N_POINTS 20
+#define N_POINTS 500000
 #define N_CLUSTER 20
 #define N_ITERATION 100
 #define N_digits 8
