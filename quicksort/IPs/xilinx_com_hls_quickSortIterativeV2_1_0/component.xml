@@ -798,7 +798,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ea03a1d1</spirit:value>
+            <spirit:value>74d465d5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -814,7 +814,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cd9cd0f1</spirit:value>
+            <spirit:value>67d068b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -830,7 +830,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d07076ea</spirit:value>
+            <spirit:value>44190fb8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -846,7 +846,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e81d07b7</spirit:value>
+            <spirit:value>c4e07a15</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1603,7 +1603,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:file>
         <spirit:name>hdl/vhdl/quickSortIterativeV2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_67b5fb3f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_5c1d78b9</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1718,7 +1718,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">9</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">10</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -1733,19 +1733,19 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>qSort-noptm-S1000</xilinx:displayName>
+      <xilinx:displayName>quick-sort-noptm</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1812081948</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-12-08T18:48:13Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1812082026</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-12-08T19:26:51Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7d119789"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1e3ed29d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="55134908"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6fe84a0a"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f2dd603d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="79823f82"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6722df2a"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="70a360a7"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

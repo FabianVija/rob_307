@@ -10,10 +10,10 @@
 #include "xparameters.h"
 
 // Constantes
-#define N_TESTS 1
+#define N_TESTS 1000
 #define CHUNK 16384
-#define N_POINTS 10000000
-#define N_IP_POINTS 20
+#define N_POINTS 500000
+#define N_IP_POINTS 100
 
 // vectors
 int vector[N_POINTS];
@@ -170,7 +170,7 @@ int partition (int* arr, int l, int h){
 		XQuicksortiterativev2_Start(&sort);
 
 		// Update Cash
-		Xil_DCacheFlushRange((u32)&arr[l+i], (size)*sizeof(int));
+		Xil_DCacheFlushRange((u32)&arr[l+i], (ip_size)*sizeof(int));
 		Xil_DCacheFlushRange((u32)ip_vec, ip_size*sizeof(int));
 		//Xil_DCacheFlushRange((u32)&pivot, sizeof(int));
 

@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
- 118516	   2728	80027872	80149116	4c6fa7c	quicksort.elf
+ 118580	   2728	4028192	4149500	 3f50fc	quicksort.elf

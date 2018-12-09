@@ -4161,3 +4161,1365 @@ arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
  118516	   2728	80027872	80149116	4c6fa7c	quicksort.elf
 Finished building: quicksort.elf.size
  
+00:25:13 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	8027872	8149116	 7c587c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:25:47 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:26:07 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	8031808	8153052	 7c67dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:26:12 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  31872	 153052	  255dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:27:04 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:27:30 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28288	 149468	  247dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:27:33 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:27:54 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  27968	 149148	  2469c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:27:57 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:28:51 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:28:58 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:29:20 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:29:29 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28288	 149468	  247dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:29:46 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  31872	 153052	  255dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:29:59 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  32608	 153788	  258bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:30:34 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  39808	 160988	  274dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:36:25 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	 111808	 233052	  38e5c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:46:28 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	  39808	 161052	  2751c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:46:31 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:46:45 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:46:53 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:47:29 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:47:34 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:47:43 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:49:22 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:49:32 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28992	 150172	  24a9c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:49:41 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:50:24 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28672	 149852	  2495c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:50:49 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:51:02 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28800	 149980	  249dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:51:20 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28992	 150172	  24a9c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:51:26 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:51:42 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  32608	 153788	  258bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:51:55 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  39808	 160988	  274dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:52:31 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:52:33 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:52:50 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:53:05 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36608	 157788	  2685c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:53:21 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:53:40 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:53:56 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:54:45 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:54:59 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	  36192	 157436	  266fc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+00:57:09 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118580	   2728	 108192	 229500	  3807c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:00:44 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118580	   2728	 828192	 949500	  e7cfc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:00:46 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:02:30 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:16:25 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:24:10: fatal error: xil_types.h: No such file or directory
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+01:16:40 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:4:0:
+../../quicksort_bsp/ps7_cortexa9_0/include/ff.h:24:10: fatal error: xil_types.h: No such file or directory
+ #include "xil_types.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+01:17:01 **** Auto Build of project quicksort_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_7/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v3_9/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/quickSortIterativeV2_v1_0/src
+make -C ps7_cortexa9_0/libsrc/quickSortIterativeV2_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_7/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling axidma
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v3_9/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling XilFFs Library
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in ps7_cortexa9_0/libsrc/quickSortIterativeV2_v1_0/src
+make -C ps7_cortexa9_0/libsrc/quickSortIterativeV2_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling quickSortIterativeV2
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Finished building libraries
+01:17:09 **** Auto Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  28992	 150172	  24a9c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:20:56 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:21:07 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:21:20 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  39808	 160988	  274dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:21:50 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36192	 157372	  266bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:22:28 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:26:18 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:26:45 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36224	 157404	  266dc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:27:03 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118452	   2728	  36608	 157788	  2685c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:28:14 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:30:41 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:38:08 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	 108192	 229436	  3803c	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:38:22 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+01:39:43 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118516	   2728	8028192	8149436	 7c59bc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:41:04 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118580	   2728	8028192	8149500	 7c59fc	quicksort.elf
+Finished building: quicksort.elf.size
+ 
+01:53:13 **** Incremental Build of configuration Debug for project quicksort ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../quicksort_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void createVector(const char*)':
+../src/main.cc:88:16: warning: ISO C++ forbids converting a string constant to 'TCHAR* {aka char*}' [-Wwrite-strings]
+  TCHAR *Path = "0:/";
+                ^~~~~
+../src/main.cc:116:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int j = 0; j < n_read; j++){
+                  ~~^~~~~~~~
+../src/main.cc: At global scope:
+../src/main.cc:32:13: warning: 'fileName' defined but not used [-Wunused-variable]
+ static char fileName[]="data10e3.txt";
+             ^~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: quicksort.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/ps7_cortexa9_0/lib -o "quicksort.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: quicksort.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 118580	   2728	4028192	4149500	 3f50fc	quicksort.elf
+Finished building: quicksort.elf.size
+ 

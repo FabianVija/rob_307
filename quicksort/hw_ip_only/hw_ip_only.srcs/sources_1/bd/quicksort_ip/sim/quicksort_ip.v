@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-//Date        : Sat Dec  8 19:50:53 2018
+//Date        : Sun Dec  9 01:07:46 2018
 //Host        : fray-inspirion running 64-bit Ubuntu 16.04.5 LTS
 //Command     : generate_target quicksort_ip.bd
 //Design      : quicksort_ip
@@ -1409,7 +1409,7 @@ module quicksort_ip
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  quicksort_ip_quickSortIterativeV2_0_0 quickSortIterativeV2_0
+  quicksort_ip_quickSortIterativeV2_0_1 quickSortIterativeV2_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .inStream_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA),

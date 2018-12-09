@@ -493,7 +493,7 @@
         <spirit:instanceName>quickSortIterativeV2_0</spirit:instanceName>
         <spirit:componentRef spirit:library="hls" spirit:name="quickSortIterativeV2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">quicksort_ip_quickSortIterativeV2_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">quicksort_ip_quickSortIterativeV2_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>

@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Dec  8 19:51:37 2018
-# Process ID: 4001
+# Start of session at: Sun Dec  9 01:08:30 2018
+# Process ID: 8370
 # Current directory: /home/lais/Documents/ROB307/rob_307/quicksort/hw_ip_only/hw_ip_only.runs/synth_1
 # Command line: vivado -log quicksort_ip_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source quicksort_ip_wrapper.tcl
 # Log file: /home/lais/Documents/ROB307/rob_307/quicksort/hw_ip_only/hw_ip_only.runs/synth_1/quicksort_ip_wrapper.vds

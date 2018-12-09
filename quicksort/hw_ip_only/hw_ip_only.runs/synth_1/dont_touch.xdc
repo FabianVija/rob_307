@@ -31,8 +31,8 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==quicksort_ip_xb
 # IP: bd/quicksort_ip/ip/quicksort_ip_xbar_0/quicksort_ip_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==quicksort_ip_xbar_0 || ORIG_REF_NAME==quicksort_ip_xbar_0} -quiet] -quiet
 
-# IP: bd/quicksort_ip/ip/quicksort_ip_quickSortIterativeV2_0_0/quicksort_ip_quickSortIterativeV2_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==quicksort_ip_quickSortIterativeV2_0_0 || ORIG_REF_NAME==quicksort_ip_quickSortIterativeV2_0_0} -quiet] -quiet
+# IP: bd/quicksort_ip/ip/quicksort_ip_quickSortIterativeV2_0_1/quicksort_ip_quickSortIterativeV2_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==quicksort_ip_quickSortIterativeV2_0_1 || ORIG_REF_NAME==quicksort_ip_quickSortIterativeV2_0_1} -quiet] -quiet
 
 # IP: bd/quicksort_ip/ip/quicksort_ip_auto_pc_1/quicksort_ip_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==quicksort_ip_auto_pc_1 || ORIG_REF_NAME==quicksort_ip_auto_pc_1} -quiet] -quiet

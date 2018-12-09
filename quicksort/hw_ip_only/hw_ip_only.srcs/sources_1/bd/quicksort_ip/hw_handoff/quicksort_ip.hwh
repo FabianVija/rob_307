@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Dec  8 19:50:53 2018" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec  9 01:07:47 2018" VIVADOVERSION="2018.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="quicksort_ip" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -5548,11 +5548,11 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_CTRL_BUS_ADDR_WIDTH" VALUE="5"/>
         <PARAMETER NAME="C_S_AXI_CTRL_BUS_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="quicksort_ip_quickSortIterativeV2_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="quicksort_ip_quickSortIterativeV2_0_1"/>
         <PARAMETER NAME="clk_period" VALUE="5"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="9"/>
+        <PARAMETER NAME="latency" VALUE="10"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S_AXI_CTRL_BUS_BASEADDR" VALUE="0x43C00000"/>

@@ -1,4 +1,4 @@
-20:40:13 **** Incremental Build of configuration Debug for project quicksort ****
+01:53:13 **** Incremental Build of configuration Debug for project quicksort ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -26,9 +26,9 @@ Finished building target: quicksort.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size quicksort.elf  |tee "quicksort.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 118516	   2728	80027872	80149116	4c6fa7c	quicksort.elf
+ 118580	   2728	4028192	4149500	 3f50fc	quicksort.elf
 Finished building: quicksort.elf.size
  
 
-20:40:14 Build Finished (took 271ms)
+01:53:13 Build Finished (took 268ms)
 
