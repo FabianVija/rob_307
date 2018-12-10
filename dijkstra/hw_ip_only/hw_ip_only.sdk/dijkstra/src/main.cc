@@ -91,9 +91,11 @@ int findIndex(int dist[], bool dSet[],int size){
 
 		// Send data
 		XAxiDma_SimpleTransfer(&axiDMA, (u32)&dSet[i], ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
+		while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
+		printf("send ip ok 1\n");
 		XAxiDma_SimpleTransfer(&axiDMA, (u32)&dist[i], ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
-		//while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
-		printf("send ip ok\n");
+		while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
+		printf("send ip ok 2\n");
 
 		// Receive data
 		XAxiDma_SimpleTransfer(&axiDMA, (u32) &ip_index, sizeof(int),XAXIDMA_DEVICE_TO_DMA );

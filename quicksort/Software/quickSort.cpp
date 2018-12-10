@@ -4,7 +4,7 @@
 #include <time.h>
 
 #define CHUNK 16384
-#define N_POINTS 1000
+#define N_POINTS 50000000
 #define N_TESTS 10
 static int vector[N_POINTS];
 static char fileName[]="data10e6.txt";

@@ -12,7 +12,7 @@
 // Constantes
 #define N_TESTS 1
 #define CHUNK 16384
-#define N_POINTS 1000000
+#define N_POINTS 50000000
 #define N_IP_POINTS 10000
 
 // vectors
