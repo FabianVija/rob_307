@@ -10,10 +10,10 @@
 #include "xparameters.h"
 
 // Constants
-#define N_TESTS 100
+#define N_TESTS 1000
 #define CHUNK 16384
-#define N_POINTS 10000000
-#define MAX_VALUE 100
+#define N_POINTS 8000000
+#define MAX_VALUE 10
 #define N_IP_POINTS 1000000
 
 // Data
@@ -192,11 +192,13 @@ int doCount (int* arr, int size){
 		XCount_Start(&count);
 
 		// Update Cash
-		Xil_DCacheFlushRange((u32)&arr[i], (ip_size)*sizeof(int));
+		Xil_DCacheFlushRange((u32)arr, (N_POINTS)*sizeof(int));
+		Xil_DCacheFlushRange((u32)vector, (N_POINTS)*sizeof(int));
 		Xil_DCacheFlushRange((u32)&result_ip, sizeof(int));
+		Xil_DCacheFlushRange((u32)&filter, sizeof(int));
 
 		// Send data
-		XAxiDma_SimpleTransfer(&axiDMA, (u32) &arr[i], ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
+		XAxiDma_SimpleTransfer(&axiDMA, (u32) arr, ip_size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
 		while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
 		//printf("send ip ok\n");
 
@@ -209,6 +211,28 @@ int doCount (int* arr, int size){
 
 		result +=result_ip;
     }
+
+//	// Start IP
+//	XCount_Set_size(&count,size);
+//	XCount_Set_filter(&count,filter);
+//	XCount_Start(&count);
+//
+//	// Update Cash
+//	Xil_DCacheFlushRange((u32)arr, (N_POINTS)*sizeof(int));
+//	Xil_DCacheFlushRange((u32)&result_ip, sizeof(int));
+//	Xil_DCacheFlushRange((u32)&filter, sizeof(int));
+//
+//	// Send data
+//	XAxiDma_SimpleTransfer(&axiDMA, (u32) arr, size*sizeof(int),XAXIDMA_DMA_TO_DEVICE );
+//	while(XAxiDma_Busy(&axiDMA, XAXIDMA_DMA_TO_DEVICE));
+//	//printf("send ip ok\n");
+//
+//	// Receive data
+//	XAxiDma_SimpleTransfer(&axiDMA, (u32) &result_ip, sizeof(int),XAXIDMA_DEVICE_TO_DMA );
+//	while(XAxiDma_Busy(&axiDMA, XAXIDMA_DEVICE_TO_DMA));
+//	//	printf("receive ip ok\n");
+//
+//	Xil_DCacheInvalidateRange((u32) &result_ip, sizeof(int));
 
 	return result;
 }

@@ -10,9 +10,9 @@
 #include "xparameters.h"
 
 // Constants
-#define N_TESTS 100
+#define N_TESTS 10
 #define CHUNK 16384
-#define N_POINTS 10000000
+#define N_POINTS 10000
 #define MAX_VALUE 100
 #define N_IP_POINTS 1000000
 
