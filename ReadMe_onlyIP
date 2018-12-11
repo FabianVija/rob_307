@@ -1,0 +1,40 @@
+- mettre Processeur.
+	- Run automatique : Mètre les sortir 
+	- Changer pour les sorti perfirmante
+		PS-PL configuration
+			HP Slave
+				check AXI HP0
+	- Habilite interruptions
+		Interrupts
+			check fabric interrupts
+			check IRQ_F2P[15:0]
+
+- Mettre ip
+	- add repository in IP catalog
+
+- Mettre axi timer
+
+- Mettre le dma
+	- axi direct memory access
+	- désactiver les scatter gate
+	- Changer width of buffer length register : 23
+	- activer "allow unaligned transfers" dans les deux cas
+
+- Mettre concat
+	- Changer poour 3 entrées
+	- connecter 1 entre avec interruption ip
+	- connecter autres avec introut of DMA
+	- connecter sorti avec IRQ_F2P du processuer
+
+- Tourner connections
+	-2x 
+
+- Connecter DMA avec IP
+	- inStream du IP avec M_AXIS_MM2S du DMA
+	- outStream du IP avec S_AXIS_S2MM du DMA
+
+- Retirer SmastConnection
+- Mettre axi interconnetcion
+	- mettre 2 portes S et 1 M
+	- connecter au deux portes DMA
+	- turner la conection automatique

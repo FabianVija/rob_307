@@ -1,0 +1,660 @@
+
+*** Running vivado
+    with args -log design_1_doKmean_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_doKmean_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_doKmean_0_1.tcl -notrace
+Command: synth_design -top design_1_doKmean_0_1 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16663 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1294.801 ; gain = 82.707 ; free physical = 1542 ; free virtual = 4061
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_doKmean_0_1' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_1/synth/design_1_doKmean_0_1.vhd:99]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:12' bound to instance 'U0' of component 'doKmean' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_1/synth/design_1_doKmean_0_1.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'doKmean' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:58]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:122]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:125]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:325]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:328]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:330]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:337]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:346]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:350]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:356]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:366]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:370]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:374]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:381]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:385]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:411]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:413]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:415]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:417]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_centroid' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:76' bound to instance 'centroid_U' of component 'doKmean_centroid' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:488]
+INFO: [Synth 8-638] synthesizing module 'doKmean_centroid' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:91]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_centroid_ram' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:13' bound to instance 'doKmean_centroid_ram_U' of component 'doKmean_centroid_ram' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'doKmean_centroid_ram' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:31]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+	Parameter MEM_SIZE bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'doKmean_centroid_ram' (1#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'doKmean_centroid' (2#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:91]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 100 - type: integer 
+	Parameter AddressWidth bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_centroid' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_centroid.vhd:76' bound to instance 'result_U' of component 'doKmean_centroid' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:502]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_CRTL_BUS_s_axi' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:12' bound to instance 'doKmean_CRTL_BUS_s_axi_U' of component 'doKmean_CRTL_BUS_s_axi' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:516]
+INFO: [Synth 8-638] synthesizing module 'doKmean_CRTL_BUS_s_axi' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:72]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'doKmean_CRTL_BUS_s_axi' (3#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_CRTL_BUS_s_axi.vhd:72]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_sitofp_32bkb' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_sitofp_32bkb.vhd:11' bound to instance 'doKmean_sitofp_32bkb_U1' of component 'doKmean_sitofp_32bkb' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:548]
+INFO: [Synth 8-638] synthesizing module 'doKmean_sitofp_32bkb' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_sitofp_32bkb.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'doKmean_ap_sitofp_4_no_dsp_32' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/ip/doKmean_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'doKmean_ap_sitofp_4_no_dsp_32_u' of component 'doKmean_ap_sitofp_4_no_dsp_32' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_sitofp_32bkb.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'doKmean_ap_sitofp_4_no_dsp_32' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/ip/doKmean_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/ip/doKmean_ap_sitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'doKmean_ap_sitofp_4_no_dsp_32' (18#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/ip/doKmean_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'doKmean_sitofp_32bkb' (19#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean_sitofp_32bkb.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'doKmean' (20#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'design_1_doKmean_0_1' (21#1) [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_1/synth/design_1_doKmean_0_1.vhd:99]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DATA[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[5]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain has unconnected port B[31]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized3 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1388.426 ; gain = 176.332 ; free physical = 1543 ; free virtual = 4064
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1388.426 ; gain = 176.332 ; free physical = 1544 ; free virtual = 4064
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1388.426 ; gain = 176.332 ; free physical = 1544 ; free virtual = 4064
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 149 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_1/constraints/doKmean_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ip/design_1_doKmean_0_1/constraints/doKmean_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FDE => FDRE: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1731.176 ; gain = 1.000 ; free physical = 1259 ; free virtual = 3780
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1345 ; free virtual = 3866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1345 ; free virtual = 3866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1347 ; free virtual = 3867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'doKmean_CRTL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'doKmean_CRTL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_486_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_253_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_326_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_fu_247_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "inStream_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_dest_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_id_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_keep_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_strb_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inStream_V_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_dest_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_id_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_keep_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_strb_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "outStream_V_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "valOut_last_V_fu_503_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_295_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'doKmean_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'doKmean_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:41 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1336 ; free virtual = 3857
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized4) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized14) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized15) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized15) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "tmp_fu_247_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "exitcond1_fu_253_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_326_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_486_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_8_fu_295_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "valOut_last_V_fu_503_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:2161]
+WARNING: [Synth 8-6014] Unused sequential element tmp_1_reg_633_reg was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:513]
+WARNING: [Synth 8-6014] Unused sequential element gain_read_reg_534_reg was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:1237]
+WARNING: [Synth 8-6014] Unused sequential element p_Val2_4_reg_628_reg was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:1489]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:2161]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:2161]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:2161]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.srcs/sources_1/bd/design_1/ipshared/6252/hdl/vhdl/doKmean.vhd:513]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+INFO: [Synth 8-3332] Sequential element (FIX_TO_FLT_OP.SPD.OP/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_6_viv.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[47]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[46]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[45]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[44]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[43]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[42]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[41]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[40]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[39]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[38]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[37]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[36]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[35]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[34]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[33]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[32]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[31]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[30]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[29]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[28]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[27]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[26]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[25]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[24]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[23]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[22]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[21]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[20]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[19]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[18]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[17]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[16]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[15]) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[47]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[46]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[45]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[44]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[43]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[42]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[41]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[40]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[39]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[38]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[37]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[36]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[35]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[34]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[33]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[32]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[31]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[30]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[29]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[28]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[27]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[26]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[25]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[24]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[23]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[22]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[21]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[20]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[19]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[18]__0) is unused and will be removed from module doKmean.
+WARNING: [Synth 8-3332] Sequential element (tmp_1_reg_633_reg[17]__0) is unused and will be removed from module doKmean.
+INFO: [Synth 8-3886] merging instance 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'U0/doKmean_sitofp_32bkb_U1/doKmean_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sh_assign_1_reg_622_reg[8] )
+WARNING: [Synth 8-3332] Sequential element (sh_assign_1_reg_622_reg[8]) is unused and will be removed from module doKmean.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1318 ; free virtual = 3842
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/i_0/centroid_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_1/result_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_1/result_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1141 ; free virtual = 3656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1129 ; free virtual = 3642
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/doKmean_sitofp_32bkb_U1/dout_r_reg[28]' (FDE) to 'U0/doKmean_sitofp_32bkb_U1/dout_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_s_reg_581_reg[28]' (FDE) to 'U0/tmp_s_reg_581_reg[29]'
+INFO: [Synth 8-4480] The timing for the instance U0/centroid_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/result_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/result_U/doKmean_centroid_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1138 ; free virtual = 3650
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1120 ; free virtual = 3639
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1119 ; free virtual = 3638
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1116 ; free virtual = 3636
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1116 ; free virtual = 3636
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1115 ; free virtual = 3635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1115 ; free virtual = 3635
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    12|
+|2     |DSP48E1    |     2|
+|3     |DSP48E1_1  |     1|
+|4     |LUT1       |     6|
+|5     |LUT2       |    99|
+|6     |LUT3       |   306|
+|7     |LUT4       |    73|
+|8     |LUT5       |   128|
+|9     |LUT6       |   137|
+|10    |MUXCY      |    77|
+|11    |MUXF7      |     3|
+|12    |RAMB18E1   |     1|
+|13    |RAMB18E1_1 |     1|
+|14    |SRL16E     |     1|
+|15    |XORCY      |    56|
+|16    |FDE        |    16|
+|17    |FDRE       |   719|
+|18    |FDSE       |     3|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1115 ; free virtual = 3635
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 162 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 1731.176 ; gain = 176.332 ; free physical = 1188 ; free virtual = 3708
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:57 . Memory (MB): peak = 1731.176 ; gain = 519.082 ; free physical = 1188 ; free virtual = 3708
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 169 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 20 instances
+  FDE => FDRE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 176 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1761.207 ; gain = 560.859 ; free physical = 1188 ; free virtual = 3709
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/ensta/deuxieme/simple_axistream/viv/kmean/kmean.runs/design_1_doKmean_0_1_synth_1/design_1_doKmean_0_1.dcp' has been generated.

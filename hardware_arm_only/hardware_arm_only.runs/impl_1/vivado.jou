@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov 26 17:50:26 2018
-# Process ID: 11390
-# Current directory: /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.runs/impl_1
-# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.runs/impl_1/design_1_wrapper.vdi
-# Journal file: /home/lais/Documentos/ROB307/rob_307/quicksort/hardware_arm_only/hardware_arm_only.runs/impl_1/vivado.jou
+# Start of session at: Sun Dec  9 09:25:43 2018
+# Process ID: 3074
+# Current directory: /home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.runs/impl_1
+# Command line: vivado -log arm_timer_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arm_timer_wrapper.tcl -notrace
+# Log file: /home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.runs/impl_1/arm_timer_wrapper.vdi
+# Journal file: /home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
-source design_1_wrapper.tcl -notrace
+source arm_timer_wrapper.tcl -notrace

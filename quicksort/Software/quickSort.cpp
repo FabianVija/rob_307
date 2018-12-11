@@ -4,8 +4,8 @@
 #include <time.h>
 
 #define CHUNK 16384
-#define N_POINTS 1000000
-#define N_TESTS 1000
+#define N_POINTS 50000000
+#define N_TESTS 10
 static int vector[N_POINTS];
 static char fileName[]="data10e6.txt";
 
@@ -64,14 +64,14 @@ void createVector (const char* nameFile){
 
 void createRandomVector(){
 	int max_val = 100000000;
-	printf("creating elements...\n");
+	//printf("creating elements...\n");
 
 	int i = 0;
 	for (i=0;i<N_POINTS;i++){
 		vector[i]=rand() % max_val;
 		//printf ("%d\n", vector[i]);
 	}
-	printf("finished create Elements\n");
+	//printf("finished create Elements\n");
 
 }
 
@@ -161,7 +161,7 @@ void printArr( int arr[], int n )
 
 int main(){
 
-	double readTime;
+    double readTime;
     double calculTime;
     double readClock;
     double calculClock;
@@ -177,7 +177,8 @@ int main(){
 		//--------------------------------------- Read data
 
 		//printf("reading...\n");
-		createVector(fileName);
+		//createVector(fileName);
+		createRandomVector();
 		//printf("reade done\n");
 		//printArr(vector,N_POINTS);
 
@@ -194,8 +195,8 @@ int main(){
 
 		//printArr(vector,N_POINTS);
 
-		calculClock += (calculStopTime - calculStartTime);
-		readClock += (readStopTime - readStartTime);
+		calculClock += (double)(calculStopTime - calculStartTime);
+		readClock += (double)(readStopTime - readStartTime);
 		calculTime += ((calculStopTime - calculStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
 		readTime += ((readStopTime - readStartTime) / (CLOCKS_PER_SEC / (double) 1000.0));
 	}

@@ -3,22 +3,26 @@
 	<section name="CleanDialogSettings">
 		<item value="563" key="DIALOG_WIDTH"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
-		<item value="411" key="DIALOG_HEIGHT"/>
-		<item value="434" key="DIALOG_X_ORIGIN"/>
-		<item value="155" key="DIALOG_Y_ORIGIN"/>
+		<item value="383" key="DIALOG_HEIGHT"/>
+		<item value="551" key="DIALOG_X_ORIGIN"/>
+		<item value="221" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/lais/Documentos/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/kmeans_bsp"/>
-			<item value="/home/lais/Documentos/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/kmeans"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/diameter"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/diameter_bsp"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/dijkstra"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/kmeans"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/quicksort_bsp"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/quicksort"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/count_bsp"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/count"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 </section>

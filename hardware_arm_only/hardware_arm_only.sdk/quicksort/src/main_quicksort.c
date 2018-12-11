@@ -8,7 +8,7 @@
 #include "xtmrctr.h"
 
 #define CHUNK 16384
-#define N_POINTS 1000
+#define N_POINTS 100000000
 #define N_TESTS 1
 static int vector[N_POINTS];
 static char fileName[]="data10e3.txt";
@@ -17,6 +17,19 @@ static FATFS  FS_instance;
 static FIL file_in;
 
 void createVector (const char* nameFile){
+
+	//--------------------------------------- Card
+	// mount sd card
+	TCHAR *Path = "0:/";
+	FRESULT  result;
+	result = f_mount(&FS_instance,Path, 0);
+	if (result != FR_OK) {
+		printf("Cannot mount sd\n");
+		return EXIT_FAILURE;
+	}
+	//printf("sd card ok \n");
+
+
 	FRESULT f_in;
     f_in = f_open(&file_in, nameFile,FA_READ);
 
@@ -66,18 +79,21 @@ void createVector (const char* nameFile){
 
 	f_close(&file_in);
 	free (buf);
+
+
+	f_mount(NULL,0, 0);
 }
 
 void createRandomVector(){
 	int max_val = 100000000;
-	printf("creating elements...\n");
+	//printf("creating elements...\n");
 
 	int i = 0;
 	for (i=0;i<N_POINTS;i++){
 		vector[i]=rand() % max_val;
 		//printf ("%d\n", vector[i]);
 	}
-	printf("finished create Elements\n");
+	//printf("finished create Elements\n");
 
 }
 
@@ -182,16 +198,6 @@ int main(){
 
 	int i;
 	for (i=0;i<N_TESTS;i++){
-		//--------------------------------------- Card
-		// mount sd card
-		TCHAR *Path = "0:/";
-		FRESULT  result;
-		result = f_mount(&FS_instance,Path, 0);
-		if (result != FR_OK) {
-			printf("Cannot mount sd\n");
-			return EXIT_FAILURE;
-		}
-		//printf("sd card ok \n");
 
 		printf("n=%d\n",i);
 		XTmrCtr_Reset(&timer, 0);
@@ -216,7 +222,6 @@ int main(){
 
 		//-------------------------------------- Time
 		//printArr(vector,N_POINTS);
-		f_mount(NULL,0, 0);
 
 
 		XTmrCtr_Stop(&timer, 0);
@@ -234,6 +239,7 @@ int main(){
 
 	printf("Number of tests: %d\n",N_TESTS);
 	printf("Size of vector: %d\n",N_POINTS);
+	printf("Frequence : %u ms\n",XPAR_TMRCTR_0_CLOCK_FREQ_HZ);
 	printf("Time of calcul: %f ms\n",calculTime);
 	printf("Clocks of calcul: %f\n", calculClock);
 	printf("Time total: %f ms\n",readTime);

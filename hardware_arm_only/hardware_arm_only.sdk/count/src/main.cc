@@ -7,9 +7,9 @@
 #include "xil_printf.h"
 #include "xil_io.h"
 
-#define N_TESTS 1000
+#define N_TESTS 10
 #define CHUNK 16384
-#define N_POINTS 100
+#define N_POINTS 10000
 #define MAX_VALUE 100
 static int vector[N_POINTS];
 static char fileName[]="data.txt";
@@ -20,6 +20,18 @@ static FATFS  FS_instance;
 static FIL file_in;
 
 void createVector (const char* nameFile){
+	//--------------------------------------- Card
+	// mount sd card
+	TCHAR *Path = "0:/";
+	FRESULT  result;
+	result = f_mount(&FS_instance,Path, 0);
+	if (result != FR_OK) {
+		printf("Cannot mount sd\n");
+		//return EXIT_FAILURE;
+	}
+	//printf("sd card ok \n");
+
+
 	FRESULT f_in;
     f_in = f_open(&file_in, nameFile,FA_READ);
 
@@ -69,6 +81,8 @@ void createVector (const char* nameFile){
 
 	f_close(&file_in);
 	free (buf);
+
+	f_mount(NULL,0, 0);
 }
 
 void createRandomVector(){
@@ -116,17 +130,6 @@ int main(){
 
 	int i,count;
 	for (i=0;i<N_TESTS;i++){
-		//--------------------------------------- Card
-		// mount sd card
-		TCHAR *Path = "0:/";
-		FRESULT  result;
-		result = f_mount(&FS_instance,Path, 0);
-		if (result != FR_OK) {
-			printf("Cannot mount sd\n");
-			return EXIT_FAILURE;
-		}
-		//printf("sd card ok \n");
-
 		printf("n=%d\n",i);
 		XTmrCtr_Reset(&timer, 0);
 		XTmrCtr_Start(&timer, 0);
@@ -147,13 +150,11 @@ int main(){
 		calculStopTime = XTmrCtr_GetValue(&timer,0);
 		readStopTime = XTmrCtr_GetValue(&timer,0);
 		//printf("count done\n");
-		f_mount(NULL,0, 0);
 
 		//-------------------------------------- Time
 
 		// print result
 		//printf("count = %d\n",count);
-		f_mount(NULL,0, 0);
 
 		XTmrCtr_Stop(&timer, 0);
 
@@ -170,6 +171,7 @@ int main(){
 
 	printf("Number of tests: %d\n",N_TESTS);
 	printf("Size of vector: %d\n",N_POINTS);
+	printf("Frequence : %u ms\n",XPAR_TMRCTR_0_CLOCK_FREQ_HZ);
 	printf("Time of calcul: %f ms\n",calculTime);
 	printf("Clocks of calcul: %f\n", calculClock);
 	printf("Time total: %f ms\n",readTime);
