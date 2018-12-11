@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;arm_app/src/count,h&apos; to &apos;count.h&apos;" description="Rename resource &apos;count,h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/count,h" name="count.h" stamp="1544292584840" updateReferences="true"/>
+</session>

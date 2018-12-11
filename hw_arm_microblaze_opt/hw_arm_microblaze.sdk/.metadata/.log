@@ -1,0 +1,1190 @@
+!SESSION 2018-12-11 04:38:17.963 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk
+
+This is a continuation of log file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/.metadata/.bak_0.log
+Created Time: 2018-12-11 05:08:00.543
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.544
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.552
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.552
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.576
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.576
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.587
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.588
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.615
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.626
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.626
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.653
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.653
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.661
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.662
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.691
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.691
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.700
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.700
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.732
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.733
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.744
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248686086]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.744
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.769
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248686086" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.770
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248686086" && level == 0}], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.794
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248686086" && level == 0}], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.795
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.796
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.796
+!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.798
+!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.798
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 0], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.831
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 0], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.832
+!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.890
+!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_5]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.891
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.892
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.893
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 0], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.937
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 0], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.938
+!MESSAGE XSCT Command: [stop], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.940
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:00.940
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.250
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.250
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.258
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.259
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.260
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.261
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.309
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.309
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.341
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.342
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.407
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.407
+!MESSAGE XSCT Command: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra/Debug/dijkstra.elf], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.780
+!MESSAGE XSCT command with result: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra/Debug/dijkstra.elf], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.781
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.782
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.788
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.835
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248686086"} -index 1], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.835
+!MESSAGE XSCT Command: [con], Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.847
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.848
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-561
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:08:01.858
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-561
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:53.289
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:56.226
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:56.237
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:56.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:56.240
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:10:56.241
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp/system.mss], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.667
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -sw dijkstra_bsp_0 -dir /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0 -processor microblaze_0 -os standalone], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.685
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -sw dijkstra_bsp_0 -dir /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0 -processor microblaze_0 -os standalone], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.854
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.856
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.857
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.860
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-12-11 05:11:15.864
+!MESSAGE Indexed 'dijkstra_bsp_0' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.886
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:15.892
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_m_axi_gp0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.004
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.006
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.006
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.008
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.020
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.021
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.069
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.070
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.479
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.487
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.489
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.495
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.495
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.501
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.501
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.510
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.514
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.522
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_m_axi_gp0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.525
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.526
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.728
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.730
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.730
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.732
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.789
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.814
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"microblaze_0": {"archiver": {"category": "",
+"value": "mb-ar",
+"default": "mb-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "mb-gcc",
+"default": "mb-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"default": "-ffunction-sections -fdata-sections -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"xmdstub_peripheral": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Debug peripheral to be used with xmdstub",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.872
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.874
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.874
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.878
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.930
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:16.935
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_m_axi_gp0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.524
+!MESSAGE XSCT Command: [::hsi::utils::update_mss -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mss /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.527
+!MESSAGE XSCT command with result: [::hsi::utils::update_mss -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mss /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.539
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.541
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.570
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.580
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.580
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.602
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.604
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.666
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.996
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.997
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:19.997
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.001
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.013
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.016
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.073
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.081
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.115
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.119
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.125
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.128
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.129
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.132
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.136
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.139
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.145
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_m_axi_gp0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.147
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:20.148
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/dijkstra_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:21.794
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.258
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.265
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.266
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.274
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.278
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.284
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.302
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.310
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.310
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.315
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.322
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.329
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.338
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.343
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.353
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.360
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.365
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.371
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.372
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.379
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.385
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.392
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.395
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.405
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.405
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.405
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.407
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.412
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.418
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.895
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.903
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:22.904
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.183
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.183
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.184
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.945
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.952
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:23.952
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.390
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.397
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.398
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.984
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.990
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:24.990
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.373
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.380
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.381
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.663
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.669
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.670
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.724
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.730
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:25.730
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.226
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.233
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.234
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.693
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.698
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:26.699
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:27.000
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-11 05:11:27.043
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.861
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.864
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.864
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.866
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.891
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.896
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_m_axi_gp0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.977
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.979
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.979
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.981
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.990
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:43.992
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:44.033
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:11:44.034
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze_opt/hw_arm_microblaze.sdk/standalone_bsp_0/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.core.resources 4 368 2018-12-11 05:11:51.274
+!MESSAGE Resource '/dijkstra_bsp' does not exist.
+
+!ENTRY com.xilinx.sdk.utils 1 0 2018-12-11 05:45:49.786
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:45:49.794
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-612
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-11 05:45:49.798
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [{Format=channel "tcfchan#6" closed, Time=1544503549797, Code=1}, ]. Thread: Thread-612

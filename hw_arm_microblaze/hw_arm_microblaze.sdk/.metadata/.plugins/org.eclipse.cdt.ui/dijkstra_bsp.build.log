@@ -1,4 +1,4 @@
-23:39:07 **** Build of project dijkstra_bsp ****
+20:55:18 **** Build of project dijkstra_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
 make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -25,6 +25,7 @@ make -C microblaze_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=/bin/sh" "COMPILE
 Running Make libs in microblaze_0/libsrc/ddrps_v1_0/src
 make -C microblaze_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling ddrps
+mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/qspips_v3_4/src
 make -C microblaze_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 Compiling qspips
@@ -60,5 +61,5 @@ make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling tmrctr
 Finished building libraries
 
-23:39:18 Build Finished (took 10s.647ms)
+20:55:24 Build Finished (took 5s.529ms)
 

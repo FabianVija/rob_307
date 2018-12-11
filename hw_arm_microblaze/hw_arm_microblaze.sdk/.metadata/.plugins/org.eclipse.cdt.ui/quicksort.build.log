@@ -1,4 +1,4 @@
-23:41:04 **** Auto Build of configuration Debug for project quicksort ****
+20:55:38 **** Build of configuration Debug for project quicksort ****
 make all 
 Building file: ../src/main_quicksort.c
 Invoking: MicroBlaze gcc compiler
@@ -10,15 +10,13 @@ Finished building: ../src/main_quicksort.c
  
 Building target: quicksort.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-Finished building target: quicksort.elf
- 
-Invoking: MicroBlaze Print Size
-mb-size quicksort.elf  |tee "quicksort.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 119460	   1496	   9140	 130096	  1fc30	quicksort.elf
-Finished building: quicksort.elf.size
- 
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../quicksort_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quicksort.elf"  ./src/main_quicksort.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main_quicksort.o: In function `main':
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:189: undefined reference to `f_mount'
+/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/quicksort/Debug/../src/main_quicksort.c:219: undefined reference to `f_mount'
+makefile:36: recipe for target 'quicksort.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [quicksort.elf] Error 1
 
-23:41:04 Build Finished (took 765ms)
+20:55:38 Build Finished (took 625ms)
 

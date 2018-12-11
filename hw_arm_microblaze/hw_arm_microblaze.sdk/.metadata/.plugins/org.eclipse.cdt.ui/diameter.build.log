@@ -1,4 +1,4 @@
-23:22:19 **** Build of configuration Debug for project diameter ****
+20:55:11 **** Build of configuration Debug for project diameter ****
 make all 
 Building file: ../src/main.cc
 Invoking: MicroBlaze g++ compiler
@@ -17,5 +17,5 @@ mb-size diameter.elf  |tee "diameter.elf.size"
 Finished building: diameter.elf.size
  
 
-23:22:20 Build Finished (took 1s.706ms)
+20:55:12 Build Finished (took 828ms)
 
