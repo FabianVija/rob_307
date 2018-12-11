@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "doKmean",
+          "label": "update",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "sumcen",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "cluster",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "read_c",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "read_p",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        }
+      ]
+    }]}

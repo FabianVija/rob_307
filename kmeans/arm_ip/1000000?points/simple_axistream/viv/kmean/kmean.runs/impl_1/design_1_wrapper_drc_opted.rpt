@@ -1,0 +1,704 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri Nov 30 00:56:14 2018
+| Host         : fabian running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 132
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached                                         | 1          |
+| DPIP-1    | Warning  | Input pipelining                                                  | 28         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 10         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 55         |
+| REQP-1839 | Warning  | RAMB36 async control check                                        | 20         |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 9          |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 1          |
+| REQP-181  | Advisory | writefirst                                                        | 2          |
+| REQP-1725 | Advisory | DSP_Abus_sign_bit_alert                                           | 6          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_100_fu_11673_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_100_fu_11673_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_107_fu_11683_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_107_fu_11683_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_109_fu_11693_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_109_fu_11693_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_116_fu_11703_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_116_fu_11703_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_118_fu_11713_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_118_fu_11713_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_125_fu_11723_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_125_fu_11723_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_127_fu_11733_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_127_fu_11733_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_134_fu_11743_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_134_fu_11743_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_136_fu_11753_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_136_fu_11753_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_143_fu_11763_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_143_fu_11763_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_145_fu_11773_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_145_fu_11773_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_152_fu_11783_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_152_fu_11783_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_154_fu_11793_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_154_fu_11793_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_161_fu_11803_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_161_fu_11803_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_163_fu_11813_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_163_fu_11813_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_170_fu_11823_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_170_fu_11823_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_172_fu_11833_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_172_fu_11833_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_179_fu_11843_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_179_fu_11843_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_17_reg_13926_reg multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_17_reg_13926_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_181_fu_11853_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_181_fu_11853_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_187_fu_11863_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_187_fu_11863_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#29 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_188_fu_11873_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_188_fu_11873_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#30 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_189_fu_11883_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_189_fu_11883_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#31 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_190_fu_11893_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_190_fu_11893_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#32 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_191_fu_11903_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_191_fu_11903_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#33 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_192_fu_11913_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_192_fu_11913_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#34 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_193_fu_11923_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_193_fu_11923_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#35 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_194_fu_11933_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_194_fu_11933_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#36 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_195_fu_11943_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_195_fu_11943_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#37 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_196_fu_11953_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_196_fu_11953_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#38 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_197_fu_11963_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_197_fu_11963_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#39 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_26_fu_11503_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_26_fu_11503_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#40 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_28_fu_11513_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_28_fu_11513_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#41 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_35_fu_11523_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_35_fu_11523_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#42 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_37_fu_11533_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_37_fu_11533_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#43 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_44_fu_11543_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_44_fu_11543_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#44 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_46_fu_11553_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_46_fu_11553_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#45 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_53_fu_11563_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_53_fu_11563_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#46 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_55_fu_11573_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_55_fu_11573_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#47 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_62_fu_11583_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_62_fu_11583_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#48 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_64_fu_11593_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_64_fu_11593_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#49 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_71_fu_11603_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_71_fu_11603_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#50 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_73_fu_11613_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_73_fu_11613_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#51 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_80_fu_11623_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_80_fu_11623_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#52 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_82_fu_11633_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_82_fu_11633_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#53 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_89_fu_11643_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_89_fu_11643_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#54 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_91_fu_11653_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_91_fu_11653_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#55 Warning
+MREG Output pipelining  
+DSP design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_98_fu_11663_p2 multiplier stage design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/tmp_98_fu_11663_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[12] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[12]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[12] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[12]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[12] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[12]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[12] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[12]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[12] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[12]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[13] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[13]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[13] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[13]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[13] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[13]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[13] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[13]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[13] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[13]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[14] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[14]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[14] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[14]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[14] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[14]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[14] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[14]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[14] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[14]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[15] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[15]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[15] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[15]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[15] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[15]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[15] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[15]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0 has an input control pin design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ram_reg_0_0/ADDRARDADDR[15] (net: design_1_i/doKmean_0/U0/points_U/doKmean_points_ram_U/ADDRARDADDR[15]) which is driven by a register (design_1_i/axi_interconnect_0/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fmul_32nseOg_U5/doKmean_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1725#1 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U38/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#2 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/doKmean_fadd_32nsdEe_U39/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#3 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fadd_32nsdEe_U4/doKmean_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#4 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U1/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#5 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_faddfsub_bkb_U3/doKmean_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#6 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_i/doKmean_0/U0/grp_get_cluster_fu_5472/doKmean_fsub_32nscud_U2/doKmean_ap_fsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+

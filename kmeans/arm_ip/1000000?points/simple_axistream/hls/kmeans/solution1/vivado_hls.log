@@ -1,0 +1,31 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vivado/2018.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'fabian' on host 'fabian' (Linux_x86_64 version 4.15.0-39-generic) on Thu Nov 29 22:14:00 CET 2018
+INFO: [HLS 200-10] On os Ubuntu 16.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/solution1'
+INFO: [HLS 200-10] Creating and opening project '/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/solution1/kmeans'.
+WARNING: [HLS 200-40] Cannot find design file 'kmeans/kmeans.h'
+WARNING: [HLS 200-40] Cannot find design file 'kmeans/kmeans.cpp'
+WARNING: [HLS 200-40] Cannot find test bench file 'kmeans/test_kmeans.cpp'
+WARNING: [HLS 200-40] Cannot find test bench file 'kmeans/twentp.csv'
+INFO: [HLS 200-10] Creating and opening solution '/home/fabian/Documents/ensta/deuxieme/simple_axistream/hls/kmeans/solution1/kmeans/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+./kmeans/solution1/directives.tcl can't be opened.
+couldn't read file "./kmeans/solution1/directives.tcl": no such file or directory
+    while executing
+"source "./kmeans/solution1/directives.tcl""
+    (file "aaaa.tcl" line 15)
+    invoked from within
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [Common 17-206] Exiting vivado_hls at Thu Nov 29 22:14:01 2018...

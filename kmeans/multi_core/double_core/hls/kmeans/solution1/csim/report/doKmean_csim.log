@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../kmeans.cpp in debug mode
+   Generating csim.exe
+res={12,7,8,0,17,18,1,9,15,6,10,14,5,4,19,3,13,2,16,11} 
+end : 1 ,end : 1 ,
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
