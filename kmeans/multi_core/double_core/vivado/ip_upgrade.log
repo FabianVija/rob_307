@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Dec  8 12:39:21 2018
+| Host         : fabian running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_doKmean_3_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_doKmean_3_1 (xilinx.com:hls:doKmean:1.0) from (Rev. 1812081138) to (Rev. 1812081233)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Dec  8 12:39:21 2018
+| Host         : fabian running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_doKmean_2_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_doKmean_2_1 (xilinx.com:hls:doKmean:1.0) from (Rev. 1812081138) to (Rev. 1812081233)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Dec  8 12:39:21 2018
+| Host         : fabian running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_doKmean_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_doKmean_1_1 (xilinx.com:hls:doKmean:1.0) from (Rev. 1812081138) to (Rev. 1812081233)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Dec  8 12:39:21 2018
+| Host         : fabian running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_doKmean_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_doKmean_0_1 (xilinx.com:hls:doKmean:1.0) from (Rev. 1812081138) to (Rev. 1812081233)
+

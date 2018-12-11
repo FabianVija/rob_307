@@ -1,0 +1,21 @@
+12:17:46 **** Auto Build of configuration Debug for project micro3 ****
+make all 
+Building file: ../src/main_m3.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_m3.o" -I../../micro3_bsp/microblaze_2/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_m3.d" -MT"src/main_m3.o" -o "src/main_m3.o" "../src/main_m3.c"
+Finished building: ../src/main_m3.c
+ 
+Building target: micro3.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../micro3_bsp/microblaze_2/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro3.elf"  ./src/main_m3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro3.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro3.elf  |tee "micro3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15928	   1392	   4040	  21360	   5370	micro3.elf
+Finished building: micro3.elf.size
+ 
+
+12:17:46 Build Finished (took 403ms)
+

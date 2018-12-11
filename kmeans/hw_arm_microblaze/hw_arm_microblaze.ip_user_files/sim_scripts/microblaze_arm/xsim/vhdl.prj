@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/microblaze_arm/ip/microblaze_arm_microblaze_0_5/sim/microblaze_arm_microblaze_0_5.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_mdm_1_5/sim/microblaze_arm_mdm_1_5.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_rst_ps7_0_50M_3/sim/microblaze_arm_rst_ps7_0_50M_3.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_axi_smc_2/bd_0/ip/ip_1/sim/bd_5a27_psr_aclk_0.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_axi_smc_2/sim/microblaze_arm_axi_smc_2.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_axi_timer_0_6/sim/microblaze_arm_axi_timer_0_6.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_dlmb_v10_5/sim/microblaze_arm_dlmb_v10_5.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_ilmb_v10_5/sim/microblaze_arm_ilmb_v10_5.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_dlmb_bram_if_cntlr_5/sim/microblaze_arm_dlmb_bram_if_cntlr_5.vhd" \
+"../../../bd/microblaze_arm/ip/microblaze_arm_ilmb_bram_if_cntlr_5/sim/microblaze_arm_ilmb_bram_if_cntlr_5.vhd" \
+"../../../bd/microblaze_arm/sim/microblaze_arm.vhd" \
+
+nosort

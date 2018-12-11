@@ -1,0 +1,6 @@
+02:30:50 **** Incremental Build of configuration Debug for project kmeans ****
+make all 
+make: Nothing to be done for 'all'.
+
+02:30:50 Build Finished (took 314ms)
+

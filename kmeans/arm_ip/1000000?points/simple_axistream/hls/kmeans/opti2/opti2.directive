@@ -1,0 +1,30 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="doKmean" label="update" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="doKmean" label="sumcen" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="doKmean" label="cluster" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="doKmean" label="read_c" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="doKmean" label="read_p" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="get_cluster" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="centroids" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="doKmean" label="send" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

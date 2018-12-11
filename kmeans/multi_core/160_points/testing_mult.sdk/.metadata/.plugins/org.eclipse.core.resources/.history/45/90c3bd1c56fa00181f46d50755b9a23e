@@ -1,0 +1,97 @@
+//#include <stdlib.h>
+#include "xparameters.h"
+#include "xdokmean.h"
+#include "xaxidma.h"
+
+#define PCLUS 10
+#define PDSET 11
+#define PNPOI 12
+#define PNPOIP 27
+#define PRESU 13
+
+#define PCEN1 14
+#define PCEN2 15
+#define PCEN3 16
+#define PCEN4 17
+
+#define PEND1 18
+#define PEND2 19
+#define PEND3 20
+#define PEND4 21
+
+
+/***** define for microblazes control **********/
+
+#define GO_ON 26
+
+#define M1_DONE 0
+#define M1_START 1
+#define M1_ON 22
+
+#define M2_DONE 3
+#define M2_START 4
+#define M2_ON 23
+
+#define M3_DONE 5
+#define M3_START 6
+#define M3_ON 24
+
+#define M4_DONE 7
+#define M4_START 8
+#define M4_ON 25
+
+XDokmean dokmean;
+XDokmean_Config *dokmean_cfg;
+XAxiDma axiDMA;
+XAxiDma_Config *axiDMA_cfg;
+
+
+int *shared_mem = (int*) 0x40000000;
+
+
+int initPeripherals(){
+
+	dokmean_cfg = XDokmean_LookupConfig(XPAR_XDOKMEAN_0_DEVICE_ID);
+	if(dokmean_cfg){
+		int status = XDokmean_CfgInitialize(&dokmean, dokmean_cfg);
+		if(status != XST_SUCCESS){
+			return 1;
+		}
+	}
+
+	axiDMA_cfg = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	if(axiDMA_cfg){
+		int stat = XAxiDma_CfgInitialize(&axiDMA,axiDMA_cfg);
+		if(stat != XST_SUCCESS){
+			return 1;
+		}
+	}
+
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+	return 0;
+
+}
+
+void kmean(){
+
+	shared_mem[M4_DONE] = 1;
+	Xil_DCacheFlushRange((u32)shared_mem, 100*sizeof(int));
+}
+int main(){
+	shared_mem[M3_ON] = 123;
+	shared_mem[M4_START] = 0;
+	initPeripherals();
+	Xil_DCacheFlushRange((u32)shared_mem, 100*sizeof(int));
+	while(1){
+		int start = shared_mem[M4_START];
+		if(start == 1){
+			break;
+		}
+		usleep(1);
+	}
+	kmean();
+
+	return 0;
+}

@@ -1,0 +1,72 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 790 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 810 -defaultsOSRD
+preplace inst doKmean_0 -pg 1 -lvl 4 -y 490 -defaultsOSRD
+preplace inst doKmean_1 -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace inst axi_dma_2 -pg 1 -lvl 5 -y 520 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 7 -y 790 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -y 600 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y 730 -defaultsOSRD
+preplace inst microblaze_1_local_memory -pg 1 -lvl 3 -y 860 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 7 -y 230 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 2 -y 670 -defaultsOSRD
+preplace inst microblaze_1 -pg 1 -lvl 2 -y 850 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 7 -y 1080 -defaultsOSRD
+preplace inst axi_interconnect_2 -pg 1 -lvl 6 -y 330 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -y 470 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 920 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 690 -defaultsOSRD
+preplace inst axi_interconnect_3 -pg 1 -lvl 3 -y 160 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 860 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 6 2 2630J 900 3020J
+preplace netloc axi_mem_intercon_M01_AXI 1 3 4 1230 100 NJ 100 NJ 100 2630J
+preplace netloc microblaze_3_Clk 1 0 7 -90 820 320 760 860 770 1280 390 1690 390 2100 110 2620
+preplace netloc axi_dma_1_M_AXI_S2MM 1 5 1 2090
+preplace netloc rst_ps7_0_100M_mb_reset 1 1 1 300
+preplace netloc axi_interconnect_1_M01_AXI 1 6 2 2680 670 2980
+preplace netloc microblaze_1_dlmb_1 1 2 1 N
+preplace netloc rst_ps7_0_100M_bus_struct_reset 1 1 2 310 940 850
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 3 1290 130 NJ 130 2070
+preplace netloc axi_dma_1_M_AXI_MM2S 1 5 1 2130
+preplace netloc processing_system7_0_M_AXI_GP0 1 6 1 2600
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 6 2 2670 40 2980
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 6 N 960 880 940 1290 400 1700 400 2130 540 2640J
+preplace netloc S02_AXI_1 1 3 4 1220 90 NJ 90 NJ 90 2640J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 6 2 2650 20 3020
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 -90 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 2590J
+preplace netloc axi_dma_2_M_AXI_S2MM 1 5 1 2120
+preplace netloc axi_mem_intercon_M00_AXI 1 3 1 1240
+preplace netloc microblaze_1_ilmb_1 1 2 1 N
+preplace netloc microblaze_0_M_AXI_DP 1 2 1 840
+preplace netloc microblaze_0_ilmb_1 1 2 1 830
+preplace netloc doKmean_0_outStream 1 4 1 1670
+preplace netloc axi_mem_intercon_M02_AXI 1 3 2 1260 210 1670J
+preplace netloc axi_interconnect_3_M01_AXI 1 3 1 1250
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 2670J 680 3010J
+preplace netloc S00_AXI_1 1 2 1 820
+preplace netloc doKmean_1_outStream 1 4 1 1670
+preplace netloc microblaze_1_debug 1 1 1 310
+preplace netloc axi_interconnect_0_M00_AXI 1 6 2 2660 30 2990
+preplace netloc axi_dma_2_M_AXI_MM2S 1 5 1 2080
+preplace netloc microblaze_0_dlmb_1 1 2 1 850
+preplace netloc axi_dma_2_M_AXIS_MM2S 1 3 3 1300 150 NJ 150 2060
+preplace netloc axi_interconnect_3_M00_AXI 1 3 2 NJ 140 1680
+preplace netloc axi_interconnect_2_M00_AXI 1 5 2 2130 550 2600
+preplace netloc axi_interconnect_1_M00_AXI 1 6 2 2680 50 3000
+preplace netloc microblaze_0_debug 1 1 1 290
+preplace netloc mdm_1_debug_sys_rst 1 0 2 -100 650 280
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 6 290 950 870 950 1270J 120 NJ 120 2110 120 2610J
+levelinfo -pg 1 -120 100 580 1070 1490 1880 2360 2830 4220 -top 0 -bot 1220
+",
+}
+{
+   da_axi4_cnt: "5",
+   da_clkrst_cnt: "54",
+   da_mb_cnt: "4",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,53 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "doKmean",
+          "label": "read_p",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "read_c",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "read_res",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "sumcen",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "update",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "send",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "send2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "doKmean",
+          "label": "write_c",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        }
+      ]
+    }]}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;kmeans/kmeans.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 372.898 ; gain = 0.293 ; free physical = 995 ; free virtual = 2767"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 372.898 ; gain = 0.293 ; free physical = 995 ; free virtual = 2767"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 372.914 ; gain = 0.309 ; free physical = 985 ; free virtual = 2758"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;get_cluster&apos; into &apos;doKmean&apos; (kmeans/kmeans.cpp:49) automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 372.914 ; gain = 0.309 ; free physical = 979 ; free virtual = 2753"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;read_p&apos; (kmeans/kmeans.cpp:19) in function &apos;doKmean&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;read_c&apos; (kmeans/kmeans.cpp:32) in function &apos;doKmean&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;sumcen&apos; (kmeans/kmeans.cpp:57) in function &apos;doKmean&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;update&apos; (kmeans/kmeans.cpp:67) in function &apos;doKmean&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;get_cluster&apos; (kmeans/kmeans.cpp:92)."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (kmeans/kmeans.cpp:20) in function &apos;doKmean&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2.1&apos; (kmeans/kmeans.cpp:33) in function &apos;doKmean&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-5.1&apos; (kmeans/kmeans.cpp:58) in function &apos;doKmean&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-6.1&apos; (kmeans/kmeans.cpp:68) in function &apos;doKmean&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (kmeans/kmeans.cpp:96) in function &apos;get_cluster&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (kmeans/kmeans.cpp:98) in function &apos;get_cluster&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;centroids&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 564.605 ; gain = 192.000 ; free physical = 932 ; free virtual = 2707"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 564.605 ; gain = 192.000 ; free physical = 800 ; free virtual = 2576"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;doKmean&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;get_cluster&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;get_cluster&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX,SCHEDULE" content="Unable to schedule &apos;load&apos; operation (&apos;data_set_load_100&apos;, kmeans/kmeans.cpp:99) on array &apos;data_set&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;data_set&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINE_REPORT_FAILURE_1080" tag="SCHEDULE" content="Unable to satisfy pipeline directive: Unable to pipeline the region."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 177.36 seconds; current allocated memory: 280.562 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_705" tag="" content="After resource sharing, estimated clock period (10.4551ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_707" tag="" content="The critical path consists of the following:
+	&apos;fsub&apos; operation (&apos;tmp_6_s&apos;, kmeans/kmeans.cpp:99) (10.5 ns)"/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 47.87 seconds; current allocated memory: 344.225 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;doKmean&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;read_p&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 43, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 47, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 49, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:21)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 50, Depth = 51."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;read_c&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 43, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 47, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 49, distance = 1, offset = 1)
+   between axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34) and axis read on port &apos;inStream_V_data_V&apos; (kmeans/kmeans.cpp:34)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 50, Depth = 51."/>
+	<Message severity="WARNING" prefix="[SCHED 204-67]" key="SCHED_PIPELINE_REPORT_FAILURE_1080" tag="SCHEDULE" content="Unable to satisfy pipeline directive: subfunction &apos;get_cluster&apos; is not pipelined."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;sumcen&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (kmeans/kmeans.cpp:59) of variable &apos;tmp_17_126&apos;, kmeans/kmeans.cpp:59 on array &apos;new_centroids&apos; and &apos;load&apos; operation (&apos;new_centroids_load&apos;, kmeans/kmeans.cpp:59) on array &apos;new_centroids&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between &apos;store&apos; operation (kmeans/kmeans.cpp:59) of variable &apos;tmp_17_126&apos;, kmeans/kmeans.cpp:59 on array &apos;new_centroids&apos; and &apos;load&apos; operation (&apos;new_centroids_load&apos;, kmeans/kmeans.cpp:59) on array &apos;new_centroids&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between &apos;store&apos; operation (kmeans/kmeans.cpp:59) of variable &apos;tmp_17_126&apos;, kmeans/kmeans.cpp:59 on array &apos;new_centroids&apos; and &apos;load&apos; operation (&apos;new_centroids_load&apos;, kmeans/kmeans.cpp:59) on array &apos;new_centroids&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="SDX_LOOP,SCHEDULE" content="Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between &apos;store&apos; operation (kmeans/kmeans.cpp:59) of variable &apos;tmp_17_126&apos;, kmeans/kmeans.cpp:59 on array &apos;new_centroids&apos; and &apos;load&apos; operation (&apos;new_centroids_load&apos;, kmeans/kmeans.cpp:59) on array &apos;new_centroids&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX,SCHEDULE" content="Unable to schedule &apos;store&apos; operation (kmeans/kmeans.cpp:59) of variable &apos;tmp_16_21&apos;, kmeans/kmeans.cpp:59 on array &apos;new_centroids&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;new_centroids&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 50, Depth = 60."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;update&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX,SCHEDULE" content="Unable to schedule &apos;load&apos; operation (&apos;np_cluster_load_3&apos;, kmeans/kmeans.cpp:69) on array &apos;np_cluster&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;np_cluster&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-69]" key="SCHED_RESOURCE_CONSTRAINT_NOT_MET_38" tag="SDX,SCHEDULE" content="Unable to schedule &apos;store&apos; operation (kmeans/kmeans.cpp:70) of constant 0 on array &apos;new_centroids&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;new_centroids&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 50, Depth = 73."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;send&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX,TIMING,SCHEDULE" content="Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX" content="The critical path consists of the following:
+	&apos;mul&apos; operation (&apos;tmp_303&apos;, kmeans/kmeans.cpp:59) (3.36 ns)
+	&apos;add&apos; operation (&apos;tmp_304&apos;, kmeans/kmeans.cpp:59) (3.02 ns)
+	&apos;getelementptr&apos; operation (&apos;new_centroids_addr_2&apos;, kmeans/kmeans.cpp:59) (0 ns)
+	&apos;load&apos; operation (&apos;new_centroids_load_2&apos;, kmeans/kmeans.cpp:59) on array &apos;new_centroids&apos; (3.25 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 38.26 seconds; current allocated memory: 358.302 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 5 loops out of a total 7 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 8.03 seconds; current allocated memory: 370.579 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;get_cluster&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_faddfsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;doKmean_faddfsub_bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;doKmean_fsub_32nscud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fadd_32ns_32ns_32_5_full_dsp_1&apos; to &apos;doKmean_fadd_32nsdEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fmul_32ns_32ns_32_4_max_dsp_1&apos; to &apos;doKmean_fmul_32nseOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fcmp_32ns_32ns_1_1_1&apos; to &apos;doKmean_fcmp_32nsfYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fsqrt_32ns_32ns_32_12_1&apos; to &apos;doKmean_fsqrt_32ng8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mul_mul_7ns_10ns_17_1_1&apos; to &apos;doKmean_mul_mul_7hbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fadd_32nsdEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_faddfsub_bkb&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fcmp_32nsfYi&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fmul_32nseOg&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fsqrt_32ng8j&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fsub_32nscud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mul_mul_7hbi&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;get_cluster&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 34.41 seconds; current allocated memory: 473.117 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;doKmean&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_keep_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_strb_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_user_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_id_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/inStream_V_dest_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_keep_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_strb_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_user_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_id_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/outStream_V_dest_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;doKmean/gain&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;doKmean&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;points&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;valref_keep_V&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;valref_strb_V&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;valref_user_V&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;valref_id_V&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;valref_dest_V&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_0&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_1&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_2&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_3&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_4&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_5&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_6&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_7&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_8&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_9&apos; will not be exposed as RTL port."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_10&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_10&apos; to &apos;doKmean_centroidsibs&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_11&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_11&apos; to &apos;doKmean_centroidsjbC&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_12&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_12&apos; to &apos;doKmean_centroidskbM&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_13&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_13&apos; to &apos;doKmean_centroidslbW&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_14&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_14&apos; to &apos;doKmean_centroidsmb6&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_15&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_15&apos; to &apos;doKmean_centroidsncg&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_16&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_16&apos; to &apos;doKmean_centroidsocq&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_17&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_17&apos; to &apos;doKmean_centroidspcA&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_18&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_18&apos; to &apos;doKmean_centroidsqcK&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;centroids_19&apos; will not be exposed as RTL port."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_centroids_19&apos; to &apos;doKmean_centroidsrcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_new_centroids&apos; to &apos;doKmean_new_centrsc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; and &apos;gain&apos; to AXI-Lite port CRTL_BUS."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_fdiv_32ns_32ns_32_16_1&apos; to &apos;doKmean_fdiv_32nstde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_sitofp_32ns_32_6_1&apos; to &apos;doKmean_sitofp_32udo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mul_mul_7ns_11s_11_1_1&apos; to &apos;doKmean_mul_mul_7vdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mac_muladd_7ns_11s_3ns_11_1_1&apos; to &apos;doKmean_mac_muladwdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mac_muladd_7ns_11s_4ns_11_1_1&apos; to &apos;doKmean_mac_muladxdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mac_muladd_7ns_11s_5ns_11_1_1&apos; to &apos;doKmean_mac_muladyd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mac_muladd_7ns_11s_6ns_11_1_1&apos; to &apos;doKmean_mac_muladzec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;doKmean_mac_muladd_7ns_11s_7ns_11_1_1&apos; to &apos;doKmean_mac_muladAem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fadd_32nsdEe&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_fdiv_32nstde&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mac_muladAem&apos;: 18 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mac_muladwdI&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mac_muladxdS&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mac_muladyd2&apos;: 8 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mac_muladzec&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_mul_mul_7vdy&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;doKmean_sitofp_32udo&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;doKmean&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 38.81 seconds; current allocated memory: 619.934 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;doKmean_points_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;doKmean_results_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;doKmean_centroids_0_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;doKmean_np_cluster_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;doKmean_new_centrsc4_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:05:31 ; elapsed = 00:05:56 . Memory (MB): peak = 1092.617 ; gain = 720.012 ; free physical = 207 ; free virtual = 2225"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for doKmean."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for doKmean."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for doKmean."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 356.26 seconds; peak allocated memory: 619.934 MB."/>
+</Messages>
