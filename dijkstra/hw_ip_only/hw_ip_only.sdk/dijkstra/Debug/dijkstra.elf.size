@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  95928	   2776	  25328	 124032	  1e480	dijkstra.elf
+  96584	   2672	400145280	400244536	17db3f38	dijkstra.elf

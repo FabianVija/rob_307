@@ -1,8 +1,8 @@
-05:28:33 **** Incremental Build of configuration Debug for project dijkstra ****
+01:00:52 **** Incremental Build of configuration Debug for project dijkstra ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
 
-05:28:34 Build Finished (took 111ms)
+01:00:52 Build Finished (took 136ms)
 

@@ -6,8 +6,8 @@ using namespace std;
 #define N_TESTS 1
 
 #define INT_MAX 2147483647
-#define max_vertex 50      /* It is the maximum number of vertices in the graph */
-int size = 50;
+#define max_vertex 100      /* It is the maximum number of vertices in the graph */
+int size = 100;
 
 unsigned int find_diameter(int graph[max_vertex][max_vertex], int size)
 {

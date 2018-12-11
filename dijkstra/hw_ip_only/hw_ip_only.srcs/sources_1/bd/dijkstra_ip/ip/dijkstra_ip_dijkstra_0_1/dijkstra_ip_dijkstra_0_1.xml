@@ -1154,27 +1154,14 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
           </spirit:reset>
           <spirit:field>
             <spirit:name>flag</spirit:name>
-            <spirit:description>Bit 0 to 0 Data signal of flag</spirit:description>
+            <spirit:description>Bit 31 to 0 Data signal of flag</spirit:description>
             <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">1</spirit:bitWidth>
+            <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
             <spirit:access>write-only</spirit:access>
             <spirit:writeValueConstraint>
               <spirit:minimum>0</spirit:minimum>
               <spirit:maximum>0</spirit:maximum>
             </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-          <spirit:field>
-            <spirit:name>RESERVED</spirit:name>
-            <spirit:description>Reserved.  0s on read.</spirit:description>
-            <spirit:bitOffset>1</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">31</spirit:bitWidth>
-            <spirit:access>read-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:readAction>modify</spirit:readAction>
             <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
           </spirit:field>
         </spirit:register>
@@ -1195,11 +1182,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 10 00:22:28 UTC 2018</spirit:value>
+            <spirit:value>Mon Dec 10 23:15:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:82ceeeaf</spirit:value>
+            <spirit:value>8:46474b88</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1215,11 +1202,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 10 00:22:28 UTC 2018</spirit:value>
+            <spirit:value>Mon Dec 10 23:15:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:82ceeeaf</spirit:value>
+            <spirit:value>8:46474b88</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1235,11 +1222,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 10 00:22:28 UTC 2018</spirit:value>
+            <spirit:value>Mon Dec 10 23:15:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:dc43e23f</spirit:value>
+            <spirit:value>8:d522651a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1255,11 +1242,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 10 00:22:28 UTC 2018</spirit:value>
+            <spirit:value>Mon Dec 10 23:15:35 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:dc43e23f</spirit:value>
+            <spirit:value>8:d522651a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1273,11 +1260,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Dec 10 00:27:14 UTC 2018</spirit:value>
+            <spirit:value>Mon Dec 10 23:16:33 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:82ceeeaf</spirit:value>
+            <spirit:value>8:46474b88</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1900,11 +1887,11 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_dist.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_dist.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1912,7 +1899,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_Dset.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_Dset.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1920,39 +1907,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendDist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendIndex.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendPath.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateDist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateDset.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateGraph.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateParameters.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updatePath.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1967,12 +1922,12 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_dist.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_dist.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1981,7 +1936,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra_Dset.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra_Dset.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1990,47 +1945,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendDist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendIndex.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/sendPath.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateDist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateDset.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateGraph.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updateParameters.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/updatePath.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/ddf4/hdl/verilog/dijkstra.v</spirit:name>
+        <spirit:name>../../ipshared/a081/hdl/verilog/dijkstra.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2121,7 +2036,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">15</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">13</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2146,7 +2061,7 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
     <xilinx:coreExtensions>
       <xilinx:displayName>dijkstra_1000</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1812100111</xilinx:coreRevision>
+      <xilinx:coreRevision>1812110012</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -2197,12 +2112,12 @@ um {}} value 2} bitoffset {attribs {resolve_type immediate dependency {} format 
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="f1f77451"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="76000a90"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cd403eb2"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4793c925"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="cf191b99"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5d1582f8"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f2dd603d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="79823f82"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="df43add6"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="01987cd0"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

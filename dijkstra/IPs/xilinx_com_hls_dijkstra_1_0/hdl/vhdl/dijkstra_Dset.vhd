@@ -12,10 +12,10 @@ use ieee.std_logic_unsigned.all;
 
 entity dijkstra_Dset_ram is 
     generic(
-            MEM_TYPE    : string := "distributed"; 
-            DWIDTH     : integer := 1; 
-            AWIDTH     : integer := 9; 
-            MEM_SIZE    : integer := 300
+            MEM_TYPE    : string := "block"; 
+            DWIDTH     : integer := 32; 
+            AWIDTH     : integer := 10; 
+            MEM_SIZE    : integer := 1000
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -35,7 +35,7 @@ type mem_array is array (0 to MEM_SIZE-1) of std_logic_vector (DWIDTH-1 downto 0
 shared variable ram : mem_array := (others=>(others=>'0'));
 
 attribute syn_ramstyle : string; 
-attribute syn_ramstyle of ram : variable is "select_ram";
+attribute syn_ramstyle of ram : variable is "block_ram";
 attribute ram_style : string;
 attribute ram_style of ram : variable is MEM_TYPE;
 
@@ -75,9 +75,9 @@ use IEEE.std_logic_1164.all;
 
 entity dijkstra_Dset is
     generic (
-        DataWidth : INTEGER := 1;
-        AddressRange : INTEGER := 300;
-        AddressWidth : INTEGER := 9);
+        DataWidth : INTEGER := 32;
+        AddressRange : INTEGER := 1000;
+        AddressWidth : INTEGER := 10);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

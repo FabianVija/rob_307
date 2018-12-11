@@ -1,4 +1,4 @@
-14:27:20 **** Auto Build of configuration Debug for project count ****
+04:27:32 **** Build of configuration Debug for project count ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -34,5 +34,5 @@ arm-none-eabi-size count.elf  |tee "count.elf.size"
 Finished building: count.elf.size
  
 
-14:27:20 Build Finished (took 309ms)
+04:27:33 Build Finished (took 314ms)
 

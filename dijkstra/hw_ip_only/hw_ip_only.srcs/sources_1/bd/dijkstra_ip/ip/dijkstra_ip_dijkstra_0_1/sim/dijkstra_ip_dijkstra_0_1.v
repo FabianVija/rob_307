@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:dijkstra:1.0
-// IP Revision: 1812100111
+// IP Revision: 1812110012
 
 `timescale 1ns/1ps
 

@@ -1,4 +1,4 @@
-NumberHits:0
-Timestamp: Mon Dec 10 00:25:59 UTC 2018
+NumberHits:8
+Timestamp: Mon Dec 10 23:15:37 UTC 2018
 VLNV: xilinx.com:ip:axi_dwidth_converter:2.1
 SynthRuntime: 192

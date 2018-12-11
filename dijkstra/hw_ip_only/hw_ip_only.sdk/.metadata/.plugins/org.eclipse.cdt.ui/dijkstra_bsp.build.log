@@ -1,4 +1,4 @@
-05:28:16 **** Auto Build of project dijkstra_bsp ****
+00:23:36 **** Auto Build of project dijkstra_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src
 make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -103,5 +103,5 @@ make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPIL
 Compiling scutimer
 Finished building libraries
 
-05:28:23 Build Finished (took 6s.778ms)
+00:23:43 Build Finished (took 7s.145ms)
 

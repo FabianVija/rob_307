@@ -2,13 +2,14 @@
  * Empty C++ Application
  */
 #include <stdio.h>
+#include <stdlib.h>  
 #include <math.h>
 #include <time.h>
 
 #define N_TESTS 1000
 #define MAX_DIST 5 //interval 0 to MAX_DIST-1
 
-#define max_vertex 10
+#define max_vertex 500
 #define INT_MAX __INT_MAX__
 
 unsigned int graph[max_vertex][max_vertex];
@@ -32,6 +33,7 @@ void sw_dijkstra(unsigned int graph[max_vertex][max_vertex], unsigned int sw_res
 
 	/*Initialize the distance of the source vertec to zero*/
 	dist[src] = 0;
+	sw_result[src] = src;
 
 	//printf("start algorithm\n");
 	for(unsigned int c = 0; c < size; c++)
@@ -60,7 +62,7 @@ void sw_dijkstra(unsigned int graph[max_vertex][max_vertex], unsigned int sw_res
 			}
 		}
 	}
-	sw_result[src] = 0;
+	//sw_result[src] = 0;
 }
 
 void printResult(unsigned int sw_result[max_vertex], unsigned int size, unsigned int scr, unsigned int dstn){
@@ -77,30 +79,30 @@ int main()
 	printf("Hi!!\n");
 
 	double readTime;
-  double calculTime;
-  double readClock;
-  double calculClock;
-  clock_t readStopTime;
-  clock_t readStartTime;
-  clock_t calculStopTime;
-  clock_t calculStartTime;
+	double calculTime;
+	double readClock;
+	double calculClock;
+	clock_t readStopTime;
+	clock_t readStartTime;
+	clock_t calculStopTime;
+	clock_t calculStartTime;
 
 	unsigned int src = 0;
-	unsigned int dstn = 4;
+	unsigned int dstn = 3;
 
 	int i;
 	for (i=0;i<N_TESTS;i++){
 		printf("n=%d\n",i);
-    readStartTime = clock();
+    		readStartTime = clock();
 
 		// Create data
-		for(int m = 0; m < max_vertex; m++) {
-					for(int n = 0; n < max_vertex; n++) {
-						graph[m][n] = ((unsigned int)rand()) % MAX_DIST;
-					}
-		}
-		src = rand() % max_vertex;
-		dstn = rand() % max_vertex;
+		//for(int m = 0; m < max_vertex; m++) {
+		//			for(int n = 0; n < max_vertex; n++) {
+		//				graph[m][n] = ((unsigned int)rand()) % MAX_DIST;
+		//			}
+		//}
+		//src = rand() % max_vertex;
+		//dstn = rand() % max_vertex;
 
 		// Algorithm
 		calculStartTime = clock();
@@ -109,7 +111,7 @@ int main()
 		readStopTime = clock();
 
 		// Print data
-		//printResult(sw_result,max_vertex,src,dstn	);
+		//printResult(sw_result,max_vertex,src,dstn);
 
 		calculClock += (calculStopTime - calculStartTime);
 		readClock += (readStopTime - readStartTime);

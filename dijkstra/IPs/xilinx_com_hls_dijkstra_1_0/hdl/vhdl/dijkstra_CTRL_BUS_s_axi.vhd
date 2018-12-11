@@ -42,7 +42,7 @@ port (
     ap_ready              :in   STD_LOGIC;
     ap_idle               :in   STD_LOGIC;
     size                  :out  STD_LOGIC_VECTOR(31 downto 0);
-    flag                  :out  STD_LOGIC_VECTOR(0 downto 0)
+    flag                  :out  STD_LOGIC_VECTOR(31 downto 0)
 );
 end entity dijkstra_CTRL_BUS_s_axi;
 
@@ -69,8 +69,7 @@ end entity dijkstra_CTRL_BUS_s_axi;
 --        bit 31~0 - size[31:0] (Read/Write)
 -- 0x14 : reserved
 -- 0x18 : Data signal of flag
---        bit 0  - flag[0] (Read/Write)
---        others - reserved
+--        bit 31~0 - flag[31:0] (Read/Write)
 -- 0x1c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
@@ -110,7 +109,7 @@ architecture behave of dijkstra_CTRL_BUS_s_axi is
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_size            : UNSIGNED(31 downto 0) := (others => '0');
-    signal int_flag            : UNSIGNED(0 downto 0) := (others => '0');
+    signal int_flag            : UNSIGNED(31 downto 0) := (others => '0');
 
 
 begin
@@ -235,7 +234,7 @@ begin
                     when ADDR_SIZE_DATA_0 =>
                         rdata_data <= RESIZE(int_size(31 downto 0), 32);
                     when ADDR_FLAG_DATA_0 =>
-                        rdata_data <= RESIZE(int_flag(0 downto 0), 32);
+                        rdata_data <= RESIZE(int_flag(31 downto 0), 32);
                     when others =>
                         rdata_data <= (others => '0');
                     end case;
@@ -391,7 +390,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_FLAG_DATA_0) then
-                    int_flag(0 downto 0) <= (UNSIGNED(WDATA(0 downto 0)) and wmask(0 downto 0)) or ((not wmask(0 downto 0)) and int_flag(0 downto 0));
+                    int_flag(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_flag(31 downto 0));
                 end if;
             end if;
         end if;

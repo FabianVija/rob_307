@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:dijkstra:1.0
-// IP Revision: 1812100111
+// IP Revision: 1812110012
 
 (* X_CORE_INFO = "dijkstra,Vivado 2018.2" *)
 (* CHECK_LICENSE_TYPE = "dijkstra_ip_dijkstra_0_1,dijkstra,{}" *)
-(* CORE_GENERATION_INFO = "dijkstra_ip_dijkstra_0_1,dijkstra,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=dijkstra,x_ipVersion=1.0,x_ipCoreRevision=1812100111,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=5,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "dijkstra_ip_dijkstra_0_1,dijkstra,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=dijkstra,x_ipVersion=1.0,x_ipCoreRevision=1812110012,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=5,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module dijkstra_ip_dijkstra_0_1 (

@@ -28,8 +28,7 @@
 //        bit 31~0 - size[31:0] (Read/Write)
 // 0x14 : reserved
 // 0x18 : Data signal of flag
-//        bit 0  - flag[0] (Read/Write)
-//        others - reserved
+//        bit 31~0 - flag[31:0] (Read/Write)
 // 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
@@ -40,5 +39,5 @@
 #define XDIJKSTRA_CTRL_BUS_ADDR_SIZE_DATA 0x10
 #define XDIJKSTRA_CTRL_BUS_BITS_SIZE_DATA 32
 #define XDIJKSTRA_CTRL_BUS_ADDR_FLAG_DATA 0x18
-#define XDIJKSTRA_CTRL_BUS_BITS_FLAG_DATA 1
+#define XDIJKSTRA_CTRL_BUS_BITS_FLAG_DATA 32
 

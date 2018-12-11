@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Mon Dec 10 01:24:56 2018
+-- Date        : Mon Dec 10 01:24:54 2018
 -- Host        : fray-inspirion running 64-bit Ubuntu 16.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/lais/Documents/ROB307/rob_307/dijkstra/hw_ip_only/hw_ip_only.srcs/sources_1/bd/dijkstra_ip/ip/dijkstra_ip_xbar_1/dijkstra_ip_xbar_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dijkstra_ip_xbar_1 -prefix
+--               dijkstra_ip_xbar_1_ dijkstra_ip_xbar_1_sim_netlist.vhdl
 -- Design      : dijkstra_ip_xbar_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -46,8 +46,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_addr_arbiter is
     \gen_single_thread.active_target_hot\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_single_thread.active_target_enc\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_addr_arbiter : entity is "axi_crossbar_v2_1_18_addr_arbiter";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_addr_arbiter;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_addr_arbiter is
@@ -2511,8 +2509,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_decerr_slave is
     \FSM_onehot_gen_axi.write_cs_reg[1]_0\ : in STD_LOGIC;
     \gen_axi.read_cs_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_decerr_slave : entity is "axi_crossbar_v2_1_18_decerr_slave";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_decerr_slave;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_decerr_slave is
@@ -3055,8 +3051,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_si_transactor is
     p_52_out : in STD_LOGIC;
     p_28_out : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_si_transactor : entity is "axi_crossbar_v2_1_18_si_transactor";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_si_transactor;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_si_transactor is
@@ -3895,8 +3889,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_splitter : entity is "axi_crossbar_v2_1_18_splitter";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_splitter;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_splitter is
@@ -7350,8 +7342,6 @@ entity dijkstra_ip_xbar_1_axi_data_fifo_v2_1_16_axic_reg_srl_fifo is
     m_select_enc_1 : in STD_LOGIC;
     m_avalid_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_data_fifo_v2_1_16_axic_reg_srl_fifo : entity is "axi_data_fifo_v2_1_16_axic_reg_srl_fifo";
 end dijkstra_ip_xbar_1_axi_data_fifo_v2_1_16_axic_reg_srl_fifo;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_data_fifo_v2_1_16_axic_reg_srl_fifo is
@@ -9171,8 +9161,6 @@ entity dijkstra_ip_xbar_1_axi_register_slice_v2_1_17_axi_register_slice is
     m_axi_bid : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_register_slice_v2_1_17_axi_register_slice : entity is "axi_register_slice_v2_1_17_axi_register_slice";
 end dijkstra_ip_xbar_1_axi_register_slice_v2_1_17_axi_register_slice;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_register_slice_v2_1_17_axi_register_slice is
@@ -9341,8 +9329,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_mux is
     \m_ready_d_reg[0]\ : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_mux : entity is "axi_crossbar_v2_1_18_wdata_mux";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_mux;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_mux is
@@ -9454,8 +9440,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_router is
     m_select_enc_1 : in STD_LOGIC;
     m_avalid_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_router : entity is "axi_crossbar_v2_1_18_wdata_router";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_router;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_wdata_router is
@@ -9542,8 +9526,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_crossbar is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_crossbar : entity is "axi_crossbar_v2_1_18_crossbar";
 end dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_crossbar;
 
 architecture STRUCTURE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_crossbar is
@@ -10318,8 +10300,6 @@ entity dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_axi_crossbar : entity is "64'b0000000000000000000000000000100000000000000000000000000000000010";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_axi_crossbar : entity is "axi_crossbar_v2_1_18_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of dijkstra_ip_xbar_1_axi_crossbar_v2_1_18_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

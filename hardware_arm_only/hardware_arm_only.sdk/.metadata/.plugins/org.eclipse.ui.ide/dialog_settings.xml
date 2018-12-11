@@ -12,6 +12,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/diameter"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/diameter_bsp"/>
+			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/dijkstra"/>
 			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/kmeans"/>
 			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/quicksort_bsp"/>
 			<item value="/home/lais/Documents/ROB307/rob_307/hardware_arm_only/hardware_arm_only.sdk/quicksort"/>

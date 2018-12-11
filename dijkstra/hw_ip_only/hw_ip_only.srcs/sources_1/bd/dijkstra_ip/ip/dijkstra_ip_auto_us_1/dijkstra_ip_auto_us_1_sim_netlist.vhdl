@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
--- Date        : Mon Dec 10 01:27:11 2018
+-- Date        : Mon Dec 10 01:27:10 2018
 -- Host        : fray-inspirion running 64-bit Ubuntu 16.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/lais/Documents/ROB307/rob_307/dijkstra/hw_ip_only/hw_ip_only.srcs/sources_1/bd/dijkstra_ip/ip/dijkstra_ip_auto_us_1/dijkstra_ip_auto_us_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dijkstra_ip_auto_us_1 -prefix
+--               dijkstra_ip_auto_us_1_ dijkstra_ip_auto_us_1_sim_netlist.vhdl
 -- Design      : dijkstra_ip_auto_us_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -61,8 +61,6 @@ entity dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_w_upsizer is
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \USE_RTL_CURR_WORD.pre_next_word_q_reg[2]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_w_upsizer : entity is "axi_dwidth_converter_v2_1_17_w_upsizer";
 end dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_w_upsizer;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_w_upsizer is
@@ -2877,8 +2875,6 @@ entity dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 60 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axic_register_slice : entity is "axi_register_slice_v2_1_17_axic_register_slice";
 end dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axic_register_slice;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axic_register_slice is
@@ -4520,8 +4516,6 @@ entity dijkstra_ip_auto_us_1_generic_baseblocks_v2_1_0_command_fifo is
     m_axi_awready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 27 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_generic_baseblocks_v2_1_0_command_fifo : entity is "generic_baseblocks_v2_1_0_command_fifo";
 end dijkstra_ip_auto_us_1_generic_baseblocks_v2_1_0_command_fifo;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_generic_baseblocks_v2_1_0_command_fifo is
@@ -6115,8 +6109,6 @@ entity dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_a_upsizer is
     m_axi_awready : in STD_LOGIC;
     \in\ : in STD_LOGIC_VECTOR ( 27 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_a_upsizer : entity is "axi_dwidth_converter_v2_1_17_a_upsizer";
 end dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_a_upsizer;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_a_upsizer is
@@ -6209,8 +6201,6 @@ entity dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axi_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 60 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axi_register_slice : entity is "axi_register_slice_v2_1_17_axi_register_slice";
 end dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axi_register_slice;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_axi_register_slice_v2_1_17_axi_register_slice is
@@ -6263,8 +6253,6 @@ entity dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_axi_upsizer is
     s_axi_wvalid : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_axi_upsizer : entity is "axi_dwidth_converter_v2_1_17_axi_upsizer";
 end dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_axi_upsizer;
 
 architecture STRUCTURE of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_axi_upsizer is
@@ -6632,8 +6620,6 @@ entity dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_top is
   attribute C_S_AXI_ID_WIDTH of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_top : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_top : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_top : entity is "axi_dwidth_converter_v2_1_17_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of dijkstra_ip_auto_us_1_axi_dwidth_converter_v2_1_17_top : entity is 1;
   attribute P_AXI4 : integer;

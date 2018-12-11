@@ -16,9 +16,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_axi
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_xlconcat_0_0/dijkstra_ip_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_xlconcat_0_0 || ORIG_REF_NAME==dijkstra_ip_xlconcat_0_0} -quiet] -quiet
 
-# IP: bd/dijkstra_ip/ip/dijkstra_ip_dijkstra_0_1/dijkstra_ip_dijkstra_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_dijkstra_0_1 || ORIG_REF_NAME==dijkstra_ip_dijkstra_0_1} -quiet] -quiet
-
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_rst_ps7_0_100M_0/dijkstra_ip_rst_ps7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_rst_ps7_0_100M_0 || ORIG_REF_NAME==dijkstra_ip_rst_ps7_0_100M_0} -quiet] -quiet
 
@@ -31,6 +28,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_axi
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_xbar_1/dijkstra_ip_xbar_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_xbar_1 || ORIG_REF_NAME==dijkstra_ip_xbar_1} -quiet] -quiet
 
+# IP: bd/dijkstra_ip/ip/dijkstra_ip_xbar_0/dijkstra_ip_xbar_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_xbar_0 || ORIG_REF_NAME==dijkstra_ip_xbar_0} -quiet] -quiet
+
+# IP: bd/dijkstra_ip/ip/dijkstra_ip_dijkstra_0_1/dijkstra_ip_dijkstra_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_dijkstra_0_1 || ORIG_REF_NAME==dijkstra_ip_dijkstra_0_1} -quiet] -quiet
+
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_auto_pc_1/dijkstra_ip_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_auto_pc_1 || ORIG_REF_NAME==dijkstra_ip_auto_pc_1} -quiet] -quiet
 
@@ -39,9 +42,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_aut
 
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_auto_us_0/dijkstra_ip_auto_us_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_auto_us_0 || ORIG_REF_NAME==dijkstra_ip_auto_us_0} -quiet] -quiet
-
-# IP: bd/dijkstra_ip/ip/dijkstra_ip_xbar_0/dijkstra_ip_xbar_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_xbar_0 || ORIG_REF_NAME==dijkstra_ip_xbar_0} -quiet] -quiet
 
 # IP: bd/dijkstra_ip/ip/dijkstra_ip_auto_pc_0/dijkstra_ip_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==dijkstra_ip_auto_pc_0 || ORIG_REF_NAME==dijkstra_ip_auto_pc_0} -quiet] -quiet
