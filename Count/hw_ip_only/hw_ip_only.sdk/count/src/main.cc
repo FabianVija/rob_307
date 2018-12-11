@@ -12,9 +12,9 @@
 // Constants
 #define N_TESTS 100
 #define CHUNK 16384
-#define N_POINTS 10000000
-#define MAX_VALUE 100
-#define N_IP_POINTS 1000000
+#define N_POINTS 10000
+#define MAX_VALUE 10
+#define N_IP_POINTS N_POINTS
 
 // Data
 int filter = 9;
@@ -152,7 +152,7 @@ int sendIP(int* arr, int ip_size,int filter){
 	XCount_Start(&count);
 
 	// Update Cash
-	Xil_DCacheFlushRange((u32)arr, (N_POINTS)*sizeof(int));
+	Xil_DCacheFlushRange((u32)&arr, (N_POINTS)*sizeof(int));
 	Xil_DCacheFlushRange((u32)vector, (N_POINTS)*sizeof(int));
 	Xil_DCacheFlushRange((u32)&result_ip, sizeof(int));
 	Xil_DCacheFlushRange((u32)&filter, sizeof(int));

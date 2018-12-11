@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1544483737">
+  <File Type="VDS-TIMING-PB" Name="dijkstra_ip_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dijkstra_ip_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="dijkstra_ip_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="dijkstra_ip_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="dijkstra_ip_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="dijkstra_ip_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="dijkstra_ip_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="dijkstra_ip_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="dijkstra_ip_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/dijkstra_ip/dijkstra_ip.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/dijkstra_ip/hdl/dijkstra_ip_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dijkstra_ip_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_dijkstra_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dijkstra_ip_processing_system7_0_0"/>
+</GenRun>

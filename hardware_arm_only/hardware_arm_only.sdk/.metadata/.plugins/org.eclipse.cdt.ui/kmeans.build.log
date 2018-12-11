@@ -1,4 +1,4 @@
-20:01:12 **** Incremental Build of configuration Debug for project kmeans ****
+04:27:32 **** Build of configuration Debug for project kmeans ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -15,9 +15,9 @@ Finished building target: kmeans.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size kmeans.elf  |tee "kmeans.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 111408	   2676	102029888	102143972	61697e4	kmeans.elf
+ 111408	   2676	81629888	81743972	4df5064	kmeans.elf
 Finished building: kmeans.elf.size
  
 
-20:01:12 Build Finished (took 215ms)
+04:27:32 Build Finished (took 267ms)
 

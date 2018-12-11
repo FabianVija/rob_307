@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="dijkstra_ip_wrapper_hw_platform_0-device"/>
+	<item value="" key="dijkstra_ip_wrapper_hw_platform_0-bmmFile"/>
+	<item value="dijkstra_ip_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="dijkstra_ip_wrapper_hw_platform_0-target"/>
+	<item value="false" key="dijkstra_ip_wrapper_hw_platform_0-partial_bit"/>
+	<item value="dijkstra_ip_wrapper.bit" key="dijkstra_ip_wrapper_hw_platform_0-bitFile"/>
+</section>
