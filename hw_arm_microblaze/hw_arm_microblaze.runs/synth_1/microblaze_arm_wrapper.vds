@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Dec  2 00:31:38 2018
-# Process ID: 3923
+# Start of session at: Sat Dec  8 20:30:34 2018
+# Process ID: 18001
 # Current directory: /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1
 # Command line: vivado -log microblaze_arm_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze_arm_wrapper.tcl
 # Log file: /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/microblaze_arm_wrapper.vds
@@ -13,55 +13,55 @@ source microblaze_arm_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.523 ; gain = 51.680 ; free physical = 105 ; free virtual = 2415
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1240.938 ; gain = 55.586 ; free physical = 230 ; free virtual = 1460
 Command: synth_design -top microblaze_arm_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3928 
+INFO: Helper process launched with PID 18013 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1334.250 ; gain = 87.738 ; free physical = 99 ; free virtual = 2304
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1333.664 ; gain = 86.738 ; free physical = 112 ; free virtual = 1344
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'microblaze_arm_wrapper' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/hdl/microblaze_arm_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'microblaze_arm' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1626' bound to instance 'microblaze_arm_i' of component 'microblaze_arm' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/hdl/microblaze_arm_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'microblaze_arm' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1656]
 INFO: [Synth 8-638] synthesizing module 'microblaze_arm_axi_mem_intercon_3' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1157]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SKLGS' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:75]
-INFO: [Synth 8-3491] module 'microblaze_arm_auto_pc_0' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'microblaze_arm_auto_pc_0' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:243]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_auto_pc_0' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_auto_pc_0_stub.vhdl:65]
+INFO: [Synth 8-3491] module 'microblaze_arm_auto_pc_0' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'microblaze_arm_auto_pc_0' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_auto_pc_0' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_auto_pc_0_stub.vhdl:65]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SKLGS' (1#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:75]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_6IYS23' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:348]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_6IYS23' (2#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:348]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_NV8AMX' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1011]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_NV8AMX' (3#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1011]
-INFO: [Synth 8-3491] module 'microblaze_arm_xbar_7' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_xbar_7_stub.vhdl:5' bound to instance 'xbar' of component 'microblaze_arm_xbar_7' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1559]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_xbar_7' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_xbar_7_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'microblaze_arm_xbar_7' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_xbar_7_stub.vhdl:5' bound to instance 'xbar' of component 'microblaze_arm_xbar_7' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1559]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_xbar_7' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_xbar_7_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_arm_axi_mem_intercon_3' (4#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1157]
-INFO: [Synth 8-3491] module 'microblaze_arm_axi_smc_2' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_axi_smc_2_stub.vhdl:5' bound to instance 'axi_smc' of component 'microblaze_arm_axi_smc_2' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2473]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_axi_smc_2' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_axi_smc_2_stub.vhdl:94]
-INFO: [Synth 8-3491] module 'microblaze_arm_axi_timer_0_6' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_axi_timer_0_6_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'microblaze_arm_axi_timer_0_6' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2559]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_axi_timer_0_6' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_axi_timer_0_6_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'microblaze_arm_mdm_1_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_mdm_1_5_stub.vhdl:5' bound to instance 'mdm_1' of component 'microblaze_arm_mdm_1_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2588]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_mdm_1_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_mdm_1_5_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'microblaze_arm_microblaze_0_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_microblaze_0_5_stub.vhdl:5' bound to instance 'microblaze_0' of component 'microblaze_arm_microblaze_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2601]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_microblaze_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_microblaze_0_5_stub.vhdl:137]
+INFO: [Synth 8-3491] module 'microblaze_arm_axi_smc_2' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_axi_smc_2_stub.vhdl:5' bound to instance 'axi_smc' of component 'microblaze_arm_axi_smc_2' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2473]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_axi_smc_2' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_axi_smc_2_stub.vhdl:94]
+INFO: [Synth 8-3491] module 'microblaze_arm_axi_timer_0_6' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_axi_timer_0_6_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'microblaze_arm_axi_timer_0_6' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2559]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_axi_timer_0_6' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_axi_timer_0_6_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'microblaze_arm_mdm_1_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_mdm_1_5_stub.vhdl:5' bound to instance 'mdm_1' of component 'microblaze_arm_mdm_1_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2588]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_mdm_1_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_mdm_1_5_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'microblaze_arm_microblaze_0_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_microblaze_0_5_stub.vhdl:5' bound to instance 'microblaze_0' of component 'microblaze_arm_microblaze_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_microblaze_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_microblaze_0_5_stub.vhdl:137]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1C8C20X' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:432]
-INFO: [Synth 8-3491] module 'microblaze_arm_dlmb_bram_if_cntlr_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_bram_if_cntlr_5_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'microblaze_arm_dlmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:646]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_dlmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_bram_if_cntlr_5_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'microblaze_arm_dlmb_v10_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_v10_5_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'microblaze_arm_dlmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:700]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_dlmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_v10_5_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'microblaze_arm_ilmb_bram_if_cntlr_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_bram_if_cntlr_5_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'microblaze_arm_ilmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:728]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_ilmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_bram_if_cntlr_5_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'microblaze_arm_ilmb_v10_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_v10_5_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'microblaze_arm_ilmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:782]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_ilmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_v10_5_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'microblaze_arm_lmb_bram_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_lmb_bram_5_stub.vhdl:5' bound to instance 'lmb_bram' of component 'microblaze_arm_lmb_bram_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:810]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_lmb_bram_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_lmb_bram_5_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'microblaze_arm_dlmb_bram_if_cntlr_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_bram_if_cntlr_5_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'microblaze_arm_dlmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:646]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_dlmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_bram_if_cntlr_5_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microblaze_arm_dlmb_v10_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_v10_5_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'microblaze_arm_dlmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:700]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_dlmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_dlmb_v10_5_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'microblaze_arm_ilmb_bram_if_cntlr_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_bram_if_cntlr_5_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'microblaze_arm_ilmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_ilmb_bram_if_cntlr_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_bram_if_cntlr_5_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'microblaze_arm_ilmb_v10_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_v10_5_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'microblaze_arm_ilmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_ilmb_v10_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_ilmb_v10_5_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'microblaze_arm_lmb_bram_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_lmb_bram_5_stub.vhdl:5' bound to instance 'lmb_bram' of component 'microblaze_arm_lmb_bram_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:810]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_lmb_bram_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_lmb_bram_5_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1C8C20X' (5#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:432]
-INFO: [Synth 8-3491] module 'microblaze_arm_processing_system7_0_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_processing_system7_0_5_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'microblaze_arm_processing_system7_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2754]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_processing_system7_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_processing_system7_0_5_stub.vhdl:166]
-INFO: [Synth 8-3491] module 'microblaze_arm_rst_ps7_0_50M_3' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_rst_ps7_0_50M_3_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'microblaze_arm_rst_ps7_0_50M_3' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2912]
-INFO: [Synth 8-638] synthesizing module 'microblaze_arm_rst_ps7_0_50M_3' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-3923-lais-Inspiron-3421/realtime/microblaze_arm_rst_ps7_0_50M_3_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'microblaze_arm_processing_system7_0_5' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_processing_system7_0_5_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'microblaze_arm_processing_system7_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2754]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_processing_system7_0_5' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_processing_system7_0_5_stub.vhdl:166]
+INFO: [Synth 8-3491] module 'microblaze_arm_rst_ps7_0_50M_3' declared at '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_rst_ps7_0_50M_3_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'microblaze_arm_rst_ps7_0_50M_3' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:2912]
+INFO: [Synth 8-638] synthesizing module 'microblaze_arm_rst_ps7_0_50M_3' [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/.Xil/Vivado-18001-lais-Inspiron-3421/realtime/microblaze_arm_rst_ps7_0_50M_3_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_arm' (6#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/synth/microblaze_arm.vhd:1656]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_arm_wrapper' (7#1) [/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.srcs/sources_1/bd/microblaze_arm/hdl/microblaze_arm_wrapper.vhd:40]
 WARNING: [Synth 8-3331] design s00_couplers_imp_NV8AMX has unconnected port M_ACLK
@@ -75,7 +75,7 @@ WARNING: [Synth 8-3331] design m01_couplers_imp_6IYS23 has unconnected port S_AR
 WARNING: [Synth 8-3331] design m00_couplers_imp_15SKLGS has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_15SKLGS has unconnected port M_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.875 ; gain = 134.363 ; free physical = 163 ; free virtual = 2311
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1381.289 ; gain = 134.363 ; free physical = 170 ; free virtual = 1344
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -88,10 +88,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.875 ; gain = 134.363 ; free physical = 164 ; free virtual = 2312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1381.289 ; gain = 134.363 ; free physical = 172 ; free virtual = 1346
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1380.875 ; gain = 134.363 ; free physical = 164 ; free virtual = 2312
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1381.289 ; gain = 134.363 ; free physical = 172 ; free virtual = 1346
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -131,17 +131,17 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1691.883 ; gain = 0.000 ; free physical = 102 ; free virtual = 2028
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1692.297 ; gain = 0.000 ; free physical = 135 ; free virtual = 1095
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'microblaze_arm_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 199 ; free virtual = 2125
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 216 ; free virtual = 1179
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 199 ; free virtual = 2125
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:50 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 216 ; free virtual = 1178
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -422,10 +422,10 @@ Applied set_property DONT_TOUCH = true for microblaze_arm_i/microblaze_0_local_m
 Applied set_property DONT_TOUCH = true for microblaze_arm_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for microblaze_arm_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 200 ; free virtual = 2127
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 216 ; free virtual = 1180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 199 ; free virtual = 2126
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 215 ; free virtual = 1179
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -467,7 +467,7 @@ WARNING: [Synth 8-3331] design microblaze_arm_axi_mem_intercon_3 has unconnected
 WARNING: [Synth 8-3331] design microblaze_arm_axi_mem_intercon_3 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design microblaze_arm_axi_mem_intercon_3 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 195 ; free virtual = 2126
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 211 ; free virtual = 1180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -485,13 +485,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'microblaze_arm_i/microbla
 INFO: [Synth 8-5578] Moved timing constraint from pin 'microblaze_arm_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'microblaze_arm_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 108 ; free virtual = 1995
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:06 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 123 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 108 ; free virtual = 1995
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 122 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -503,7 +503,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1049
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -527,7 +527,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -540,7 +540,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -552,25 +552,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -625,11 +625,11 @@ Report Instance Areas:
 |5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1C8C20X |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.883 ; gain = 445.371 ; free physical = 107 ; free virtual = 1995
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.297 ; gain = 445.371 ; free physical = 121 ; free virtual = 1050
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1691.883 ; gain = 134.363 ; free physical = 165 ; free virtual = 2053
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1691.891 ; gain = 445.371 ; free physical = 176 ; free virtual = 2064
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1692.297 ; gain = 134.363 ; free physical = 179 ; free virtual = 1108
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.305 ; gain = 445.371 ; free physical = 179 ; free virtual = 1108
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -639,9 +639,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 59 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:01:02 . Memory (MB): peak = 1698.883 ; gain = 458.359 ; free physical = 149 ; free virtual = 2038
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:10 . Memory (MB): peak = 1699.297 ; gain = 458.359 ; free physical = 162 ; free virtual = 1093
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.runs/synth_1/microblaze_arm_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file microblaze_arm_wrapper_utilization_synth.rpt -pb microblaze_arm_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.27 . Memory (MB): peak = 1698.883 ; gain = 0.000 ; free physical = 149 ; free virtual = 2038
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  2 00:32:58 2018...
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:02 . Memory (MB): peak = 1699.297 ; gain = 0.000 ; free physical = 152 ; free virtual = 1093
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  8 20:32:35 2018...

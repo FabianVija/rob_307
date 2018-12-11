@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_xbar_2_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s00_data_fifo_5_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_3_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_7_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_xbar_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_2_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_df_3_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s02_data_fifo_0_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s02_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s01_data_fifo_4_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s01_data_fifo_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s02_data_fifo_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_4_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_s03_data_fifo_0_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s03_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s02_data_fifo_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_s00_data_fifo_4_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s00_data_fifo_5_synth_1"/>
+	</Run>
+	<Run Id="design_1_s00_data_fifo_7_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s00_data_fifo_6_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s00_data_fifo_7_synth_1"/>
+	</Run>
+	<Run Id="design_1_s00_data_fifo_8_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s00_data_fifo_7_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_8_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_xbar_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_9_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_xbar_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_xbar_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_7_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_6_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_s04_data_fifo_0_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s04_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s02_data_fifo_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_5_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_0_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_2_synth_1"/>
+	</Run>
+	<Run Id="design_1_s00_data_fifo_9_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_s00_data_fifo_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_s00_data_fifo_7_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_us_df_1_synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_auto_us_df_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_df_3_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_xbar_2_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_5_synth_1"/>
+		<Parent Id="design_1_xbar_3_synth_1"/>
+		<Parent Id="design_1_xbar_7_synth_1"/>
+		<Parent Id="design_1_auto_us_df_2_synth_1"/>
+		<Parent Id="design_1_auto_us_df_3_synth_1"/>
+		<Parent Id="design_1_s02_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_s01_data_fifo_4_synth_1"/>
+		<Parent Id="design_1_auto_us_df_4_synth_1"/>
+		<Parent Id="design_1_s03_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_4_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_7_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_6_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_8_synth_1"/>
+		<Parent Id="design_1_xbar_8_synth_1"/>
+		<Parent Id="design_1_xbar_9_synth_1"/>
+		<Parent Id="design_1_auto_us_df_7_synth_1"/>
+		<Parent Id="design_1_auto_us_df_6_synth_1"/>
+		<Parent Id="design_1_s04_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_auto_us_df_5_synth_1"/>
+		<Parent Id="design_1_auto_us_df_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_9_synth_1"/>
+		<Parent Id="design_1_auto_us_df_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_xbar_2_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_5_synth_1"/>
+		<Parent Id="design_1_xbar_3_synth_1"/>
+		<Parent Id="design_1_xbar_7_synth_1"/>
+		<Parent Id="design_1_auto_us_df_2_synth_1"/>
+		<Parent Id="design_1_auto_us_df_3_synth_1"/>
+		<Parent Id="design_1_s02_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_s01_data_fifo_4_synth_1"/>
+		<Parent Id="design_1_auto_us_df_4_synth_1"/>
+		<Parent Id="design_1_s03_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_4_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_7_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_6_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_8_synth_1"/>
+		<Parent Id="design_1_xbar_8_synth_1"/>
+		<Parent Id="design_1_xbar_9_synth_1"/>
+		<Parent Id="design_1_auto_us_df_7_synth_1"/>
+		<Parent Id="design_1_auto_us_df_6_synth_1"/>
+		<Parent Id="design_1_s04_data_fifo_0_synth_1"/>
+		<Parent Id="design_1_auto_us_df_5_synth_1"/>
+		<Parent Id="design_1_auto_us_df_0_synth_1"/>
+		<Parent Id="design_1_s00_data_fifo_9_synth_1"/>
+		<Parent Id="design_1_auto_us_df_1_synth_1"/>
+	</Run>
+</Runs>
+

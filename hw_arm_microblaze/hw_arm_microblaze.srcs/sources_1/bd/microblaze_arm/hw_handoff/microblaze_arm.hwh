@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec  2 00:14:33 2018" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Dec  8 20:28:16 2018" VIVADOVERSION="2018.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="microblaze_arm" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -1859,9 +1859,9 @@
         <PARAMETER NAME="C_COUNT_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_ONE_TIMER_ONLY" VALUE="0"/>
         <PARAMETER NAME="C_TRIG0_ASSERT" VALUE="&quot;1&quot;"/>
-        <PARAMETER NAME="C_TRIG1_ASSERT" VALUE="&quot;1&quot;"/>
+        <PARAMETER NAME="C_TRIG1_ASSERT" VALUE="1"/>
         <PARAMETER NAME="C_GEN0_ASSERT" VALUE="&quot;1&quot;"/>
-        <PARAMETER NAME="C_GEN1_ASSERT" VALUE="&quot;1&quot;"/>
+        <PARAMETER NAME="C_GEN1_ASSERT" VALUE="1"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="5"/>
         <PARAMETER NAME="Component_Name" VALUE="microblaze_arm_axi_timer_0_6"/>
@@ -1870,7 +1870,7 @@
         <PARAMETER NAME="GEN0_ASSERT" VALUE="Active_High"/>
         <PARAMETER NAME="GEN1_ASSERT" VALUE="Active_High"/>
         <PARAMETER NAME="COUNT_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="mode_64bit" VALUE="0"/>
+        <PARAMETER NAME="mode_64bit" VALUE="1"/>
         <PARAMETER NAME="enable_timer2" VALUE="1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x20000000"/>

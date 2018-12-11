@@ -1,4 +1,4 @@
-!SESSION 2018-12-03 22:38:05.625 -----------------------------------------------
+!SESSION 2018-12-08 20:53:27.034 -----------------------------------------------
 eclipse.buildId=2018.2
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
@@ -6,879 +6,2217 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk
 
 This is a continuation of log file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/.metadata/.bak_0.log
-Created Time: 2018-12-03 22:48:52.640
+Created Time: 2018-12-08 21:04:13.696
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:52.641
-!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:52.664
-!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:52.665
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:52.712
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:52.716
-!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.854
-!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_6]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.855
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.856
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.857
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.902
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.902
-!MESSAGE XSCT Command: [stop], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.904
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:54.905
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.290
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.290
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.298
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.299
-!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.301
-!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.301
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.365
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.366
-!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.390
-!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.390
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.439
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:55.439
-!MESSAGE XSCT Command: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/diametre/Debug/diametre.elf], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.010
-!MESSAGE XSCT command with result: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/diametre/Debug/diametre.elf], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.011
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.012
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.031
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.099
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.099
-!MESSAGE XSCT Command: [con], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:48:56.109
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
-
-!ENTRY org.eclipse.core.resources 4 568 2018-12-03 22:49:28.307
-!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:13.696
+!MESSAGE Error
 !STACK 0
-java.io.FileNotFoundException: /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap (Arquivo ou diretório não encontrado)
-	at java.io.FileOutputStream.open0(Native Method)
-	at java.io.FileOutputStream.open(FileOutputStream.java:270)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
-	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
-	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
-	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
-	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
-	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:13.696
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.298
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.302
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.306
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.707
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.710
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:14.712
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.285
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.289
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.291
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.663
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.668
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:15.670
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.412
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.415
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.416
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.697
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.700
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.701
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.757
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.761
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:16.762
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.366
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.369
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.370
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.827
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.831
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:17.831
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:18.189
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2018-12-08 21:04:18.220
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:46.919
-!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-545
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:42.238
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:46.922
-!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-545
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:42.241
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sat Dec  8 20:28:16 2018",
+"vivado_version": "2018.2",
+"part": "xc7z020clg484-1",
+}]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 1 0 2018-12-03 22:49:47.928
+!ENTRY com.xilinx.sdk.utils 1 0 2018-12-08 21:04:44.335
 !MESSAGE Updating toolusage
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.929
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.937
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.937
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.962
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.962
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.973
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:47.973
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.007
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.008
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.073
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.075
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.112
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.114
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.117
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.118
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.133
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.134
-!MESSAGE XSCT Command: [version -server], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.138
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.139
-!MESSAGE XSCT Command: [version], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.139
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.140
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.151
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.152
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.208
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.210
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.230
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.232
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.273
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.275
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.288
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.289
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.326
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.327
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.340
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.341
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.376
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.378
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.401
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.401
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.444
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.445
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.458
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.458
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.509
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.510
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.550
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.551
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.555
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.557
-!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.559
-!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.560
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.600
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:48.601
-!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.055
-!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_7]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.056
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.057
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.057
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.090
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.091
-!MESSAGE XSCT Command: [stop], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.093
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.093
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:49:51.208
-!MESSAGE XSCT command with result: [ps7_init], Result: [{Format=Memory write error at 0xF8000008. AP transaction timeout, Time=1543873791207, Code=1}, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 1 0 2018-12-03 22:50:01.163
-!MESSAGE Updating toolusage
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.164
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.165
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.165
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.174
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.174
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.182
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.182
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.206
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.207
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.238
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.239
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.241
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.241
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.243
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.243
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.251
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.251
-!MESSAGE XSCT Command: [version -server], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.252
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.253
-!MESSAGE XSCT Command: [version], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.253
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.254
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.262
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.262
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.288
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.288
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.296
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.296
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.323
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.324
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.333
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.334
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.358
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.359
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.367
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.367
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.392
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.393
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.401
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.402
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.432
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.433
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.441
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.441
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.467
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.467
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.491
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.492
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.492
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.493
-!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.494
-!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.495
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.530
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.531
-!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.534
-!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_7]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.534
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.536
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.536
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.568
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.568
-!MESSAGE XSCT Command: [stop], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.570
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.571
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:01.590
-!MESSAGE XSCT command with result: [ps7_init], Result: [{Format=Memory read error at 0xF8007080. AHB AP transaction error, DAP status f0000021, Time=1543873801590, Code=1}, ]. Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:08.389
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:08.408
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.629
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.643
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.649
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.661
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.661
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.671
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.672
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.708
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.708
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.747
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:27.748
-!MESSAGE XSCT Command: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:34.203
-!MESSAGE XSCT command with result: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Result: [{Format=fpga configuration failed. DONE PIN is not HIGH, Time=1543873834203, Code=1}, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 1 0 2018-12-03 22:50:46.574
-!MESSAGE Updating toolusage
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:46.575
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:46.576
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:46.577
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.589
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.589
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.604
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.605
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.658
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.658
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.722
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.723
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:50:48.730
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is not configured]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.805
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.808
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.808
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.826
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.827
-!MESSAGE XSCT Command: [version -server], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.843
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.844
-!MESSAGE XSCT Command: [version], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.847
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.848
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.870
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.870
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.917
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.918
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.932
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.932
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.963
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.964
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.980
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:41.980
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.028
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.028
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.043
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.043
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.089
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.089
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.102
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.102
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.136
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.136
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.144
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.145
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.171
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.172
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.204
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.205
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.206
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.207
-!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.229
-!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.230
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.264
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.265
-!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.274
-!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_7]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.275
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.276
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.277
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.311
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.312
-!MESSAGE XSCT Command: [stop], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.367
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.368
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.694
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.695
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.702
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.702
-!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.704
-!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:42.704
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-9
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:45.721
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:45.760
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [{Format=no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"". available targets:
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.367
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.380
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333313",
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.381
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.409
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"ps7_ddr_0": {},
+"ps7_ethernet_0": {},
+"ps7_gpio_0": {},
+"ps7_m_axi_gp0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_sd_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.423
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.436
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x20000000",
+"high": "0x2000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_m_axi_gp0_S_AXI_GP0": {"name": "ps7_m_axi_gp0",
+"base": "0x40000000",
+"high": "0x7FFFFFFF",
+"size": "1073741824",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1_S_AXI_GP0": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0_S_AXI_GP0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0_S_AXI_GP0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0_S_AXI_GP0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0_S_AXI_GP0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0_S_AXI_GP0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "S_AXI_GP0",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0_S_AXI_GP0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "S_AXI_GP0",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00001FFF",
+"size": "8192",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0_S_AXI_GP0": {"name": "ps7_ddr_0",
+"base": "0x08000000",
+"high": "0x0FFFFFFF",
+"size": "134217728",
+"slaveintf": "S_AXI_GP0",
+"type": "MEMORY",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0_S_AXI_HP0": {"name": "ps7_ddr_0",
+"base": "0x10000000",
+"high": "0x1FFFFFFF",
+"size": "268435456",
+"slaveintf": "S_AXI_HP0",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.437
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.443
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.443
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.452
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.453
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.479
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.480
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.481
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.482
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.483
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.483
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.485
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.485
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.488
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.496
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.500
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.502
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.503
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.506
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.518
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.519
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.544
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.545
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.548
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.549
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.550
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.550
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.552
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.552
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.554
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.559
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.561
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.562
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.563
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.627
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.630
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.631
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.633
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.634
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.635
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, microblaze_0]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.636
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.644
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.646
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.648
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.650
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_FREQ], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.652
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.654
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.660
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.663
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf bit], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.665
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf bit], Result: [null, microblaze_arm_wrapper.bit]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:44.669
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:45.872
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:45.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.197
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.198
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.207
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.208
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.233
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.234
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.278
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.278
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:04:46.281
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is not configured]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:16.903
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:16.906
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:16.907
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:16.994
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.000
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.007
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.008
+!MESSAGE XSCT Command: [version], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.009
+!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.011
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.029
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.029
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.130
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.134
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.158
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.158
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.209
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.212
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.226
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.227
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.278
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.278
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.299
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.299
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.335
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.335
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.344
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.344
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.369
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.370
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.378
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248687027]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.379
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.405
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.406
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248687027" && level == 0}], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.432
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248687027" && level == 0}], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.432
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.434
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.438
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.442
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.444
+!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.462
+!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.463
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.497
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.498
+!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.570
+!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_0]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.570
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.577
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.577
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.634
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.634
+!MESSAGE XSCT Command: [stop], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.678
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:17.679
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.045
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.045
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.053
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.053
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.055
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:18.055
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:21.098
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Result: [{Format=no targets found with "name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"". available targets:
   1* APU
      2  ARM Cortex-A9 MPCore #0 (Suspended)
      3  ARM Cortex-A9 MPCore #1 (Suspended)
-  4  xc7z020, Time=1543873905756, Code=1}, ]. Thread: Worker-9
+  4  xc7z020, Time=1544299641098, Code=1}, ]. Thread: Worker-5
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:51:45.761
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:21.219
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:21.222
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "microblaze_arm_i/microblaze_0:microblaze_arm_i/microblaze_0",
+"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:24.790
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:24.794
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.259
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:24.797
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:24.799
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.852
 !MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.356
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.854
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.392
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.854
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.401
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.863
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.401
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.863
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.410
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.410
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.871
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.434
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.894
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
      3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.434
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.895
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.472
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.922
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:03.472
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:50.923
 !MESSAGE XSCT Command: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:07.530
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:53.276
 !MESSAGE XSCT command with result: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:08.331
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:54.077
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:52:08.334
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:07:54.080
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:23.821
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:23.829
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.045
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.068
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.080
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.089
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.089
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.097
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.097
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.121
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.121
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.167
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:43.168
-!MESSAGE XSCT Command: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:47.582
-!MESSAGE XSCT command with result: [fpga -file /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:48.383
-!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:53:48.386
-!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
-
-!ENTRY org.eclipse.core.resources 4 568 2018-12-03 22:54:40.814
+!ENTRY org.eclipse.core.resources 4 568 2018-12-08 21:09:10.706
 !MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
 !STACK 0
 java.io.FileNotFoundException: /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap (Arquivo ou diretório não encontrado)
@@ -895,268 +2233,268 @@ java.io.FileNotFoundException: /home/lais/Documentos/ROB307/rob_307/hw_arm_micro
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY com.xilinx.sdk.utils 1 0 2018-12-03 22:57:21.056
+!ENTRY com.xilinx.sdk.utils 1 0 2018-12-08 21:15:42.719
 !MESSAGE Updating toolusage
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.056
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.720
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.058
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.723
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.063
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.723
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.072
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.737
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.072
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.737
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.080
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.753
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.080
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.753
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.112
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.879
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.112
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.879
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.187
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.926
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==0} -index 1], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.188
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.927
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.217
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.940
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.217
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.940
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.219
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.942
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.219
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.942
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.229
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.954
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.230
-!MESSAGE XSCT Command: [version -server], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.955
+!MESSAGE XSCT Command: [version -server], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.247
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.956
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.2]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.248
-!MESSAGE XSCT Command: [version], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.957
+!MESSAGE XSCT Command: [version], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.248
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.958
+!MESSAGE XSCT command with result: [version], Result: [null, 2018.2]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.249
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.958
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.256
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.970
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.257
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:42.971
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.280
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.013
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.281
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.013
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.289
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.026
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.289
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.026
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.316
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.074
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.316
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.075
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.324
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.083
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.325
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.083
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.358
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.110
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.359
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.110
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.369
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.119
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.369
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.120
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.402
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.149
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.402
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.149
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.414
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.157
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.414
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.157
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.438
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.183
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.438
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.183
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.446
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248773728]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.196
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248687027]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.447
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.196
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.474
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.221
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248687027" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.475
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.222
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248687027" && level == 0}], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.498
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248773728" && level == 0}], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.256
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248687027" && level == 0}], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.499
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.257
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.500
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.258
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.500
-!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.258
+!MESSAGE XSCT Command: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.513
-!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.259
+!MESSAGE XSCT command with result: [source /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.514
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.260
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.544
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.295
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.545
-!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.296
+!MESSAGE XSCT Command: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.549
-!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_7]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.300
+!MESSAGE XSCT command with result: [loadhw -hw /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/microblaze_arm_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, microblaze_arm_wrapper_0]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.550
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.300
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.551
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.302
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.553
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.303
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.587
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.339
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 0], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.587
-!MESSAGE XSCT Command: [stop], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.340
+!MESSAGE XSCT Command: [stop], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.589
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.341
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.590
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.342
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.905
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.665
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.906
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.665
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.914
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.675
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.914
-!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.675
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.915
-!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.678
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.916
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.679
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.964
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.741
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:21.965
-!MESSAGE XSCT Command: [rst -processor], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.742
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.019
-!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.772
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.019
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.772
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.065
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.833
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.066
-!MESSAGE XSCT Command: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/diametre/Debug/diametre.elf], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:43.834
+!MESSAGE XSCT Command: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/count/Debug/count.elf], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.636
-!MESSAGE XSCT command with result: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/diametre/Debug/diametre.elf], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:44.536
+!MESSAGE XSCT command with result: [dow /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/count/Debug/count.elf], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.637
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:44.536
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.638
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:44.538
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.752
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:45.398
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.929
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 1], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:45.467
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Zed 210248687027"} -index 1], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.929
-!MESSAGE XSCT Command: [con], Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:45.467
+!MESSAGE XSCT Command: [con], Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:22.968
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:15:45.481
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:53.648
-!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-721
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:19:07.988
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-254
 
-!ENTRY com.xilinx.sdk.utils 0 0 2018-12-03 22:57:53.662
-!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-721
+!ENTRY com.xilinx.sdk.utils 0 0 2018-12-08 21:19:08.005
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-254
 
-!ENTRY org.eclipse.ui.ide 4 4 2018-12-03 22:58:00.218
+!ENTRY org.eclipse.ui.ide 4 4 2018-12-08 21:19:16.646
 !MESSAGE Problems saving workspace
 
-!ENTRY org.eclipse.ui.ide 4 1 2018-12-03 22:58:00.218
+!ENTRY org.eclipse.ui.ide 4 1 2018-12-08 21:19:16.647
 !MESSAGE Problems occurred while trying to save the state of the workbench.
-!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-12-03 22:58:00.218
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-12-08 21:19:16.647
 !MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
 !STACK 0
 java.io.FileNotFoundException: /home/lais/Documentos/ROB307/rob_307/hw_arm_microblaze/hw_arm_microblaze.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers (Arquivo ou diretório não encontrado)

@@ -1,4 +1,4 @@
-01:46:36 **** Build of project dijkstra_bsp ****
+20:55:18 **** Build of project dijkstra_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/ddrps_v1_0/src
 make -C microblaze_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -61,5 +61,5 @@ make -C microblaze_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=m
 Compiling tmrctr
 Finished building libraries
 
-01:46:41 Build Finished (took 4s.834ms)
+20:55:24 Build Finished (took 5s.529ms)
 

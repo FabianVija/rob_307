@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  8 18:50:12 2018
+# Process ID: 27122
+# Current directory: /home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_Count_1_0_synth_1
+# Command line: vivado -log design_1_Count_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Count_1_0.tcl
+# Log file: /home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_Count_1_0_synth_1/design_1_Count_1_0.vds
+# Journal file: /home/fabian/Documents/ensta/deuxieme/rob307/multicore/count/vivado/testing_mult.runs/design_1_Count_1_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_Count_1_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_Count_1_0, cache-ID = 60f13efce2db2741.
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  8 18:50:22 2018...

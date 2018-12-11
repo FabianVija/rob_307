@@ -1,4 +1,4 @@
-22:57:30 **** Auto Build of configuration Debug for project diametre ****
+20:55:17 **** Build of configuration Debug for project diametre ****
 make all 
 Building file: ../src/main.cc
 Invoking: MicroBlaze g++ compiler
@@ -17,5 +17,5 @@ mb-size diametre.elf  |tee "diametre.elf.size"
 Finished building: diametre.elf.size
  
 
-22:57:32 Build Finished (took 2s.369ms)
+20:55:18 Build Finished (took 765ms)
 
